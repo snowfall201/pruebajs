@@ -1,9 +1,9 @@
-name: Scrapear y subir contenido
+name: Ejecutar scraping diario
 
 on:
   schedule:
-    - cron: '0 * * * *' # cada hora
-  workflow_dispatch:     # también puedes ejecutarlo manualmente
+    - cron: '0 6 * * *'     # todos los días a las 6:00 UTC
+  workflow_dispatch:        # opción para ejecutarlo manualmente
   push:
     paths:
       - scraper.js
@@ -13,24 +13,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clonar repo
+    - name: Clonar el repositorio
       uses: actions/checkout@v3
 
-    - name: Configurar Node.js
+    - name: Instalar Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
 
     - name: Instalar dependencias
-      run: npm install cheerio node-fetch
+      run: npm install
 
-    - name: Ejecutar scraping
-      run: node scraper.js
+    - name: Ejecutar script de scraping
+      run: npm run scrape
 
-    - name: Subir cambios
+    - name: Hacer commit de data.json
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
         git add data.json
-        git commit -m "Actualización automática"
+        git commit -m "Actualización automática de data.json" || echo "Sin cambios"
         git push
