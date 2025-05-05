@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Mi Página</title>
-  </head>
-  <body>
-    <h1>Hola mundo desde GitHub Pages!</h1>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contenido extraído</title>
+</head>
+<body>
+  <h1>Texto extraído automáticamente</h1>
+  <pre id="contenido">Cargando...</pre>
+
+  <script>
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('contenido').innerText = data.texto + '\n\nActualizado: ' + data.fecha;
+      });
+  </script>
+</body>
 </html>
