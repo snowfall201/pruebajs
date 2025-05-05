@@ -2,17 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Contenido extraído</title>
+  <title>Proyectos UNED</title>
 </head>
 <body>
-  <h1>Texto extraído automáticamente</h1>
-  <pre id="contenido">Cargando...</pre>
+  <h1>Proyectos</h1>
+  <ul id="proyectos"></ul>
 
   <script>
     fetch('data.json')
       .then(res => res.json())
       .then(data => {
-        document.getElementById('contenido').innerText = data.texto + '\n\nActualizado: ' + data.fecha;
+        const ul = document.getElementById('proyectos');
+        data.forEach(proyecto => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
+          ul.appendChild(li);
+        });
       });
   </script>
 </body>
