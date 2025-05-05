@@ -22,11 +22,9 @@ jobs:
 
       - name: Instalar dependencias
         run: npm install
-        working-directory: ${{ github.workspace }}
 
       - name: Ejecutar scraper
         run: npm run scrape
-        working-directory: ${{ github.workspace }}
 
       - name: Commit y push de data.json actualizado
         run: |
@@ -35,4 +33,3 @@ jobs:
           git add data.json
           git commit -m "Actualizar data.json automáticamente" || echo "Sin cambios"
           git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
-
