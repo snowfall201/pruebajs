@@ -1,41 +1,37 @@
-name: Ejecutar scraping diario
+name: Ejecutar scraper y guardar datos
 
 on:
-  schedule:
-    - cron: '0 6 * * *'     # todos los días a las 6:00 UTC
-  workflow_dispatch:        # opción para ejecutarlo manualmente
   push:
-    paths:
-      - scraper.js
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
+  scrape:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clonar el repositorio
-      uses: actions/checkout@v3
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
 
-    - name: Instalar Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Diagnóstico - verificar archivos
+        run: |
+          echo "Directorio actual:"
+          pwd
+          echo "Contenido:"
+          ls -la
 
-    - name: Cambiar a carpeta raíz correcta
-      run: cd $GITHUB_WORKSPACE && ls -la
+      - name: Instalar dependencias
+        run: npm install
+        working-directory: ${{ github.workspace }}
 
-    - name: Instalar dependencias
-      working-directory: ${{ github.workspace }}
-      run: npm install
+      - name: Ejecutar scraper
+        run: npm run scrape
+        working-directory: ${{ github.workspace }}
 
-
-    - name: Ejecutar script de scraping
-      run: npm run scrape
-
-    - name: Hacer commit de data.json
-      run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git add data.json
-        git commit -m "Actualización automática de data.json" || echo "Sin cambios"
-        git push
+      - name: Commit y push de data.json actualizado
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
+          git add data.json
+          git commit -m "Actualizar data.json automáticamente" || echo "Sin cambios"
+          git push
