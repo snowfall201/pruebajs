@@ -21,8 +21,13 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Cambiar a carpeta raíz correcta
+      run: cd $GITHUB_WORKSPACE && ls -la
+
     - name: Instalar dependencias
+      working-directory: ${{ github.workspace }}
       run: npm install
+
 
     - name: Ejecutar script de scraping
       run: npm run scrape
