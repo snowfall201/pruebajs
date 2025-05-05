@@ -1,3 +1,4 @@
+// scraper.js
 import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import { writeFileSync } from 'fs';
@@ -23,7 +24,7 @@ async function scrape() {
   });
 
   writeFileSync('data.json', JSON.stringify(resultados, null, 2));
-  console.log('Scraping terminado y guardado en data.json');
+  console.log('Scraping terminado');
 }
 
 scrape();
