@@ -1,0 +1,96 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Proyectos UNED</title>
+  <style>
+    /* Estilo base para la página */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h2 {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    /* Estilos para las secciones de proyectos */
+    .proyectos-section {
+      width: 80%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .proyectos-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .proyectos-section li {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .proyectos-section li:hover {
+      background-color: #e9e9e9;
+    }
+
+    .proyectos-section strong {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .proyectos-section span {
+      font-style: italic;
+      color: #777;
+    }
+
+    /* Estilos para los responsables */
+    .responsables {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Estilo del contenedor de proyectos finalizados */
+    #proyectos-finalizados ul {
+      padding-left: 20px;
+    }
+
+    #proyectos-vigentes ul {
+      padding-left: 20px;
+    }
+
+    /* Estilos generales para mejorar la legibilidad */
+    p, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
