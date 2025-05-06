@@ -37,7 +37,9 @@ try {
         .find('.grupo-proyectos__proyecto.agrupador-anualidad')
         .each((_, yearBlock) => {
           const year = $(yearBlock).find('.grupo-proyectos__proyecto-titulo').text().trim();
-          data.finalizados.anios[year] = [];
+          if (!data.finalizados.anios[year]) {
+            data.finalizados.anios[year] = [];
+          }
 
           $(yearBlock).find('.grupo-proyectos__item').each((_, el) => {
             const titulo = $(el).find('.c-proyecto-card__title').text().trim();
@@ -51,24 +53,13 @@ try {
     }
   });
 
-  // Ordenar los años numéricamente en orden descendente
-const sortedYears = Object.keys(data.finalizados.anios).sort((a, b) => b - a);
-sortedYears.forEach(year => {
-  console.log(year, data.finalizados.anios[year]);
-});
-  
-  // Crear un nuevo objeto 'anios' con los años ordenados
-  const sortedAnios = {};
-  sortedYears.forEach(year => {
-    sortedAnios[year] = data.finalizados.anios[year];
-  });
+  // Ordenar los años descendente y reconstruir el objeto
+  const sortedAnios = Object.fromEntries(
+    Object.entries(data.finalizados.anios)
+      .sort(([a], [b]) => b - a)
+  );
 
-  // Reemplazar los 'anios' con los años ordenados
   data.finalizados.anios = sortedAnios;
-
-  // Guardar los datos en el archivo JSON
-  fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
-  console.log('Scraping completo. Datos guardados en data.json');
 } catch (error) {
-  console.error('Error durante el scraping:', error);
+  console.error('Error al procesar los datos:', error);
 }
