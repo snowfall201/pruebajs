@@ -18,17 +18,17 @@
   <div id="proyectos-finalizados"></div>
 
   <script>
-    fetch('data.json')
+ fetch('data.json')
   .then(res => res.json())
   .then(data => {
     // Definir la base URL
-    const baseURL = 'https://portalcientifico.uned.es/';
+    const baseURL = 'https://portalcientifico.uned.es';
 
     // Proyectos vigentes
     const vigentesList = document.getElementById('proyectos-vigentes');
     data.vigentes.proyectos.forEach(p => {
       const li = document.createElement('li');
-      const proyectoURL = baseURL + encodeURIComponent(p.titulo.replace(/\s+/g, '-').toLowerCase());  // Genera el URL usando el título del proyecto
+      const proyectoURL = baseURL + p.link;  // Usamos el link relativo que viene en el JSON
 
       li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
       vigentesList.appendChild(li);
@@ -44,7 +44,7 @@
       const ul = document.createElement('ul');
       proyectos.forEach(p => {
         const li = document.createElement('li');
-        const proyectoURL = baseURL + encodeURIComponent(p.titulo.replace(/\s+/g, '-').toLowerCase());  // Genera el URL usando el título del proyecto
+        const proyectoURL = baseURL + p.link;  // Usamos el link relativo que viene en el JSON
 
         li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
         ul.appendChild(li);
@@ -52,6 +52,7 @@
       finalizadosDiv.appendChild(ul);
     });
   });
+
   </script>
 
 </body>
