@@ -13,36 +13,36 @@
 
   <!-- Sección para proyectos finalizados -->
   <h2>Proyectos Finalizados</h2>
-  <ul id="proyectos-finalizados"></ul>
+  <div id="proyectos-finalizados"></div>
 
   <script>
     fetch('data.json')
       .then(res => res.json())
       .then(data => {
         const vigentesUl = document.getElementById('proyectos-vigentes');
-        const finalizadosUl = document.getElementById('proyectos-finalizados');
+        const finalizadosDiv = document.getElementById('proyectos-finalizados');
 
         // Mostrar proyectos vigentes
-        const vigentes = data.vigentes.proyectos;
-        vigentes.forEach(proyecto => {
+        data.vigentes.proyectos.forEach(proyecto => {
           const li = document.createElement('li');
           li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
           vigentesUl.appendChild(li);
         });
 
-        // Mostrar proyectos finalizados por año
-        for (const year in data.finalizados.anios) {
-          const anioProyectos = data.finalizados.anios[year];
+        // Mostrar proyectos finalizados ordenados por año (usando aniosOrdenados)
+        data.finalizados.aniosOrdenados.forEach(([year, proyectos]) => {
           const yearTitle = document.createElement('h3');
           yearTitle.textContent = `Proyectos finalizados en ${year}`;
-          finalizadosUl.appendChild(yearTitle);
-          
-          anioProyectos.forEach(proyecto => {
+          finalizadosDiv.appendChild(yearTitle);
+
+          const ul = document.createElement('ul');
+          proyectos.forEach(proyecto => {
             const li = document.createElement('li');
             li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
-            finalizadosUl.appendChild(li);
+            ul.appendChild(li);
           });
-        }
+          finalizadosDiv.appendChild(ul);
+        });
       })
       .catch(error => console.error('Error al cargar los datos:', error));
   </script>
