@@ -4,18 +4,12 @@
     "descripcion": "Proyectos en los que participa algún/a investigador/a",
     "proyectos": [
       {
-        "titulo": "Soporte avanzado para SIstemas software COnfigurables",
-        "responsables": [
-          "DAVID JOSE FERNANDEZ AMOROS",
-          "RUBEN HERADIO GIL"
-        ]
+        "titulo": "Soporte avanzado para Sistemas software Configurables",
+        "responsables": ["DAVID JOSE FERNANDEZ AMOROS", "RUBEN HERADIO GIL"]
       },
       {
-        "titulo": "Control resiliente y seguro de sistemas ciberfísicos cooperativos",
-        "responsables": [
-          "MARIA GUINALDO LOSADA",
-          "JOSE SANCHEZ MORENO"
-        ]
+        "titulo": "Control resiliente...",
+        "responsables": ["MARIA GUINALDO LOSADA", "JOSE SANCHEZ MORENO"]
       }
     ]
   },
@@ -23,198 +17,14 @@
     "titulo": "Proyectos finalizados",
     "descripcion": "Proyectos finalizados en los que ha participado algún/a investigador/a",
     "anios": {
-      "2009": [
+      "2024": [
         {
-          "titulo": "Robots de servicios para la mejora de la calidad de los ciudadanos en el área metropolitana",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        },
-        {
-          "titulo": "Integración de sensores viales de rango y de radiofrecuencia aplicada a tareas de reconocimiento de objetos en entornos de fabricación automatizada",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        }
-      ],
-      "2010": [
-        {
-          "titulo": "Sistema autómatico de adquisición de datos a partir de EPC",
-          "responsables": [
-            "JOSE ANTONIO CERRADA SOMOLINOS"
-          ]
-        }
-      ],
-      "2012": [
-        {
-          "titulo": "Desarrollo de un sistema inteligente de visión 3D (SIVI3D) en un mundo etiquetado",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        }
-      ],
-      "2013": [
-        {
-          "titulo": "Sistema holístico de adquisición de datos EPC",
-          "responsables": [
-            "JOSE ANTONIO CERRADA SOMOLINOS"
-          ]
-        },
-        {
-          "titulo": "Reconstrucción virtual de escenas complejas a partir de información visual 3D asistida por computación ubicua",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        },
-        {
-          "titulo": "Generación automática de interfaces gráficas de usuario para sistemas de adquisición de datos EPC",
-          "responsables": [
-            "RUBEN HERADIO GIL"
-          ]
-        }
-      ],
-      "2014": [
-        {
-          "titulo": "Modelado, simulación y control basados en eventos",
-          "responsables": [
-            "SEBASTIAN DORMIDO BENCOMO"
-          ]
-        },
-        {
-          "titulo": "Sistemas Inteligentes para la Toma de Decisión con Información  Lingüística: Aplicación en Bibliotecas Digitales",
-          "responsables": [
-            "FRANCISCO JAVIER CABRERIZO LORITE"
-          ]
-        },
-        {
-          "titulo": "Robots de servicios para la mejora de la calidad de vida de los ciudadanos en áreas metropolitanas (fase II)",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        }
-      ],
-      "2016": [
-        {
-          "titulo": "Control distribuido basado en eventos",
-          "responsables": [
-            "MARIA GUINALDO LOSADA"
-          ]
-        },
-        {
-          "titulo": "Laboratorios Online de Energías Renovables",
-          "responsables": [
-            "LUIS DE LA TORRE CUBILLO"
-          ]
-        }
-      ],
-      "2017": [
-        {
-          "titulo": "Reconstrucción virtual de escenas complejas en interiores habitados mediante información visual 3D asistida por computación ubicua",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS",
-            "JOSE ANTONIO CERRADA SOMOLINOS"
-          ]
-        },
-        {
-          "titulo": "Control basado en eventos de sistemas distribuidos y colaborativos",
-          "responsables": [
-            "SEBASTIAN DORMIDO BENCOMO"
-          ]
-        }
-      ],
-      "2018": [
-        {
-          "titulo": "Robótica aplicada a la mejora de la calidad de vida de los ciudadanos (fase III)",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        },
-        {
-          "titulo": "Open virtual and remote labs for Control Education",
-          "responsables": [
-            "SEBASTIAN DORMIDO BENCOMO"
-          ]
-        },
-        {
-          "titulo": "Desarrollo tecnológico, compartición interinstitucional y diseminación social de laboratorios virtuales y remotos como herramienta",
-          "responsables": [
-            "JOSE SANCHEZ MORENO"
-          ]
-        }
-      ],
-      "2019": [
-        {
-          "titulo": "Control y optimización de la producción de biomasa con microalgas como fuente de energía renovable",
-          "responsables": [
-            "JOSE SANCHEZ MORENO"
-          ]
-        }
-      ],
-      "2020": [
-        {
-          "titulo": "Desarrollo de técnicas de visión 3D asistidas por tecnología inalámbrica para el reconocimiento de ambientes de alta variabilidad",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS",
-            "RUBEN HERADIO GIL"
-          ]
-        }
-      ],
-      "2021": [
-        {
-          "titulo": "Diseño eficiente y control distribuido de sistemas ciber-físicos",
-          "responsables": [
-            "SEBASTIAN DORMIDO BENCOMO",
-            "RAQUEL DORMIDO CANTO"
-          ]
-        },
-        {
-          "titulo": "Desarrollo de técnicas de visión artificial para análisis forestal mediante sistemas estereoscópicos",
-          "responsables": [
-            "PEDRO JAVIER HERRERA CARO"
-          ]
-        }
-      ],
-      "2022": [
-        {
-          "titulo": "Soporte automático para la optimización y prueba de sistemas de visión altamente configurables.",
-          "responsables": [
-            "RUBEN HERADIO GIL"
-          ]
+          "titulo": "...",
+          "responsables": [...]
         }
       ],
       "2023": [
-        {
-          "titulo": "Analysis techniques for Logic Translations of Intermediate Languages for Uniform Sampling",
-          "responsables": [
-            "DAVID JOSE FERNANDEZ AMOROS"
-          ]
-        },
-        {
-          "titulo": "RoboCity2030-Madrid Robotics Digital Innovacion Hub",
-          "responsables": [
-            "CARLOS CERRADA SOMOLINOS"
-          ]
-        }
-      ],
-      "2024": [
-        {
-          "titulo": "New Automatic Translation of Intermediate Languages and Uniform Sampling",
-          "responsables": [
-            "DAVID JOSE FERNANDEZ AMOROS"
-          ]
-        },
-        {
-          "titulo": "Mejora de estrategias para la adquisición de Hábitos Saludables. Identificación personalizada de trabas psicológicas que dificultan su logro a través de herramienta informática de software libre",
-          "responsables": [
-            "LUIS ANGEL SAUL GUTIERREZ"
-          ]
-        },
-        {
-          "titulo": "Centro de Computación de Alto Rendimiento. MODALIDAD B",
-          "responsables": [
-            "RUBEN HERADIO GIL"
-          ]
-        }
+        { "titulo": "...", "responsables": [...] }
       ]
     }
   }
