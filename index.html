@@ -29,6 +29,9 @@
           vigentesUl.appendChild(li);
         });
 
+        // Depurar: Ver qué contiene aniosOrdenados
+        console.log('Anios Ordenados:', data.finalizados.aniosOrdenados);
+
         // Mostrar proyectos finalizados ordenados por año (usando aniosOrdenados)
         data.finalizados.aniosOrdenados.forEach(([year, proyectos]) => {
           const yearTitle = document.createElement('h3');
