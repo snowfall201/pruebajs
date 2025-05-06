@@ -19,35 +19,39 @@
 
   <script>
     fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        // Proyectos vigentes
-        const vigentesList = document.getElementById('proyectos-vigentes');
-        data.vigentes.proyectos.forEach(p => {
-          const li = document.createElement('li');
-          li.innerHTML = `<strong><a href="${p.link}" target="_blank">${p.titulo}</a></strong><br>Responsables: ${p.responsables.join(', ')}`;
-          vigentesList.appendChild(li);
-        });
+  .then(res => res.json())
+  .then(data => {
+    // Definir la base URL
+    const baseURL = 'https://portalcientifico.uned.es/grupos/17474/';
 
-        // Proyectos finalizados (array ya en orden descendente)
-        const finalizadosDiv = document.getElementById('proyectos-finalizados');
-        data.finalizados.anios.forEach(({ year, proyectos }) => {
-          const h3 = document.createElement('h3');
-          h3.textContent = `Proyectos finalizados en ${year}`;
-          finalizadosDiv.appendChild(h3);
+    // Proyectos vigentes
+    const vigentesList = document.getElementById('proyectos-vigentes');
+    data.vigentes.proyectos.forEach(p => {
+      const li = document.createElement('li');
+      const proyectoURL = baseURL + encodeURIComponent(p.titulo.replace(/\s+/g, '-').toLowerCase());  // Genera el URL usando el título del proyecto
 
-          const ul = document.createElement('ul');
-          proyectos.forEach(p => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong><a href="${p.link}" target="_blank">${p.titulo}</a></strong><br>Responsables: ${p.responsables.join(', ')}`;
-            ul.appendChild(li);
-          });
-          finalizadosDiv.appendChild(ul);
-        });
-      })
-      .catch(error => {
-        console.error('Error al cargar los datos:', error);
+      li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
+      vigentesList.appendChild(li);
+    });
+
+    // Proyectos finalizados (array ya en orden descendente)
+    const finalizadosDiv = document.getElementById('proyectos-finalizados');
+    data.finalizados.anios.forEach(({ year, proyectos }) => {
+      const h3 = document.createElement('h3');
+      h3.textContent = `Proyectos finalizados en ${year}`;
+      finalizadosDiv.appendChild(h3);
+
+      const ul = document.createElement('ul');
+      proyectos.forEach(p => {
+        const li = document.createElement('li');
+        const proyectoURL = baseURL + encodeURIComponent(p.titulo.replace(/\s+/g, '-').toLowerCase());  // Genera el URL usando el título del proyecto
+
+        li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
+        ul.appendChild(li);
       });
+      finalizadosDiv.appendChild(ul);
+    });
+  });
   </script>
 
 </body>
