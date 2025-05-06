@@ -62,7 +62,6 @@ $('.grupo-proyectos').each((_, section) => {
             });
         });
     }
-  });
 
   // — Convertir a array y ordenar en orden descendente —
   const sortedAniosArray = Object
