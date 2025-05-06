@@ -12,8 +12,7 @@ try {
     finalizados: {
       titulo: 'Proyectos finalizados',
       descripcion: 'Proyectos finalizados en los que ha participado algún/a investigador/a',
-      anios: {},
-      aniosOrdenados: [] // Nuevo campo para mantener el orden
+      anios: {}
     }
   };
 
@@ -54,10 +53,13 @@ try {
     }
   });
 
-  // Generar array ordenado de años con proyectos
-  data.finalizados.aniosOrdenados = Object.entries(data.finalizados.anios)
-    .sort(([a], [b]) => parseInt(b) - parseInt(a)); // orden descendente
+  // Ordenar los años descendente y reconstruir el objeto
+  const sortedAnios = Object.fromEntries(
+    Object.entries(data.finalizados.anios)
+      .sort(([a], [b]) => b - a)
+  );
 
+  data.finalizados.anios = sortedAnios;
 } catch (error) {
   console.error('Error al procesar los datos:', error);
 }
