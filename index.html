@@ -6,33 +6,41 @@
 </head>
 <body>
   <h1>Proyectos</h1>
-  <ul id="proyectos"></ul>
+  
+  <!-- Sección para proyectos vigentes -->
+  <h2>Proyectos Vigentes</h2>
+  <ul id="proyectos-vigentes"></ul>
+
+  <!-- Sección para proyectos finalizados -->
+  <h2>Proyectos Finalizados</h2>
+  <ul id="proyectos-finalizados"></ul>
 
   <script>
     fetch('data.json')
       .then(res => res.json())
       .then(data => {
-        const ul = document.getElementById('proyectos');
-        
+        const vigentesUl = document.getElementById('proyectos-vigentes');
+        const finalizadosUl = document.getElementById('proyectos-finalizados');
+
         // Mostrar proyectos vigentes
         const vigentes = data.vigentes.proyectos;
         vigentes.forEach(proyecto => {
           const li = document.createElement('li');
           li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
-          ul.appendChild(li);
+          vigentesUl.appendChild(li);
         });
 
         // Mostrar proyectos finalizados por año
         for (const year in data.finalizados.anios) {
           const anioProyectos = data.finalizados.anios[year];
-          const yearTitle = document.createElement('h2');
+          const yearTitle = document.createElement('h3');
           yearTitle.textContent = `Proyectos finalizados en ${year}`;
-          ul.appendChild(yearTitle);
+          finalizadosUl.appendChild(yearTitle);
           
           anioProyectos.forEach(proyecto => {
             const li = document.createElement('li');
             li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
-            ul.appendChild(li);
+            finalizadosUl.appendChild(li);
           });
         }
       })
