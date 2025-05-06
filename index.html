@@ -16,38 +16,25 @@
   <div id="proyectos-finalizados"></div>
 
   <script>
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        const vigentesUl = document.getElementById('proyectos-vigentes');
-        const finalizadosDiv = document.getElementById('proyectos-finalizados');
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      // Proyectos finalizados (array ya en orden descendente)
+      const finalizadosDiv = document.getElementById('proyectos-finalizados');
+      data.finalizados.anios.forEach(({ year, proyectos }) => {
+        const h3 = document.createElement('h3');
+        h3.textContent = `Proyectos finalizados en ${year}`;
+        finalizadosDiv.appendChild(h3);
 
-        // Mostrar proyectos vigentes
-        data.vigentes.proyectos.forEach(proyecto => {
+        const ul = document.createElement('ul');
+        proyectos.forEach(p => {
           const li = document.createElement('li');
-          li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
-          vigentesUl.appendChild(li);
+          li.innerHTML = `<strong>${p.titulo}</strong><br>Responsables: ${p.responsables.join(', ')}`;
+          ul.appendChild(li);
         });
-
-        // Depurar: Ver qué contiene aniosOrdenados
-        console.log('Anios Ordenados:', data.finalizados.aniosOrdenados);
-
-        // Mostrar proyectos finalizados ordenados por año (usando aniosOrdenados)
-        data.finalizados.aniosOrdenados.forEach(([year, proyectos]) => {
-          const yearTitle = document.createElement('h3');
-          yearTitle.textContent = `Proyectos finalizados en ${year}`;
-          finalizadosDiv.appendChild(yearTitle);
-
-          const ul = document.createElement('ul');
-          proyectos.forEach(proyecto => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
-            ul.appendChild(li);
-          });
-          finalizadosDiv.appendChild(ul);
-        });
-      })
-      .catch(error => console.error('Error al cargar los datos:', error));
-  </script>
+        finalizadosDiv.appendChild(ul);
+      });
+    });
+</script>
 </body>
 </html>
