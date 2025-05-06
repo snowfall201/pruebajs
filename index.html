@@ -15,10 +15,18 @@
   <h2>Proyectos Finalizados</h2>
   <div id="proyectos-finalizados"></div>
 
-  <script>
+ <script>
   fetch('data.json')
     .then(res => res.json())
     .then(data => {
+      // Proyectos vigentes
+      const vigentesList = document.getElementById('proyectos-vigentes');
+      data.vigentes.proyectos.forEach(p => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${p.titulo}</strong><br>Responsables: ${p.responsables.join(', ')}`;
+        vigentesList.appendChild(li);
+      });
+
       // Proyectos finalizados (array ya en orden descendente)
       const finalizadosDiv = document.getElementById('proyectos-finalizados');
       data.finalizados.anios.forEach(({ year, proyectos }) => {
@@ -36,5 +44,6 @@
       });
     });
 </script>
+
 </body>
 </html>
