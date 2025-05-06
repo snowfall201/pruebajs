@@ -51,8 +51,10 @@ try {
     }
   });
 
-  // Ordenar los años en orden descendente
-  const sortedYears = Object.keys(data.finalizados.anios).sort((a, b) => b - a);
+  // Ordenar los años numéricamente en orden descendente
+  const sortedYears = Object.keys(data.finalizados.anios)
+    .map(year => parseInt(year)) // Convertir las claves (años) a números
+    .sort((a, b) => b - a) // Ordenar numéricamente de mayor a menor
 
   // Crear un nuevo objeto 'anios' con los años ordenados
   const sortedAnios = {};
