@@ -1,30 +1,60 @@
-// scraper.js
-import * as cheerio from 'cheerio';
 import fetch from 'node-fetch';
-import { writeFileSync } from 'fs';
+import * as cheerio from 'cheerio';
+import fs from 'fs';
 
 const URL = 'https://portalcientifico.uned.es/grupos/17474/proyectos';
 
-async function scrape() {
-  const res = await fetch(URL);
-  const html = await res.text();
-  const $ = cheerio.load(html);
+const response = await fetch(URL);
+const html = await response.text();
+const $ = cheerio.load(html);
 
-  const resultados = [];
+const data = {
+  vigentes: {
+    titulo: 'Proyectos vigentes',
+    descripcion: 'Proyectos en los que participa algún/a investigador/a',
+    proyectos: []
+  },
+  finalizados: {
+    titulo: 'Proyectos finalizados',
+    descripcion: 'Proyectos finalizados en los que ha participado algún/a investigador/a',
+    anios: {}
+  }
+};
 
-  $('.c-proyecto-card').each((_, el) => {
-    const titulo = $(el).find('.c-proyecto-card__title').text().trim();
-    const responsables = [];
+// Extraer proyectos vigentes
+$('.grupo-proyectos').each((_, section) => {
+  const title = $(section).find('.grupo-proyectos__title span').first().text().trim();
 
-    $(el).find('.c-proyecto-card__responsables .item').each((_, span) => {
-      responsables.push($(span).text().trim());
+  if (title.includes('vigentes')) {
+    $(section).find('.grupo-proyectos__item').each((_, el) => {
+      const titulo = $(el).find('.c-proyecto-card__title').text().trim();
+      const responsables = [];
+      $(el).find('.c-proyecto-card__responsables .item').each((_, span) => {
+        responsables.push($(span).text().trim());
+      });
+      data.vigentes.proyectos.push({ titulo, responsables });
     });
+  }
 
-    resultados.push({ titulo, responsables });
-  });
+  // Extraer proyectos finalizados por año
+  if (title.includes('finalizados')) {
+    $(section)
+      .find('.grupo-proyectos__proyecto.agrupador-anualidad')
+      .each((_, yearBlock) => {
+        const year = $(yearBlock).find('.grupo-proyectos__proyecto-titulo').text().trim();
+        data.finalizados.anios[year] = [];
 
-  writeFileSync('data.json', JSON.stringify(resultados, null, 2));
-  console.log('Scraping terminado');
-}
+        $(yearBlock).find('.grupo-proyectos__item').each((_, el) => {
+          const titulo = $(el).find('.c-proyecto-card__title').text().trim();
+          const responsables = [];
+          $(el).find('.c-proyecto-card__responsables .item').each((_, span) => {
+            responsables.push($(span).text().trim());
+          });
+          data.finalizados.anios[year].push({ titulo, responsables });
+        });
+      });
+  }
+});
 
-scrape();
+fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
+console.log('Scraping completo. Datos guardados en data.json');
