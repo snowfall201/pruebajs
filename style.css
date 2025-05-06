@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  line-height: 1.6;
 }
 
 h1 {
@@ -14,6 +15,7 @@ h1 {
   padding: 20px 0;
   margin: 0;
   font-size: 2.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -29,8 +31,11 @@ h3 {
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #00796b;
+  text-align: left;
+  padding-left: 20px;
 }
 
+/* Lista sin estilo */
 ul {
   list-style: none;
   padding: 0;
@@ -41,34 +46,36 @@ li {
   background-color: #ffffff;
   border-radius: 8px;
   margin: 10px 0;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
+/* Efecto hover sobre los elementos de la lista */
 li:hover {
   background-color: #e0f2f1;
   transform: scale(1.02);
 }
 
+/* Estilo del texto importante (negrita) */
 strong {
   font-size: 1.2em;
   color: #004d40;
 }
 
+/* Estilo para los responsables (texto en cursiva y color) */
 .responsables {
   font-size: 0.95em;
   color: #00796b;
   font-style: italic;
+  margin-top: 5px;
 }
 
 /* Estilo para la sección de proyectos finalizados */
-#proyectos-finalizados ul {
-  padding-left: 20px;
-}
-
+#proyectos-finalizados ul,
 #proyectos-vigentes ul {
   padding-left: 20px;
+  margin: 0;
 }
 
 .project-year {
@@ -77,6 +84,7 @@ strong {
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: bold;
+  padding-left: 20px;
 }
 
 .project-item {
@@ -98,6 +106,14 @@ strong {
   }
 
   li {
-    padding: 10px;
+    padding: 15px;
+  }
+
+  .responsables {
+    font-size: 0.9em;
+  }
+
+  .project-year {
+    font-size: 1.2em;
   }
 }
