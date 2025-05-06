@@ -24,23 +24,25 @@ async function scrape() {
   };
 
   // — Extraer proyectos vigentes —
-$('.grupo-proyectos').each((_, section) => {
-  const title = $(section).find('.grupo-proyectos__title span').first().text().trim();
-  console.log(`Título del bloque de proyectos: ${title}`);
+  $('.grupo-proyectos').each((_, section) => {
+    const title = $(section).find('.grupo-proyectos__title span').first().text().trim();
+    console.log(`Título del bloque de proyectos: ${title}`);
 
-  if (title.toLowerCase().includes('vigentes')) {
-    $(section).find('.grupo-proyectos__item').each((_, el) => {
-      const titulo = $(el).find('.c-proyecto-card__title').text().trim();
-      const responsables = $(el)
-        .find('.c-proyecto-card__responsables .item')
-        .map((_, span) => $(span).text().trim())
-        .get();
-      console.log(`Proyecto encontrado: ${titulo}`);
-      data.vigentes.proyectos.push({ titulo, responsables });
-    });
-  }
-
-
+    if (title.toLowerCase().includes('vigentes')) {
+      $(section).find('.grupo-proyectos__item').each((_, el) => {
+        const titulo = $(el).find('.c-proyecto-card__title').text().trim();
+        const responsables = $(el)
+          .find('.c-proyecto-card__responsables .item')
+          .map((_, span) => $(span).text().trim())
+          .get();
+        
+        // Obtener el enlace del proyecto (asumido como un enlace en la tarjeta del proyecto)
+        const enlace = $(el).find('a').attr('href') || ''; // Obtener el enlace del atributo href
+        
+        console.log(`Proyecto encontrado: ${titulo}, Enlace: ${enlace}`);
+        data.vigentes.proyectos.push({ titulo, responsables, link: enlace });
+      });
+    }
 
     // — Extraer proyectos finalizados por año —
     if (title.toLowerCase().includes('finalizados')) {
@@ -58,11 +60,16 @@ $('.grupo-proyectos').each((_, section) => {
                 .find('.c-proyecto-card__responsables .item')
                 .map((_, span) => $(span).text().trim())
                 .get();
-              data.finalizados.anios[year].push({ titulo, responsables });
+
+              // Obtener el enlace del proyecto (asumido como un enlace en la tarjeta del proyecto)
+              const enlace = $(el).find('a').attr('href') || ''; // Obtener el enlace del atributo href
+              
+              data.finalizados.anios[year].push({ titulo, responsables, link: enlace });
             });
         });
     }
-});
+  });
+
   // — Convertir a array y ordenar en orden descendente —
   const sortedAniosArray = Object
     .entries(data.finalizados.anios)
