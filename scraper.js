@@ -62,4 +62,10 @@ try {
 
   // Reemplazar los 'anios' con los años ordenados
   data.finalizados.anios = sortedAnios;
+
+  // Guardar los datos en el archivo JSON
+  fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
+  console.log('Scraping completo. Datos guardados en data.json');
+} catch (error) {
+  console.error('Error durante el scraping:', error);
 }
