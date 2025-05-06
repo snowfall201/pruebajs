@@ -24,19 +24,23 @@ async function scrape() {
   };
 
   // — Extraer proyectos vigentes —
-  $('.grupo-proyectos').each((_, section) => {
-    const title = $(section).find('.grupo-proyectos__title span').first().text().trim();
+$('.grupo-proyectos').each((_, section) => {
+  const title = $(section).find('.grupo-proyectos__title span').first().text().trim();
+  console.log(`Título del bloque de proyectos: ${title}`);
 
-    if (title.toLowerCase().includes('vigentes')) {
-      $(section).find('.grupo-proyectos__item').each((_, el) => {
-        const titulo = $(el).find('.c-proyecto-card__title').text().trim();
-        const responsables = $(el)
-          .find('.c-proyecto-card__responsables .item')
-          .map((_, span) => $(span).text().trim())
-          .get();
-        data.vigentes.proyectos.push({ titulo, responsables });
-      });
-    }
+  if (title.toLowerCase().includes('vigentes')) {
+    $(section).find('.grupo-proyectos__item').each((_, el) => {
+      const titulo = $(el).find('.c-proyecto-card__title').text().trim();
+      const responsables = $(el)
+        .find('.c-proyecto-card__responsables .item')
+        .map((_, span) => $(span).text().trim())
+        .get();
+      console.log(`Proyecto encontrado: ${titulo}`);
+      data.vigentes.proyectos.push({ titulo, responsables });
+    });
+  }
+});
+
 
     // — Extraer proyectos finalizados por año —
     if (title.toLowerCase().includes('finalizados')) {
