@@ -51,8 +51,15 @@ try {
     }
   });
 
-  fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
-  console.log('Scraping completo. Datos guardados en data.json');
-} catch (error) {
-  console.error('Error durante el scraping:', error);
+  // Ordenar los años en orden descendente
+  const sortedYears = Object.keys(data.finalizados.anios).sort((a, b) => b - a);
+
+  // Crear un nuevo objeto 'anios' con los años ordenados
+  const sortedAnios = {};
+  sortedYears.forEach(year => {
+    sortedAnios[year] = data.finalizados.anios[year];
+  });
+
+  // Reemplazar los 'anios' con los años ordenados
+  data.finalizados.anios = sortedAnios;
 }
