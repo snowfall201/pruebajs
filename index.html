@@ -13,12 +13,30 @@
       .then(res => res.json())
       .then(data => {
         const ul = document.getElementById('proyectos');
-        data.forEach(proyecto => {
+        
+        // Mostrar proyectos vigentes
+        const vigentes = data.vigentes.proyectos;
+        vigentes.forEach(proyecto => {
           const li = document.createElement('li');
           li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
           ul.appendChild(li);
         });
-      });
+
+        // Mostrar proyectos finalizados por año
+        for (const year in data.finalizados.anios) {
+          const anioProyectos = data.finalizados.anios[year];
+          const yearTitle = document.createElement('h2');
+          yearTitle.textContent = `Proyectos finalizados en ${year}`;
+          ul.appendChild(yearTitle);
+          
+          anioProyectos.forEach(proyecto => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${proyecto.titulo}</strong><br>Responsables: ${proyecto.responsables.join(', ')}`;
+            ul.appendChild(li);
+          });
+        }
+      })
+      .catch(error => console.error('Error al cargar los datos:', error));
   </script>
 </body>
 </html>
