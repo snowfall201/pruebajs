@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-  <link rel="stylesheet" href="style.css">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyectos UNED</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Proyectos</h1>
@@ -16,35 +17,38 @@
   <h2>Proyectos Finalizados</h2>
   <div id="proyectos-finalizados"></div>
 
- <script>
-  fetch('data.json')
-    .then(res => res.json())
-    .then(data => {
-      // Proyectos vigentes
-      const vigentesList = document.getElementById('proyectos-vigentes');
-      data.vigentes.proyectos.forEach(p => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${p.titulo}</strong><br>Responsables: ${p.responsables.join(', ')}`;
-        vigentesList.appendChild(li);
-      });
-
-      // Proyectos finalizados (array ya en orden descendente)
-      const finalizadosDiv = document.getElementById('proyectos-finalizados');
-      data.finalizados.anios.forEach(({ year, proyectos }) => {
-        const h3 = document.createElement('h3');
-        h3.textContent = `Proyectos finalizados en ${year}`;
-        finalizadosDiv.appendChild(h3);
-
-        const ul = document.createElement('ul');
-        proyectos.forEach(p => {
+  <script>
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        // Proyectos vigentes
+        const vigentesList = document.getElementById('proyectos-vigentes');
+        data.vigentes.proyectos.forEach(p => {
           const li = document.createElement('li');
-          li.innerHTML = `<strong>${p.titulo}</strong><br>Responsables: ${p.responsables.join(', ')}`;
-          ul.appendChild(li);
+          li.innerHTML = `<strong><a href="${p.link}" target="_blank">${p.titulo}</a></strong><br>Responsables: ${p.responsables.join(', ')}`;
+          vigentesList.appendChild(li);
         });
-        finalizadosDiv.appendChild(ul);
+
+        // Proyectos finalizados (array ya en orden descendente)
+        const finalizadosDiv = document.getElementById('proyectos-finalizados');
+        data.finalizados.anios.forEach(({ year, proyectos }) => {
+          const h3 = document.createElement('h3');
+          h3.textContent = `Proyectos finalizados en ${year}`;
+          finalizadosDiv.appendChild(h3);
+
+          const ul = document.createElement('ul');
+          proyectos.forEach(p => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong><a href="${p.link}" target="_blank">${p.titulo}</a></strong><br>Responsables: ${p.responsables.join(', ')}`;
+            ul.appendChild(li);
+          });
+          finalizadosDiv.appendChild(ul);
+        });
+      })
+      .catch(error => {
+        console.error('Error al cargar los datos:', error);
       });
-    });
-</script>
+  </script>
 
 </body>
 </html>
