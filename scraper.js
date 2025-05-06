@@ -39,7 +39,7 @@ $('.grupo-proyectos').each((_, section) => {
       data.vigentes.proyectos.push({ titulo, responsables });
     });
   }
-});
+
 
 
     // — Extraer proyectos finalizados por año —
@@ -62,7 +62,7 @@ $('.grupo-proyectos').each((_, section) => {
             });
         });
     }
-
+});
   // — Convertir a array y ordenar en orden descendente —
   const sortedAniosArray = Object
     .entries(data.finalizados.anios)
