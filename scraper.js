@@ -54,10 +54,10 @@ try {
   });
 
   // Ordenar los años descendente y reconstruir el objeto
-  const sortedAnios = Object.fromEntries(
-    Object.entries(data.finalizados.anios)
-      .sort(([a], [b]) => b - a)
-  );
+const sortedAnios = Object.fromEntries(
+  Object.entries(data.finalizados.anios)
+    .sort(([a], [b]) => parseInt(b) - parseInt(a))
+);
 
   data.finalizados.anios = sortedAnios;
 } catch (error) {
