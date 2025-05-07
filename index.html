@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos UNED</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Proyectos</h1>
-  
-  <!-- Sección para proyectos vigentes -->
-  <h2>Proyectos Vigentes</h2>
-  <ul id="proyectos-vigentes"></ul>
+---
+layout: default
+title: Proyectos UNED
+---
 
-  <!-- Sección para proyectos finalizados -->
-  <h2>Proyectos Finalizados</h2>
-  <div id="proyectos-finalizados"></div>
+# Proyectos
 
-  <script>
- fetch('data.json')
+## Proyectos Vigentes
+
+<ul id="proyectos-vigentes"></ul>
+
+## Proyectos Finalizados
+
+<div id="proyectos-finalizados"></div>
+
+<script>
+fetch('data.json')
   .then(res => res.json())
   .then(data => {
-    // Definir la base URL
     const baseURL = 'https://portalcientifico.uned.es';
 
-    // Proyectos vigentes
     const vigentesList = document.getElementById('proyectos-vigentes');
     data.vigentes.proyectos.forEach(p => {
       const li = document.createElement('li');
-      const proyectoURL = baseURL + p.link;  // Usamos el link relativo que viene en el JSON
-
+      const proyectoURL = baseURL + p.link;
       li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
       vigentesList.appendChild(li);
     });
 
-    // Proyectos finalizados (array ya en orden descendente)
     const finalizadosDiv = document.getElementById('proyectos-finalizados');
     data.finalizados.anios.forEach(({ year, proyectos }) => {
       const h3 = document.createElement('h3');
@@ -44,16 +36,11 @@
       const ul = document.createElement('ul');
       proyectos.forEach(p => {
         const li = document.createElement('li');
-        const proyectoURL = baseURL + p.link;  // Usamos el link relativo que viene en el JSON
-
+        const proyectoURL = baseURL + p.link;
         li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
         ul.appendChild(li);
       });
       finalizadosDiv.appendChild(ul);
     });
-  });
-
-  </script>
-
-</body>
-</html>
+});
+</script>
