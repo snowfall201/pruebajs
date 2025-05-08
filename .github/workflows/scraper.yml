@@ -22,8 +22,18 @@ jobs:
           echo "Contenido:"
           ls -la
 
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
       - name: Instalar dependencias
-        run: npm install
+        run: |
+          npm install
+          npm audit fix --force  # Opcional, si quieres resolver vulnerabilidades automáticamente
 
       - name: Ejecutar scraper principal (data.json)
         run: npm run scrape
