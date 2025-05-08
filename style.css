@@ -1,4 +1,6 @@
 @import "{{ site.theme }}";
+
+/*Estilos index*/
 nav ul {
   display: flex;
   gap: 1rem; 
@@ -12,3 +14,44 @@ nav ul li a {
   color: inherit;         
   font-weight: bold;
 }
+
+/*Estilos repositorios*/
+.repo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.repo-card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+}
+
+.repo-card h2 {
+  margin-top: 0;
+}
+
+.repo-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0366d6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repo-card a:hover {
+  background-color: #024fa2;
+}
+
