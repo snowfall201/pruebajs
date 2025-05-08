@@ -1,1 +1,1734 @@
-
+{
+  "publicaciones": [
+    {
+      "year": "2025",
+      "publicaciones": [
+        {
+          "titulo": "Optimization of Spectrum Use by Mode S Surveillance Systems Through Coordinated DAP Extraction",
+          "link": "/documentos/6796b47ac8fe9e422476a553",
+          "revista": "IEEE Aerospace and Electronic Systems Magazine, Vol. 40, Núm. 1, pp. 6-20"
+        },
+        {
+          "titulo": "Recognition of Egyptian hieroglyphic texts through focused generic segmentation and cross-validation voting",
+          "link": "/documentos/67b16edceb752026d8340417",
+          "revista": "Applied Soft Computing, Vol. 171"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "publicaciones": [
+        {
+          "titulo": "A Pragmatic Framework for Assessing Learning Outcomes in Competency-Based Courses",
+          "link": "/documentos/65c35d3ad2edca1267d6af14",
+          "revista": "IEEE Transactions on Education, Vol. 67, Núm. 2, pp. 224-233"
+        },
+        {
+          "titulo": "An Ontological Behavioral Modeling Approach With SHACL, SPARQL, and RDF Applied to Smart Grids",
+          "link": "/documentos/6678c8133974ce515cb0119a",
+          "revista": "IEEE Access, Vol. 12, pp. 82041-82056"
+        },
+        {
+          "titulo": "Dynamic periodic event-triggered control for nonlinear systems with output dynamic quantization",
+          "link": "/documentos/66b88ce9110bef475d852a58",
+          "revista": "Journal of the Franklin Institute, Vol. 361, Núm. 14"
+        },
+        {
+          "titulo": "Event-Based Control in Industry Practice: Paving the Way Toward Resource-Efficient Industrial Internet of Things",
+          "link": "/documentos/64c85cdbacdc40244331e7d7",
+          "revista": "IEEE Industrial Electronics Magazine, Vol. 18, Núm. 2, pp. 38-47"
+        },
+        {
+          "titulo": "Event-Triggered Control of Port-Hamiltonian Systems under Time-Delay Communication",
+          "link": "/documentos/65c35d3ad2edca1267d6af11",
+          "revista": "IEEE Control Systems Letters, Vol. 8, pp. 175-180"
+        },
+        {
+          "titulo": "IIoT System for Intelligent Detection of Bottleneck in Manufacturing Lines",
+          "link": "/documentos/664b291bcfa2e63241040c6e",
+          "revista": "Applied Sciences (Switzerland), Vol. 14, Núm. 1"
+        },
+        {
+          "titulo": "Pragmatic Random Sampling of the Linux Kernel: Enhancing the Randomness and Correctness of the conf Tool",
+          "link": "/documentos/66efdf0f03d44e1da2aa30ca",
+          "revista": "ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Remote path-following control for a holonomic Mecanum-wheeled robot in a resource-efficient networked control system",
+          "link": "/documentos/6665f26abe265147d9b62bb1",
+          "revista": "ISA Transactions, Vol. 151, pp. 377-390"
+        },
+        {
+          "titulo": "TOR y la libertad de expresión en la red",
+          "link": "/documentos/66771575f7f79b2afcf725fc",
+          "revista": "La inteligencia artificial y el control algorítmico de los derechos fundamentales (Aranzadi), pp. 173-187"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "publicaciones": [
+        {
+          "titulo": "A Combined Model Based on Recurrent Neural Networks and Graph Convolutional Networks for Financial Time Series Forecasting",
+          "link": "/documentos/63d5b4ddf851ee1ba3ea0c53",
+          "revista": "Mathematics, Vol. 11, Núm. 1"
+        },
+        {
+          "titulo": "A Monte Carlo tree search conceptual framework for feature model analyses",
+          "link": "/documentos/638beab5840d3a6d9ac8384b",
+          "revista": "Journal of Systems and Software, Vol. 195"
+        },
+        {
+          "titulo": "Circuit Testing Based on Fuzzy Sampling with BDD Bases",
+          "link": "/documentos/63f71b03eb6b7c68e7a2481c",
+          "revista": "Proceedings of the 56th Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "Circuit Testing Based on Fuzzy Sampling with BDD Bases",
+          "link": "/documentos/6444ee1148c3090deaa2665b",
+          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "FLAMA: A collaborative effort to build a new framework for the automated analysis of feature models",
+          "link": "/documentos/656207f9f2e9e72161e14e44",
+          "revista": "ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Finding Near-Optimal Configurations in Colossal Spaces with Statistical Guarantees",
+          "link": "/documentos/654b5873759c78696e8803f4",
+          "revista": "ACM Transactions on Software Engineering and Methodology"
+        },
+        {
+          "titulo": "Mobile Robot Navigation Based on Embedded Computer Vision",
+          "link": "/documentos/64995b7f71c692789f1dff2b",
+          "revista": "Mathematics, Vol. 11, Núm. 11"
+        },
+        {
+          "titulo": "On the Supervision of Peer Assessment Tasks: An Efficient Instructor Guidance Technique",
+          "link": "/documentos/65351ba07bba975a1caafe1f",
+          "revista": "IEEE Transactions on Learning Technologies, Vol. 16, Núm. 6, pp. 926-939"
+        },
+        {
+          "titulo": "Teaching automation with Factory I/O under a competency-based curriculum",
+          "link": "/documentos/63670937688cd71757e151d8",
+          "revista": "Multimedia Tools and Applications, Vol. 82, Núm. 13, pp. 19221-19246"
+        },
+        {
+          "titulo": "Using IoT-Type Metadata and Smart Web Design to Create User Interfaces Automatically",
+          "link": "/documentos/62dc5f27a3beec219592c4bd",
+          "revista": "IEEE Transactions on Industrial Informatics, Vol. 19, Núm. 3, pp. 3109-3118"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "publicaciones": [
+        {
+          "titulo": "A Rule-Learning Approach for Detecting Faults in Highly Configurable Software Systems from Uniform Random Samples",
+          "link": "/documentos/6444ee1148c3090deaa26662",
+          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "A bibliometric analysis of 10 years of research on symptom networks in psychopathology and mental health",
+          "link": "/documentos/61ff08de13638e1cfc27952a",
+          "revista": "Psychiatry Research, Vol. 308"
+        },
+        {
+          "titulo": "A bibliometric analysis of off-line handwritten document analysis literature (1990–2020)",
+          "link": "/documentos/61ff08d713638e1cfc2794dc",
+          "revista": "Pattern Recognition, Vol. 125"
+        },
+        {
+          "titulo": "Automated Support for Battle Decision Making: A Systematic Literature Review",
+          "link": "/documentos/63fde4ea11e23733761f324f",
+          "revista": "Military Operations Research, Vol. 27, Núm. 4, pp. 5-24"
+        },
+        {
+          "titulo": "Automated Support for Battle Decision Making: A Systematic Literature Review",
+          "link": "/documentos/65b68ec53f557c3e59ec3d4e",
+          "revista": "Military Operations Research (United States), Vol. 27, Núm. 4, pp. 5-23"
+        },
+        {
+          "titulo": "Correction to: Uniform and scalable sampling of highly configurable systems (Empirical Software Engineering, (2022), 27, 2, (44), 10.1007/s10664-021-10102-5)",
+          "link": "/documentos/6416a7d15db420433b7ba205",
+          "revista": "Empirical Software Engineering"
+        },
+        {
+          "titulo": "Distributed Event-Triggered Flocking Control of Lagrangian Systems",
+          "link": "/documentos/61e2fdf71db4736e1e980e1a",
+          "revista": "IEEE Control Systems Letters, Vol. 6, pp. 1946-1951"
+        },
+        {
+          "titulo": "Guiando la intervención del profesorado en la evaluación por pares explotando un modelo gráfico probabilístico",
+          "link": "/documentos/6406948bdfebf07f27009b24",
+          "revista": "Actas de las Jornadas sobre la Enseñanza Universitaria de la Informática (JENUI), Núm. 7, pp. 199-206"
+        },
+        {
+          "titulo": "Methods for identifying biomedical translation: a systematic review",
+          "link": "/documentos/64099955d8f6e90129f32483",
+          "revista": "American Journal of Translational Research, Vol. 14, Núm. 4, pp. 2697"
+        },
+        {
+          "titulo": "Scalable Sampling of Highly-Configurable Systems: Generating Random Instances of the Linux Kernel",
+          "link": "/documentos/63df0aac6fdec82c4e7df4f1",
+          "revista": "Automated Software Engineering - ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Uniform and scalable sampling of highly configurable systems",
+          "link": "/documentos/61ff08d813638e1cfc2794df",
+          "revista": "Empirical Software Engineering, Vol. 27, Núm. 2"
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "publicaciones": [
+        {
+          "titulo": "Aprendizaje profundo",
+          "link": "/documentos/640bdb294dc75a08e096aea3",
+          "revista": "RC Libros"
+        },
+        {
+          "titulo": "Automated support for battle operational–strategic decision-making",
+          "link": "/documentos/611775b3045feb0a43a6e3fd",
+          "revista": "Mathematics, Vol. 9, Núm. 13"
+        },
+        {
+          "titulo": "Inconsistency-Tolerating Guidance for Software Engineering Processes",
+          "link": "/documentos/6173e6c81c8ff27873b9393a",
+          "revista": "Proceedings - International Conference on Software Engineering"
+        },
+        {
+          "titulo": "Machine learning for software engineering: A bibliometric analysis from 2015 to 2019",
+          "link": "/documentos/60e6a3964edb8e25f92cf604",
+          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "Monte Carlo tree search for feature model analyses: A general framework for decision-making",
+          "link": "/documentos/6173e6c71c8ff27873b93937",
+          "revista": "Systems and Software Product Lines Conference - ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Periodic event-triggered targeted shape control of Lagrangian systems with discrete-time delays",
+          "link": "/documentos/60e6a87f4edb8e25f92d474b",
+          "revista": "ISA Transactions, Vol. 117, pp. 139-149"
+        },
+        {
+          "titulo": "Product Optimization in Stepwise Design",
+          "link": "/documentos/60e6a8484edb8e25f92d449d",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) (Springer Science and Business Media Deutschland GmbH), pp. 63-81"
+        },
+        {
+          "titulo": "Stability and Synchronization of Switched Multi-Rate Recurrent Neural Networks",
+          "link": "/documentos/609c22f71aec1f036bb1e643",
+          "revista": "IEEE Access, Vol. 9, pp. 45614-45621"
+        },
+        {
+          "titulo": "Uniform and Scalable SAT-Sampling for Configurable Systems",
+          "link": "/documentos/65ea0e4e8aef32320667f368",
+          "revista": "Actas de las XXV Jornadas de Ingeniería del Software y Bases de Datos (JISBD 2021): [Málaga, 22 al 24 de septiembre de 2021]"
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "publicaciones": [
+        {
+          "titulo": "A propagation breakdown management model for the industrial internet of things",
+          "link": "/documentos/5fa07adc299952440aae1454",
+          "revista": "Computers in Industry, Vol. 123"
+        },
+        {
+          "titulo": "An automatic segmentation method based on geometrical features in hemispherical images for forest management",
+          "link": "/documentos/5f388c5e299952274d17681a",
+          "revista": "Proceedings of SPIE - The International Society for Optical Engineering"
+        },
+        {
+          "titulo": "Converting OCL and CGMES rules to SHACL in smart grids",
+          "link": "/documentos/60e6a82a4edb8e25f92d4133",
+          "revista": "IEEE Access, Vol. 8, pp. 177255-177266"
+        },
+        {
+          "titulo": "Decoupled feedforward-feedback periodic event-triggered control for disturbance rejection",
+          "link": "/documentos/60b7732913b90b1901164aef",
+          "revista": "IFAC-PapersOnLine"
+        },
+        {
+          "titulo": "Distributed targeted distance-based formation control for mechanical systems",
+          "link": "/documentos/5fa07d23299952440aae4766",
+          "revista": "European Control Conference 2020, ECC 2020"
+        },
+        {
+          "titulo": "Event-based control: A bibliometric analysis of twenty years of research",
+          "link": "/documentos/5fa07c02299952440aae2fdf",
+          "revista": "IEEE Access, Vol. 8, pp. 47188-47208"
+        },
+        {
+          "titulo": "Evidence-based control engineering education: Evaluating the LCSD simulation tool",
+          "link": "/documentos/5faf814229995246a6dd3710",
+          "revista": "IEEE Access, Vol. 8, pp. 170183-170194"
+        },
+        {
+          "titulo": "Group decision-making based on artificial intelligence: A bibliometric analysis",
+          "link": "/documentos/5fa07c01299952440aae2fdb",
+          "revista": "Mathematics, Vol. 8, Núm. 9"
+        },
+        {
+          "titulo": "Message Queuing Telemetry Transport (MQTT) Security: A Cryptographic Smart Card Approach",
+          "link": "/documentos/5fa07adc299952440aae1456",
+          "revista": "IEEE Access, Vol. 8, pp. 115051-115062"
+        },
+        {
+          "titulo": "Revisiting the simplified IMC tuning rules for low-order controllers: Novel 2DoF feedback controller",
+          "link": "/documentos/60b772d813b90b190116452f",
+          "revista": "IET Control Theory and Applications, Vol. 14, Núm. 13, pp. 1700-1710"
+        },
+        {
+          "titulo": "Revisiting the simplified internal model control tuning rules for low-order controllers: Feedforward controller",
+          "link": "/documentos/60b772e313b90b19011645de",
+          "revista": "IET Control Theory and Applications, Vol. 14, Núm. 12, pp. 1612-1618"
+        },
+        {
+          "titulo": "Robust switched control of an air levitation system with minimum sensing",
+          "link": "/documentos/5fa07d2e299952440aae481b",
+          "revista": "ISA Transactions, Vol. 96, pp. 327-336"
+        },
+        {
+          "titulo": "Rough sets: A bibliometric analysis from 2014 to 2018",
+          "link": "/documentos/60e6a3744edb8e25f92cf421",
+          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "Simulation and Experimental Results of a New Control Strategy for Point Stabilization of Nonholonomic Mobile Robots",
+          "link": "/documentos/5fa07a44299952440aae0a61",
+          "revista": "IEEE Transactions on Industrial Electronics, Vol. 67, Núm. 8, pp. 6679-6687"
+        },
+        {
+          "titulo": "Uniform and scalable SAT-sampling for configurable systems",
+          "link": "/documentos/5fefbfef5ef7443267ee942d",
+          "revista": "Systems and Software Product Lines Conference - ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Using extended logical primitives for efficient BDD building",
+          "link": "/documentos/5fa07c01299952440aae2fdd",
+          "revista": "Mathematics, Vol. 8, Núm. 8"
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "publicaciones": [
+        {
+          "titulo": "A Simplified Optimal Path Following Controller for an Agricultural Skid-Steering Robot",
+          "link": "/documentos/5fa07adc299952440aae1458",
+          "revista": "IEEE Access, Vol. 7, pp. 95932-95940"
+        },
+        {
+          "titulo": "A kconfig translation to logic with one-way validation system",
+          "link": "/documentos/5fa07c02299952440aae2fe3",
+          "revista": "Systems and Software Product Lines Conference - ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "A kconfig translation to logic with one-way validation system",
+          "link": "/documentos/61a5243037d5b2018338e33a",
+          "revista": "PervasiveHealth: Pervasive Computing Technologies for Healthcare"
+        },
+        {
+          "titulo": "A kconfig translation to logic with one-way validation system",
+          "link": "/documentos/61ff08d813638e1cfc2794e2",
+          "revista": "ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "A proposal of self-tuning controllers for path following of agricultural skid-steering robots",
+          "link": "/documentos/6407256fd8f6e90129f323e9",
+          "revista": "Robotics & Artificial Intelligence Workshop (R&AI RoboCity2030)"
+        },
+        {
+          "titulo": "Automated Assessment of Computer Programming Practices: The 8-Years UNED Experience",
+          "link": "/documentos/5fa07adc299952440aae145c",
+          "revista": "IEEE Access, Vol. 7, pp. 130113-130119"
+        },
+        {
+          "titulo": "Automated assessment and monitoring support for competency-based courses",
+          "link": "/documentos/5fa07c03299952440aae2feb",
+          "revista": "IEEE Access, Vol. 7, pp. 41043-41051"
+        },
+        {
+          "titulo": "Combining Virtual and Remote Interactive Labs and Visual/Textual Programming: The Furuta Pendulum Experience",
+          "link": "/documentos/5fa07d0f299952440aae460e",
+          "revista": "Lecture Notes in Networks and Systems (Springer), pp. 100-109"
+        },
+        {
+          "titulo": "Combining stereovision matching constraints for solving the correspondence problem",
+          "link": "/documentos/641120051683f13c4c4f15de",
+          "revista": "Advances in theory and applications of stereo vision (InTech), pp. 89-112"
+        },
+        {
+          "titulo": "Control de formaciones sobre regiones objetivo de sistemas multi-agente lagrangianos con retardo",
+          "link": "/documentos/5f88eb6329995259ef29ae21",
+          "revista": "XL Jornadas de Automática: libro de actas. Ferrol, 4-6 de septiembre de 2019"
+        },
+        {
+          "titulo": "Customized Online Laboratory Experiments: A General Tool and Its Application to the Furuta Inverted Pendulum [Focus on Education]",
+          "link": "/documentos/5fa07c02299952440aae2fe1",
+          "revista": "IEEE Control Systems, Vol. 39, Núm. 5, pp. 75-87"
+        },
+        {
+          "titulo": "Estudio del modelo de combate de Lanchester como soporte para la construcción de un decisor estratégico operacional militar mediante bloques retroalimentados",
+          "link": "/documentos/5f88eb6329995259ef29ae1b",
+          "revista": "XL Jornadas de Automática: libro de actas. Ferrol, 4-6 de septiembre de 2019"
+        },
+        {
+          "titulo": "Event-Based Feedforward Control of Linear Systems with input Time-Delay",
+          "link": "/documentos/5fa07cff299952440aae4511",
+          "revista": "International Journal of Applied Mathematics and Computer Science, Vol. 29, Núm. 3, pp. 541-553"
+        },
+        {
+          "titulo": "Group decision making based on a framework of granular computing for multi-criteria and linguistic contexts",
+          "link": "/documentos/5fa07adc299952440aae145a",
+          "revista": "IEEE Access, Vol. 7, pp. 54670-54681"
+        },
+        {
+          "titulo": "Integration of computer vision and wireless networks to provide indoor positioning",
+          "link": "/documentos/5fa07b88299952440aae243c",
+          "revista": "Sensors (Switzerland), Vol. 19, Núm. 24"
+        },
+        {
+          "titulo": "Looking over the Research Literature on Software Engineering from 2016 to 2018",
+          "link": "/documentos/5fa07c03299952440aae2fe9",
+          "revista": "Procedia Computer Science"
+        },
+        {
+          "titulo": "Puzzlex: An online experimentation environment for control engineering labs",
+          "link": "/documentos/5fa07c02299952440aae2fe5",
+          "revista": "Proceedings of the 2019 5th Experiment at International Conference, exp.at 2019"
+        },
+        {
+          "titulo": "Segmentation and stereoscopic correspondence in images obtained with omnidirectional projection for forest environments",
+          "link": "/documentos/6413614c4c7ff54200b023bb",
+          "revista": "Advances in stereo vision (InTech), pp. 41-56"
+        },
+        {
+          "titulo": "Supporting the Statistical Analysis of Variability Models",
+          "link": "/documentos/5fa07c02299952440aae2fe7",
+          "revista": "Proceedings - International Conference on Software Engineering"
+        }
+      ]
+    },
+    {
+      "year": "2018",
+      "publicaciones": [
+        {
+          "titulo": "A Vision-Based Strategy to Segment and Localize Ancient Symbols Written in Stone",
+          "link": "/documentos/5fa07adc299952440aae1462",
+          "revista": "Advances in Intelligent Systems and Computing"
+        },
+        {
+          "titulo": "Asynchronous periodic event-triggered control with dynamical controllers",
+          "link": "/documentos/5fa07ce8299952440aae4386",
+          "revista": "Journal of the Franklin Institute, Vol. 355, Núm. 8, pp. 3455-3469"
+        },
+        {
+          "titulo": "Entorno de experimentacion para laboratorios en linea: El caso del péndulo de furuta",
+          "link": "/documentos/5e7a9d962999522583e81b8a",
+          "revista": "XXXIX Jornadas de Automática: actas. Badajoz, 5-7 de septiembre de 2018"
+        },
+        {
+          "titulo": "Integration of Economic Models for Software Product Lines by Means of a Common Lexicon",
+          "link": "/documentos/64085df4d8f6e90129f32454",
+          "revista": "THE 17TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET'18)"
+        },
+        {
+          "titulo": "Integration of economic models for software product lines by means of a common lexicon",
+          "link": "/documentos/5fa07b88299952440aae243e",
+          "revista": "Frontiers in Artificial Intelligence and Applications"
+        },
+        {
+          "titulo": "Mejoras en el algoritmo de posicionamiento en interiores mediante sensores RGB-D y redes Wifi",
+          "link": "/documentos/5f88eb6729995259ef29b16d",
+          "revista": "XXXIX Jornadas de Automática: actas. Badajoz, 5-7 de septiembre de 2018"
+        },
+        {
+          "titulo": "Metodología Scrum en el Desarrollo de Proyectos Fin de Carrera y Fin de Grado en una Universidad a Distancia",
+          "link": "/documentos/5f88eb6429995259ef29ae83",
+          "revista": "La profesionalización del docente a través de la innovación educativa. Libro de actas: IX Jornadas de redes de investigación en innovación docente. UNED, Madrid. 28, 29 y 30 de junio de 2017"
+        },
+        {
+          "titulo": "Nuevas estrategias de control basado en eventos: Aplicación a sistemas subactuados",
+          "link": "/documentos/6401b764d8f6e90129f32307",
+          "revista": "XVI Simposio CEA de Ingeniería de Control"
+        },
+        {
+          "titulo": "Open-Source Hardware in Education: A Systematic Mapping Study",
+          "link": "/documentos/5fa07c03299952440aae2fef",
+          "revista": "IEEE Access, Vol. 6, pp. 72094-72103"
+        },
+        {
+          "titulo": "Optimal control for aperiodic dual-rate systems with time-varying delays",
+          "link": "/documentos/5fa07ce7299952440aae4378",
+          "revista": "Sensors (Switzerland), Vol. 18, Núm. 5"
+        },
+        {
+          "titulo": "Optimización en sistemas de control multifrecuencia",
+          "link": "/documentos/5e87bd4129995221754ebd43",
+          "revista": "XXXIX Jornadas de Automática: actas. Badajoz, 5-7 de septiembre de 2018"
+        },
+        {
+          "titulo": "Robust digital control for autonomous skid-steered agricultural robots",
+          "link": "/documentos/5fa07adc299952440aae145e",
+          "revista": "Computers and Electronics in Agriculture, Vol. 153, pp. 94-101"
+        },
+        {
+          "titulo": "Self-tuning regulator for a tractor with varying speed and hitch forces",
+          "link": "/documentos/5fa07adc299952440aae1460",
+          "revista": "Computers and Electronics in Agriculture, Vol. 145, pp. 282-288"
+        },
+        {
+          "titulo": "Teaching Control supported by Virtual Labs under a Competency-based curriculum",
+          "link": "/documentos/5fa07c03299952440aae2ff1",
+          "revista": "Proceedings of the LACCEI international Multi-conference for Engineering, Education and Technology"
+        },
+        {
+          "titulo": "Underwater coverage with a mobile robot of limited control authority",
+          "link": "/documentos/5fa07cdf299952440aae42ef",
+          "revista": "2018 European Control Conference, ECC 2018"
+        },
+        {
+          "titulo": "Web experimentation on virtual and remote laboratories",
+          "link": "/documentos/5fa07c03299952440aae2fed",
+          "revista": "Lecture Notes in Networks and Systems (Springer), pp. 205-219"
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "publicaciones": [
+        {
+          "titulo": "A semantic approach to enrich user experience in museums through indoor positioning",
+          "link": "/documentos/5fa07adc299952440aae1466",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "An Object-Oriented Library for Process Control Simulations in MATLAB",
+          "link": "/documentos/5fa07ccf299952440aae41b0",
+          "revista": "IFAC-PapersOnLine, Vol. 50, Núm. 1, pp. 15686-15691"
+        },
+        {
+          "titulo": "An improved indoor positioning system using RGB-D cameras and wireless networks for use in complex environments",
+          "link": "/documentos/5fa07adc299952440aae1464",
+          "revista": "Sensors (Switzerland), Vol. 17, Núm. 10"
+        },
+        {
+          "titulo": "Anytime optimal control strategy for multi-rate systems",
+          "link": "/documentos/5fa07cdb299952440aae42a7",
+          "revista": "IEEE Access, Vol. 5, pp. 2790-2797"
+        },
+        {
+          "titulo": "Blockly experiments for EjsS laboratories",
+          "link": "/documentos/5fa07c03299952440aae2ff3",
+          "revista": "Proceedings of 2017 4th Experiment at International Conference: Online Experimentation, exp.at 2017"
+        },
+        {
+          "titulo": "Conducting Online Lab Experiments with Blockly",
+          "link": "/documentos/5fa07c03299952440aae2ff5",
+          "revista": "IFAC-PapersOnLine, Vol. 50, Núm. 1, pp. 13474-13479"
+        },
+        {
+          "titulo": "Deciphering egyptian hieroglyphs: Towards a new strategy for navigation in museums",
+          "link": "/documentos/5fa07b89299952440aae2440",
+          "revista": "Sensors (Switzerland), Vol. 17, Núm. 3"
+        },
+        {
+          "titulo": "Design of periodic event-triggered control for polynomial systems: A delay system approach",
+          "link": "/documentos/5fa07cd0299952440aae41c0",
+          "revista": "IFAC-PapersOnLine, Vol. 50, Núm. 1, pp. 7887-7892"
+        },
+        {
+          "titulo": "Periodic event-triggered swing-up control of the inverted pendulum",
+          "link": "/documentos/5fa07cdb299952440aae42af",
+          "revista": "Lecture Notes in Electrical Engineering"
+        },
+        {
+          "titulo": "The experiment editor: Supporting inquiry-based learning with virtual labs",
+          "link": "/documentos/5fa07c03299952440aae2ff7",
+          "revista": "European Journal of Physics, Vol. 38, Núm. 3"
+        },
+        {
+          "titulo": "Towards Taming Variability Models in the Wild",
+          "link": "/documentos/64085f5ad8f6e90129f32458",
+          "revista": "THE 16TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 17)"
+        },
+        {
+          "titulo": "Towards taming variability models in the wild",
+          "link": "/documentos/5fa07b89299952440aae2442",
+          "revista": "Frontiers in Artificial Intelligence and Applications"
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "publicaciones": [
+        {
+          "titulo": "A bibliometric analysis of 20 years of research on software product lines",
+          "link": "/documentos/608b2089289c4a02b5021649",
+          "revista": "Information and Software Technology, Vol. 72, pp. 1-15"
+        },
+        {
+          "titulo": "A novel approach to periodic event-triggered control: Design and application to the inverted pendulum",
+          "link": "/documentos/5fa07cb3299952440aae3f9c",
+          "revista": "ISA Transactions, Vol. 65, pp. 327-338"
+        },
+        {
+          "titulo": "Augmenting measure sensitivity to detect essential, dispensable and highly incompatible features in mass customization",
+          "link": "/documentos/5fa07c04299952440aae3002",
+          "revista": "European Journal of Operational Research, Vol. 248, Núm. 3, pp. 1066-1077"
+        },
+        {
+          "titulo": "Automated experiments on EjsS laboratories",
+          "link": "/documentos/5fa07c04299952440aae2ffc",
+          "revista": "Proceedings of 2016 13th International Conference on Remote Engineering and Virtual Instrumentation, REV 2016"
+        },
+        {
+          "titulo": "Basal area and diameter distribution estimation using stereoscopic hemispherical images",
+          "link": "/documentos/61e2fe0f1db4736e1e981039",
+          "revista": "Photogrammetric Engineering and Remote Sensing, Vol. 82, Núm. 8, pp. 605-616"
+        },
+        {
+          "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
+          "link": "/documentos/64086026d8f6e90129f3245c",
+          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
+        },
+        {
+          "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
+          "link": "/documentos/634ee0c048ee3619a115dcd5",
+          "revista": "Frontiers in Artificial Intelligence and Applications"
+        },
+        {
+          "titulo": "Control PID basado en eventos periódico para sistemas de control de red",
+          "link": "/documentos/624fb62bca2946066d974d03",
+          "revista": "Actas de las XXXVII Jornadas de Automática: Madrid. 7, 8 y 9 de septiembre de 2016"
+        },
+        {
+          "titulo": "Control of a Chain Pendulum: A fuzzy logic approach",
+          "link": "/documentos/5de79c782999524dcbea6eb3",
+          "revista": "International Journal of Computational Intelligence Systems, Vol. 9, Núm. 2, pp. 281-295"
+        },
+        {
+          "titulo": "Indoor positioning prediction system based on wireless networks and depth sensing cameras",
+          "link": "/documentos/624fb629ca2946066d974c91",
+          "revista": "Actas de las XXXVII Jornadas de Automática: Madrid. 7, 8 y 9 de septiembre de 2016"
+        },
+        {
+          "titulo": "Indoor positioning system using depth maps and wireless networks",
+          "link": "/documentos/5fa07adc299952440aae1468",
+          "revista": "Journal of Sensors, Vol. 2016"
+        },
+        {
+          "titulo": "Operaciones de transformación de imágenes",
+          "link": "/documentos/6407e4eb664b5416d589e62e",
+          "revista": "Conceptos y métodos en visión por computador (Grupo de Visión del Comité Español de Automática (CEA)), pp. 61-76"
+        },
+        {
+          "titulo": "Segmentación de regiones",
+          "link": "/documentos/6407e4eb664b5416d589e62c",
+          "revista": "Conceptos y métodos en visión por computador (Grupo de Visión del Comité Español de Automática (CEA)), pp. 99-114"
+        },
+        {
+          "titulo": "Stereovision matching based on combining neural networks for outdoor images",
+          "link": "/documentos/640724cad8f6e90129f323e7",
+          "revista": "Conference on Future Trends in Robotics (RoboCity16)"
+        },
+        {
+          "titulo": "Virtual Control Labs Experimentation: The Water Tank System",
+          "link": "/documentos/5fa07c04299952440aae3000",
+          "revista": "IFAC-PapersOnLine, Vol. 49, Núm. 6, pp. 87-92"
+        },
+        {
+          "titulo": "Virtual and remote labs in control education: A survey",
+          "link": "/documentos/5fa07c04299952440aae2ffe",
+          "revista": "Annual Reviews in Control, Vol. 42, pp. 1-10"
+        },
+        {
+          "titulo": "Virtual and remote labs in education: A bibliometric analysis",
+          "link": "/documentos/5e81db6729995270f8358c3d",
+          "revista": "Computers and Education, Vol. 98, pp. 14-38"
+        }
+      ]
+    },
+    {
+      "year": "2015",
+      "publicaciones": [
+        {
+          "titulo": "A novel approach for periodic event-Triggering based on general quadratic functions",
+          "link": "/documentos/5e81db6829995270f8358c4f",
+          "revista": "Proceedings of 1st International Conference on Event-Based Control, Communication and Signal Processing, EBCCSP 2015"
+        },
+        {
+          "titulo": "A science mapping analysis of the literature on software product lines",
+          "link": "/documentos/5fa07c04299952440aae3004",
+          "revista": "Communications in Computer and Information Science"
+        },
+        {
+          "titulo": "Efficient Identification of Core and Dead Features in Variability Models",
+          "link": "/documentos/5fa07b89299952440aae2444",
+          "revista": "IEEE Access, Vol. 3, pp. 2333-2340"
+        },
+        {
+          "titulo": "Enhancing web-based labs in Moodle by providing automatic support for different types of files",
+          "link": "/documentos/5fa07c03299952440aae2ff9",
+          "revista": "exp.at 2015 - 3rd Experiment International Conference: Online Experimentation"
+        },
+        {
+          "titulo": "Evolution of RFID applications in construction: A literature review",
+          "link": "/documentos/5d95a1bb2999525d7e94d8d6",
+          "revista": "Sensors (Switzerland), Vol. 15, Núm. 7, pp. 15988-16008"
+        },
+        {
+          "titulo": "Nuevas estrategias de control basado en eventos: Diseño y aplicación al péndulo invertido",
+          "link": "/documentos/6401b7add8f6e90129f32309",
+          "revista": "XIII Simposio CEA de Ingeniería de Control"
+        },
+        {
+          "titulo": "Performing Automated Experiments with EJsS Laboratories",
+          "link": "/documentos/5e81db6c29995270f8358c7f",
+          "revista": "IFAC-PapersOnLine, Vol. 48, Núm. 29, pp. 134-139"
+        },
+        {
+          "titulo": "Stability of output event-based control systems through quadratic trigger functions",
+          "link": "/documentos/5e81db6829995270f8358c51",
+          "revista": "IEEE International Conference on Emerging Technologies and Factory Automation, ETFA"
+        },
+        {
+          "titulo": "The ball and beam system: A case study of virtual and remote lab enhancement with Moodle",
+          "link": "/documentos/5e81db6a29995270f8358c61",
+          "revista": "IEEE Transactions on Industrial Informatics, Vol. 11, Núm. 4, pp. 934-945"
+        },
+        {
+          "titulo": "The photoelectric effect and study of the diffraction of light: Two new experiments in UNILabs virtual and remote laboratories network",
+          "link": "/documentos/5e81db6a29995270f8358c69",
+          "revista": "Nuovo Cimento della Societa Italiana di Fisica C, Vol. 38, Núm. 3"
+        },
+        {
+          "titulo": "Un método para la mejora de la calidad docente: el análisis integral de asignaturas",
+          "link": "/documentos/62d2465b7837075df2124757",
+          "revista": "Evaluación de la Calidad de la Investigación y de la Educación Superior: libro de resúmenes XI FECIES"
+        }
+      ]
+    },
+    {
+      "year": "2014",
+      "publicaciones": [
+        {
+          "titulo": "A Scalable Approach to Exact Model and Commonality Counting for Extended Feature Models",
+          "link": "/documentos/5fa07adc299952440aae146a",
+          "revista": "IEEE Transactions on Software Engineering, Vol. 40, Núm. 9, pp. 895-910"
+        },
+        {
+          "titulo": "A new combined strategy for discrimination between types of weed",
+          "link": "/documentos/61e2fe101db4736e1e98103f",
+          "revista": "Advances in Intelligent Systems and Computing"
+        },
+        {
+          "titulo": "A novel approach for weed type classification based on shape descriptors and a fuzzy decision-making method",
+          "link": "/documentos/61e2fe101db4736e1e98103c",
+          "revista": "Sensors (Switzerland), Vol. 14, Núm. 8, pp. 15304-15324"
+        },
+        {
+          "titulo": "Application of the Dempster-Shafer theory to classify monocot and dicot weeds based on Geometric Shape Descriptors",
+          "link": "/documentos/6407713fd8f6e90129f32421",
+          "revista": "Second International Conference on Robotics and associated High-technologies and Equipment for Agriculture and Forestry (RHEA 2014)"
+        },
+        {
+          "titulo": "EJSApp: unos add-ons de Moodle para publicar laboratorios virtuales y remotos online",
+          "link": "/documentos/5ef3dd4929995238faba1844",
+          "revista": "VI Jornadas de Redes de Investigación en Innovación Docente de la UNED: libro de actas"
+        },
+        {
+          "titulo": "Evolution of RFID applications in construction: A literature review",
+          "link": "/documentos/5d95a17a2999525d7e94d3ea",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), Vol. 8867, pp. 191-199"
+        },
+        {
+          "titulo": "Fuzzy logic vs analytic controllers on a non-linear system",
+          "link": "/documentos/5de79c7a2999524dcbea6ec9",
+          "revista": "Decision Making and Soft Computing - Proceedings of the 11th International FLINS Conference, FLINS 2014"
+        },
+        {
+          "titulo": "Lógica difusa VS controladores analíticos en un sistema no lineal",
+          "link": "/documentos/6401b822d8f6e90129f3230b",
+          "revista": "X Simposio CEA de Control Inteligente"
+        },
+        {
+          "titulo": "Making EJS applications at the OSP digital library available from Moodle",
+          "link": "/documentos/5e81db6f29995270f8358cb1",
+          "revista": "Proceedings of 2014 11th International Conference on Remote Engineering and Virtual Instrumentation, REV 2014"
+        },
+        {
+          "titulo": "Speeding up derivative configuration from product platforms",
+          "link": "/documentos/5d95a1862999525d7e94d4fc",
+          "revista": "Entropy, Vol. 16, Núm. 6, pp. 3329-3356"
+        },
+        {
+          "titulo": "VII Jornadas de Redes de Investigación en Innovación Docente de la UNED: libro de actas",
+          "link": "/documentos/5e71620d299952180a8e0f18",
+          "revista": "UNED - Universidad Nacional de Educación a Distancia"
+        }
+      ]
+    },
+    {
+      "year": "2013",
+      "publicaciones": [
+        {
+          "titulo": "A Domain Engineering Approach to Increase Productivity in the Development of a Service for Changes Notification of the Configuration Management Database",
+          "link": "/documentos/64085d4bd8f6e90129f32452",
+          "revista": "Journal of Software Engineering and Applications, Vol. 06, Núm. 04, pp. 207-220"
+        },
+        {
+          "titulo": "A fuzzy linguistic model to evaluate the quality of Library 2.0 functionalities",
+          "link": "/documentos/5fa07c04299952440aae3006",
+          "revista": "International Journal of Information Management, Vol. 33, Núm. 4, pp. 642-654"
+        },
+        {
+          "titulo": "A literature review on feature diagram product counting and its usage in software product line economic models",
+          "link": "/documentos/5fa07add299952440aae146e",
+          "revista": "International Journal of Software Engineering and Knowledge Engineering, Vol. 23, Núm. 8, pp. 1177-1204"
+        },
+        {
+          "titulo": "A virtual and remote control laboratory in moodle: The ball and beam system",
+          "link": "/documentos/5e81db7229995270f8358ccf",
+          "revista": "IFAC Proceedings Volumes (IFAC-PapersOnline)"
+        },
+        {
+          "titulo": "Congresos, seminarios, reuniones científicas y cursos de verano: Conferencias organizadas por el grupo de Biología Evolutiva en 2013; Multimedia in Physics Teaching and Learning Workshop (MPTL); XIV Edición de Ciencia en Acción (CEA)",
+          "link": "/documentos/5f88eb2229995259ef298899",
+          "revista": "100cias@uned, Núm. 6, pp. 37-42"
+        },
+        {
+          "titulo": "Direction Kernels: Using a simplified 3D model representation for grasping",
+          "link": "/documentos/5d95a1392999525d7e94ce6f",
+          "revista": "Machine Vision and Applications, Vol. 24, Núm. 2, pp. 351-370"
+        },
+        {
+          "titulo": "Dynamic control of a reconfigurable stair-climbing mobility system",
+          "link": "/documentos/5d95a1352999525d7e94ce1a",
+          "revista": "Robotica, Vol. 31, Núm. 2, pp. 295-310"
+        },
+        {
+          "titulo": "Entorno de prácticas para el aprendizaje de los fundamentos de la programación de computadores",
+          "link": "/documentos/5f88eaf929995259ef297159",
+          "revista": "Innovación en entornos de blended-learning: III Redes de investigación en innovación docente de la UNED"
+        },
+        {
+          "titulo": "Estudio comparativo de entornos informáticos para el aprendizaje de robótica",
+          "link": "/documentos/5db2e36829995259652a6240",
+          "revista": "Innovación en entornos de blended-learning: III Redes de investigación en innovación docente de la UNED"
+        },
+        {
+          "titulo": "Laboratorios remotos de Física",
+          "link": "/documentos/5f88eb2f29995259ef298f49",
+          "revista": "Revista española de física, Vol. 27, Núm. 1, pp. 57-60"
+        },
+        {
+          "titulo": "Learning the best segmentation process for discriminating accurately between monocots and dicots",
+          "link": "/documentos/64072886d8f6e90129f323eb",
+          "revista": "9th European Conference on Precision Agriculture (ECPA 2013)"
+        },
+        {
+          "titulo": "METADEPCAS: Introducing semantic RFID data management",
+          "link": "/documentos/5fa07add299952440aae146c",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "New unsupervised hybrid classifier based on the fuzzy integral: Applied to natural textured images",
+          "link": "/documentos/5de79b092999524dcbea5cee",
+          "revista": "IET Computer Vision, Vol. 7, Núm. 4, pp. 272-278"
+        },
+        {
+          "titulo": "Nuevas tecnologías: un análisis del estado actual de Moodle, la plataforma líder para cursos online",
+          "link": "/documentos/5f88eb2229995259ef2988a7",
+          "revista": "100cias@uned, Núm. 6, pp. 184-187"
+        },
+        {
+          "titulo": "Optimización evolutiva de un método de discriminación visual entre mono y dicotiledóneas: resultados iniciales",
+          "link": "/documentos/640844a3d8f6e90129f32438",
+          "revista": "Interempresas Agricultura y ganadería, Vol. 114, pp. 114 - 122"
+        },
+        {
+          "titulo": "Providing collaborative support to virtual and remote laboratories",
+          "link": "/documentos/5e81db7229995270f8358cd5",
+          "revista": "IEEE Transactions on Learning Technologies, Vol. 6, Núm. 4, pp. 312-323"
+        },
+        {
+          "titulo": "Real-time collaboration for web-based labs",
+          "link": "/documentos/5e81db7129995270f8358cc7",
+          "revista": "Computer-Supported Collaborative Learning Conference, CSCL"
+        }
+      ]
+    },
+    {
+      "year": "2012",
+      "publicaciones": [
+        {
+          "titulo": "A Non-Supervised Strategy for Identifying Weeds in Agricultural Aerial Images",
+          "link": "/documentos/6407113ed8f6e90129f323c7",
+          "revista": "International Conference of Agricultural Engineering (CIGR-AgEng 2012)"
+        },
+        {
+          "titulo": "A SCADA oriented middleware for RFID technology",
+          "link": "/documentos/5fa07c78299952440aae3ad0",
+          "revista": "Expert Systems with Applications, Vol. 39, Núm. 12, pp. 11115-11124"
+        },
+        {
+          "titulo": "A Weed/Crop Segmentation Method Based on Fuzzy Clustering for Remote Images",
+          "link": "/documentos/640714d2d8f6e90129f323cb",
+          "revista": "First International Conference on Robotics and associated High-technologies and Equipment for Agriculture (RHEA 2012)"
+        },
+        {
+          "titulo": "A practical approach for implemeting the service catalogue in micro, small and medium enterprises",
+          "link": "/documentos/5fa07add299952440aae1470",
+          "revista": "Iberian Conference on Information Systems and Technologies, CISTI"
+        },
+        {
+          "titulo": "A review of quality evaluation of digital libraries based on users' perceptions",
+          "link": "/documentos/5fa07c04299952440aae300c",
+          "revista": "Journal of Information Science, Vol. 38, Núm. 3, pp. 269-283"
+        },
+        {
+          "titulo": "An Empirical Study on the Viability of the Application of Sift Algorithm to Video Stabilization in Crop Fields",
+          "link": "/documentos/6407109cd8f6e90129f323c5",
+          "revista": "International Conference of Agricultural Engineering (CIGR-AgEng 2012)"
+        },
+        {
+          "titulo": "An empirical study on the suitability of SURF algorithm for features detection and video stabilization in crop fields",
+          "link": "/documentos/640711c6d8f6e90129f323c9",
+          "revista": "First International Conference on Robotics and associated High-technologies and Equipment for Agriculture (RHEA 2012)"
+        },
+        {
+          "titulo": "Automatic construction of 3D basic-semantic models of inhabited interiors using laser scanners and RFID sensors",
+          "link": "/documentos/5d95a0e62999525d7e94c7aa",
+          "revista": "Sensors (Switzerland), Vol. 12, Núm. 5, pp. 5705-5724"
+        },
+        {
+          "titulo": "Automatic method for building indoor boundary models from dense point clouds collected by laser scanners",
+          "link": "/documentos/5d95a0bb2999525d7e94c429",
+          "revista": "Sensors (Switzerland), Vol. 12, Núm. 12, pp. 16099-16115"
+        },
+        {
+          "titulo": "Deterministic Simulated Annealing Applied to Computer Vision Tasks",
+          "link": "/documentos/640843a9d8f6e90129f32436",
+          "revista": "Journal of High Performance Computing, Vol. 2, pp. 20 - 23"
+        },
+        {
+          "titulo": "Dynamic model of a stair-climbing mobility system and its experimental validation",
+          "link": "/documentos/5d95a0c22999525d7e94c4f3",
+          "revista": "Multibody System Dynamics, Vol. 28, Núm. 4, pp. 349-367"
+        },
+        {
+          "titulo": "El Catálogo de Servicios como base para la Gestión Financiera en lasMedianas, Pequeñas y Micro empresas :: aproximación práctica mediante unabiblioteca de activos de proceso",
+          "link": "/documentos/62302253c43e8f7de943cdda",
+          "revista": "Sistemas y Tecnologías de Información: actas de la 7.ª Conferencia Ibérica de Sistemas y Tecnologías de Información"
+        },
+        {
+          "titulo": "Evaluación de la privacidad de una red social virtual",
+          "link": "/documentos/5fa07c7a299952440aae3b08",
+          "revista": "RISTI - Revista Iberica de Sistemas e Tecnologias de Informacao, pp. 59-73"
+        },
+        {
+          "titulo": "Exemplar driven development of software product lines",
+          "link": "/documentos/5fa07c04299952440aae3008",
+          "revista": "Expert Systems with Applications, Vol. 39, Núm. 17, pp. 12885-12896"
+        },
+        {
+          "titulo": "Improving the accuracy of COPLIMO to estimate the payoff of a software product line",
+          "link": "/documentos/5fa07c04299952440aae300a",
+          "revista": "Expert Systems with Applications, Vol. 39, Núm. 9, pp. 7919-7928"
+        },
+        {
+          "titulo": "Managing RFID Sensors Networks with a general purpose RFID middleware",
+          "link": "/documentos/5d95a0e02999525d7e94c734",
+          "revista": "Sensors (Switzerland), Vol. 12, Núm. 6, pp. 7719-7737"
+        },
+        {
+          "titulo": "Physics experiments at the UNEDLabs portal",
+          "link": "/documentos/5e81db7529995270f8358d11",
+          "revista": "International Journal of Online Engineering, Vol. 8, Núm. SPEC. ISSUE, pp. 26-27"
+        },
+        {
+          "titulo": "Reconstrucción precisa de interiores con escáner 3d y tecnologías rfid",
+          "link": "/documentos/643841dacd47bb6af696c716",
+          "revista": "Actas de las XXXIII Jornadas de Automática: Vigo, 5 al 7 de Septiembre de 2012 (Universidade de Vigo)"
+        },
+        {
+          "titulo": "Relleno de huecos en mallas 3D completas mediante algoritmos de restauración de imagen",
+          "link": "/documentos/5d5ba7462999520e90d115e7",
+          "revista": "Revista iberoamericana de automática e informática industrial ( RIAI ), Vol. 9, Núm. 4, pp. 429-440"
+        },
+        {
+          "titulo": "Synchronous collaboration with virtual and remote labs in moodle",
+          "link": "/documentos/5e81db7529995270f8358d03",
+          "revista": "IFAC Proceedings Volumes (IFAC-PapersOnline)"
+        },
+        {
+          "titulo": "The Service Catalog as the Basis for Financial Management in Medium, Minor and Micro Enterprises: Practical Approach Using a Library of Process Assets",
+          "link": "/documentos/63ff60729391220346866c32",
+          "revista": "Sistemas y tecnologías de Iinformación, Vols 1 and 2"
+        }
+      ]
+    },
+    {
+      "year": "2011",
+      "publicaciones": [
+        {
+          "titulo": "A Case-Based Reasoning system for recommending cooking recipes",
+          "link": "/documentos/64073490d8f6e90129f323f7",
+          "revista": "Java in Academia and Research (iConcept Press), pp. 1 - 16"
+        },
+        {
+          "titulo": "A Combined Strategy Using FMCDM for Textures Segmentation in Hemispherical Images from Forest Environments",
+          "link": "/documentos/640a8dbf45d1845f9e5ecd0c",
+          "revista": "Advances in Artificial Intelligence: 14th Conference of the Spanish Association for Artificial Intelligence, CAEPIA 2011, La Laguna, Spain, November 7-11, 2011. Proceedings"
+        },
+        {
+          "titulo": "A combined strategy using FMCDM for textures segmentation in hemispherical images from forest environments",
+          "link": "/documentos/5de79b7c2999524dcbea6299",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "A motivational teaching-learning process based on the student's interest: High level of education",
+          "link": "/documentos/5de79b7c2999524dcbea629b",
+          "revista": "EUROCON 2011 - International Conference on Computer as a Tool - Joint with Conftele 2011"
+        },
+        {
+          "titulo": "A segmentation method using Otsu and fuzzy k-Means for stereovision matching in hemispherical images from forest environments",
+          "link": "/documentos/5de79b7c2999524dcbea6297",
+          "revista": "Applied Soft Computing Journal, Vol. 11, Núm. 8, pp. 4738-4747"
+        },
+        {
+          "titulo": "A stereovision matching strategy for images captured with fish-eye lenses in forest environments",
+          "link": "/documentos/5de79b7d2999524dcbea62a5",
+          "revista": "Sensors, Vol. 11, Núm. 2, pp. 1756-1783"
+        },
+        {
+          "titulo": "An architecture for virtual and remote laboratories to support distance learning",
+          "link": "/documentos/5e81db7629995270f8358d31",
+          "revista": "Research in Engineering Education Symposium 2011, REES 2011"
+        },
+        {
+          "titulo": "Automatic segmentation of relevant textures in agricultural images",
+          "link": "/documentos/5de79b7d2999524dcbea62a7",
+          "revista": "Computers and Electronics in Agriculture, Vol. 75, Núm. 1, pp. 75-83"
+        },
+        {
+          "titulo": "Camera System geometry for site specific treatment inprecision agriculture",
+          "link": "/documentos/640a8dc145d1845f9e5eceb0",
+          "revista": "Proceedings of the first International Workshop on robotics and associated high technologies and equipment for agriculture (RHEA-2011): Montpellier, France September 9, 2011"
+        },
+        {
+          "titulo": "Combining Support Vector Machines and simulated annealing for stereovision matching with fish eye lenses in forest environments",
+          "link": "/documentos/5de79b7d2999524dcbea629f",
+          "revista": "Expert Systems with Applications, Vol. 38, Núm. 7, pp. 8622-8631"
+        },
+        {
+          "titulo": "Detection, modeling and classification of moldings for automated reverse engineering of buildings from 3D data",
+          "link": "/documentos/5d95a07a2999525d7e94be10",
+          "revista": "Proceedings of the 28th International Symposium on Automation and Robotics in Construction, ISARC 2011"
+        },
+        {
+          "titulo": "Enseñanza-aprendizaje en visión por computador: un enfoque motivador hacia el futuro profesional",
+          "link": "/documentos/6369acca69e22d1dfe0890c0",
+          "revista": "XVII Jornadas de Enseñanza Universitaria de la Informática: JENUI 2011 : Actas : Sevilla, 5 al 8 de julio de 2011"
+        },
+        {
+          "titulo": "Gestión de empresas informáticas",
+          "link": "/documentos/5f88eb0f29995259ef297e11",
+          "revista": "Editorial Universitaria Ramón Areces"
+        },
+        {
+          "titulo": "Identification and Classification of Textures in Eucalyptus Forests based onHemispherical Images",
+          "link": "/documentos/6412fae5d8f6e90129f32590",
+          "revista": "14th Conference of the Spanish Association for Artificial Intelligence (CAEPIA 2011)"
+        },
+        {
+          "titulo": "MARC: Minimum access RFID readers commands",
+          "link": "/documentos/5fa07add299952440aae1474",
+          "revista": "2011 IEEE International Conference on RFID-Technologies and Applications, RFID-TA 2011"
+        },
+        {
+          "titulo": "Performance analysis of fuzzy aggregation operations for combining classifiers for natural textures in images",
+          "link": "/documentos/5de79b7d2999524dcbea62a1",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "Problemas de gestión de empresas informáticas",
+          "link": "/documentos/5f88eb0f29995259ef297df9",
+          "revista": "Editorial Universitaria Ramón Areces"
+        },
+        {
+          "titulo": "RRTL: RFID Reader Topology Language. A language to manage RFID Reader's Networks",
+          "link": "/documentos/5fa07add299952440aae1476",
+          "revista": "Procedia Computer Science"
+        },
+        {
+          "titulo": "Supporting commonality-based analysis of software product lines",
+          "link": "/documentos/5fa07add299952440aae1472",
+          "revista": "IET Software, Vol. 5, Núm. 6, pp. 496-509"
+        },
+        {
+          "titulo": "UNED Labs: A Network of Virtual and Remote Laboratories",
+          "link": "/documentos/5c13b23dc8914b6ed377a52d",
+          "revista": "Using remote labs in education: two little ducks in remote experimentation (Servicio de Publicaciones = Argitalpen Zerbitzua), pp. 253-270"
+        },
+        {
+          "titulo": "Understanding the role of conceptual relations in Word Sense Disambiguation",
+          "link": "/documentos/5fa07c04299952440aae300e",
+          "revista": "Expert Systems with Applications, Vol. 38, Núm. 8, pp. 9506-9516"
+        }
+      ]
+    },
+    {
+      "year": "2010",
+      "publicaciones": [
+        {
+          "titulo": "A selection process based on additive consistency to deal with incomplete fuzzy linguistic information",
+          "link": "/documentos/5fa07c05299952440aae3012",
+          "revista": "Journal of Universal Computer Science, Vol. 16, Núm. 1, pp. 62-81"
+        },
+        {
+          "titulo": "A stereovision sensor for forest inventories: The matching problem",
+          "link": "/documentos/5de79b7e2999524dcbea62a9",
+          "revista": "Proceedings - 1st International Conference on Sensor Device Technologies and Applications, SENSORDEVICES 2010"
+        },
+        {
+          "titulo": "Aprendizaje estadístico",
+          "link": "/documentos/641a228e4a607a4a19c5cbc5",
+          "revista": "Aprendizaje automático (RA-MA), pp. 59-78"
+        },
+        {
+          "titulo": "Automatic image segmentation of greenness in crop fields",
+          "link": "/documentos/5de79b7e2999524dcbea62ab",
+          "revista": "Proceedings of the 2010 International Conference of Soft Computing and Pattern Recognition, SoCPaR 2010"
+        },
+        {
+          "titulo": "Automatic word sense disambiguation using cooccurrence and hierarchical information",
+          "link": "/documentos/5fa07c04299952440aae3010",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "Combinación de clasificaciones",
+          "link": "/documentos/641a228f4a607a4a19c5cbcf",
+          "revista": "Aprendizaje automático (RA-MA), pp. 79-97"
+        },
+        {
+          "titulo": "DEPCAS: An industrial approach to RFID middleware",
+          "link": "/documentos/5fa07add299952440aae1478",
+          "revista": "Proceedings of the IEEE International Conference on Industrial Technology"
+        },
+        {
+          "titulo": "Diseño de un nuevo clasificador supervisado para minería de datos",
+          "link": "/documentos/5d399a0f299952068445d4f8",
+          "revista": "Anales de ingeniería técnica en informática de sistemas, Núm. 3, pp. 112-128"
+        },
+        {
+          "titulo": "Diseño y construcción de robots de bajo coste para experimentación con tecnologías RFID",
+          "link": "/documentos/6657726ac744b3460991ce78",
+          "revista": "XXXI Jornadas de Automática Jaén 8-10 de septiembre de 2010: Comunicaciones"
+        },
+        {
+          "titulo": "Fuzzy Cognitive Maps applied to computer vision tasks",
+          "link": "/documentos/5de79b7e2999524dcbea62ad",
+          "revista": "Studies in Fuzziness and Soft Computing"
+        },
+        {
+          "titulo": "Plataforma experimental para la navegación asistida por etiquetas NFC de un robot móvil",
+          "link": "/documentos/6657726bc744b3460991cea8",
+          "revista": "XXXI Jornadas de Automática Jaén 8-10 de septiembre de 2010: Comunicaciones"
+        },
+        {
+          "titulo": "Revisión de técnicas de relleno de huecos en mallas 3D",
+          "link": "/documentos/6657726dc744b3460991d05e",
+          "revista": "XXXI Jornadas de Automática Jaén 8-10 de septiembre de 2010: Comunicaciones"
+        }
+      ]
+    },
+    {
+      "year": "2009",
+      "publicaciones": [
+        {
+          "titulo": "A featured-based strategy for stereovision matching in sensors with fish-eye lenses for forest environments",
+          "link": "/documentos/5de79b7f2999524dcbea62b9",
+          "revista": "Sensors, Vol. 9, Núm. 12, pp. 9468-9492"
+        },
+        {
+          "titulo": "Choquet Fuzzy Integral applied to stereovision matching for fish-eye lenses in forest analysis",
+          "link": "/documentos/5de79b7e2999524dcbea62b3",
+          "revista": "Advances in Intelligent and Soft Computing"
+        },
+        {
+          "titulo": "Code Generation with the Exemplar Flexibilization Language",
+          "link": "/documentos/5fa07add299952440aae147c",
+          "revista": "Electronic Notes in Theoretical Computer Science, Vol. 238, Núm. 2, pp. 25-34"
+        },
+        {
+          "titulo": "Combination of attributes in stereovision matching for fish-eye lenses in forest analysis",
+          "link": "/documentos/5de79b7f2999524dcbea62b7",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "Combining classifiers through fuzzy cognitive maps in natural images",
+          "link": "/documentos/5de79b7f2999524dcbea62bb",
+          "revista": "IET Computer Vision, Vol. 3, Núm. 3, pp. 112-123"
+        },
+        {
+          "titulo": "Fuzzy multi-criteria decision making in stereovision matching for fish-eye lenses in forest analysis",
+          "link": "/documentos/5de79b7f2999524dcbea62b5",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "Image-based airborne sensors: A combined approach for spectral signatures classification through deterministic simulated annealing",
+          "link": "/documentos/5de79b7f2999524dcbea62bd",
+          "revista": "Sensors, Vol. 9, Núm. 9, pp. 7132-7149"
+        },
+        {
+          "titulo": "Improved method for object recognition in complex scenes by fusioning 3-D information and RFID technology",
+          "link": "/documentos/5d95a0262999525d7e94b585",
+          "revista": "IEEE Transactions on Instrumentation and Measurement, Vol. 58, Núm. 10, pp. 3473-3480"
+        },
+        {
+          "titulo": "Inferring information from feature diagrams to product line economic models",
+          "link": "/documentos/5f88eb4929995259ef299c25",
+          "revista": "SPLC '09 Proceedings of the 13th International Software Product Line Conference (Carnegie Mellon University Pittsburgh, 2009), pp. 41-50"
+        },
+        {
+          "titulo": "Interacción persona-robot",
+          "link": "/documentos/61690c95dc823869b2820d01",
+          "revista": "UNED - Universidad Nacional de Educación a Distancia"
+        },
+        {
+          "titulo": "JaDaCook 2: Cooking Over Ontological Knowledge",
+          "link": "/documentos/640718bad8f6e90129f323d9",
+          "revista": "8th International Conference on Case-Based Reasoning (ICCBR-09)"
+        },
+        {
+          "titulo": "Man machine interface in RFID middleware: DEPCAS user interface",
+          "link": "/documentos/5fa07add299952440aae147a",
+          "revista": "RFID Technology Concepts, Applications, Challenges - Proceedings of the 3rd International Workshop on RFID Technology - Concepts, Applications, Challenges IWRT 2009 In Conjunction with ICEIS 2009"
+        },
+        {
+          "titulo": "Moving surface extraction based on unordered hexagonal perfect submaps projection: Applications to 3D feature tracking",
+          "link": "/documentos/5d95a0252999525d7e94b563",
+          "revista": "Image and Vision Computing, Vol. 27, Núm. 8, pp. 1083-1096"
+        }
+      ]
+    },
+    {
+      "year": "2008",
+      "publicaciones": [
+        {
+          "titulo": "A first generation software product line for data acquisition systems in astronomy",
+          "link": "/documentos/5e3c34cc29995246bbf5cedc",
+          "revista": "Proceedings of SPIE - The International Society for Optical Engineering"
+        },
+        {
+          "titulo": "A generative approach to improve the abstraction level to build applications based on the notification of changes in databases",
+          "link": "/documentos/5fa07ade299952440aae1482",
+          "revista": "ICEIS 2008 - Proceedings of the 10th International Conference on Enterprise Information Systems"
+        },
+        {
+          "titulo": "A robust method for filling holes in 3D meshes based on image restoration",
+          "link": "/documentos/5d95a00a2999525d7e94b255",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "DEPCAS: an RFID middleware generalization. An example with tracking systems",
+          "link": "/documentos/5fa07add299952440aae147e",
+          "revista": "Proceedings of the 2008 International Conference on Wireless Networks, ICWN 2008"
+        },
+        {
+          "titulo": "Filling holes in 3D meshes using image restoration algorithms",
+          "link": "/documentos/5d95a00a2999525d7e94b253",
+          "revista": "4th International Symposium on 3D Data Processing, Visualization and Transmission, 3DPVT 2008 - Proceedings"
+        },
+        {
+          "titulo": "Implementing EPCIS with DEPCAS RFID middleware",
+          "link": "/documentos/5fa07add299952440aae1480",
+          "revista": "RFID Technology - Concepts, Applications, Challenges - Proceedings of the 2nd International Workshop on RFID Technology - Concepts, Applications, Challenges, IWRT 2008; In Conjunction with ICEIS 2008"
+        },
+        {
+          "titulo": "JaDaCook: Java Application Developed and Cooked Over Ontological Knowledge",
+          "link": "/documentos/64071868d8f6e90129f323d7",
+          "revista": "9th European Conference on Case-Based Reasoning (ECCBR-08)"
+        },
+        {
+          "titulo": "On combining classifiers by relaxation for natural textures in images",
+          "link": "/documentos/5de79b7f2999524dcbea62c1",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        }
+      ]
+    },
+    {
+      "year": "2007",
+      "publicaciones": [
+        {
+          "titulo": "Fusion of 3D vision techniques and RFID technology for object recognition in complex scenes",
+          "link": "/documentos/5de7a96b2999527a8884d2e9",
+          "revista": "2007 IEEE International Symposium on Intelligent Signal Processing, WISP"
+        },
+        {
+          "titulo": "Pipe-DEPCAS: A middleware solution for EPC-RFID Data Acquisition Systems",
+          "link": "/documentos/5fa07ade299952440aae1484",
+          "revista": "Proceedings of the 1st International Workshop on RFID Technology - Concepts, Applications, Challenges IWRT 2007; In Conjunction with ICEIS 2007"
+        },
+        {
+          "titulo": "Reconocimiento de objetos de Forma Libre a Partir de los Datos de Rango de una Vista Parcial usando Cono Curvaturas Ponderadas",
+          "link": "/documentos/5d5ba72a2999520e90d0e173",
+          "revista": "Revista iberoamericana de automática e informática industrial ( RIAI ), Vol. 4, Núm. 1, pp. 95-106"
+        }
+      ]
+    },
+    {
+      "year": "2006",
+      "publicaciones": [
+        {
+          "titulo": "Distributed control system of an experimental robotic cell with 3D vision",
+          "link": "/documentos/5d959fad2999525d7e94a753",
+          "revista": "ICINCO 2006 - 3rd International Conference on Informatics in Control, Automation and Robotics, Proceedings"
+        },
+        {
+          "titulo": "Partial Views Matching Using a Method Based on Principal Components",
+          "link": "/documentos/63ff60719391220346866bec",
+          "revista": "Informatics in Control, Automation and Robotics I"
+        },
+        {
+          "titulo": "Path planning for manipulation environments through interpolated walks",
+          "link": "/documentos/5d959fad2999525d7e94a763",
+          "revista": "IEEE International Conference on Intelligent Robots and Systems"
+        },
+        {
+          "titulo": "Plataforma multisensorial con información RFID de bajo coste",
+          "link": "/documentos/5f88eb6629995259ef29b07d",
+          "revista": "Actas del II Congreso Iberoamericano sobre Computación Ubicua: CICU 06, Alcalá de Henares. Junio 7-9 de 2006"
+        },
+        {
+          "titulo": "ShADEs-3D: una herramienta para la adquisición de datos 3D bajo el Entorno Matlab",
+          "link": "/documentos/5d5ba7282999520e90d0ddab",
+          "revista": "Revista iberoamericana de automática e informática industrial ( RIAI ), Vol. 3, Núm. 1, pp. 94-103"
+        },
+        {
+          "titulo": "Simulations of heating of solid targets by fast electrons",
+          "link": "/documentos/5fa07ade299952440aae1486",
+          "revista": "Laser and Particle Beams"
+        }
+      ]
+    },
+    {
+      "year": "2005",
+      "publicaciones": [
+        {
+          "titulo": "Free-shaped object recognition method from partial views using weighted cone curvatures",
+          "link": "/documentos/5d959f942999525d7e94a42d",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "Imagen de gradiente de profundidad basado en silueta: una solución para reconstrucción de escenas en ámbitos 3D",
+          "link": "/documentos/668985bf3d02c76d597b016b",
+          "revista": "XXVI Jornadas de Automática: 7-10 de septiembre de 2005, Alicante-Elche"
+        },
+        {
+          "titulo": "Objects layout graph for 3D complex scenes",
+          "link": "/documentos/5d959f942999525d7e94a42b",
+          "revista": "Proceedings - International Conference on Image Processing, ICIP"
+        }
+      ]
+    },
+    {
+      "year": "2004",
+      "publicaciones": [
+        {
+          "titulo": "An enhanced statistical module for teleoperation through the internet",
+          "link": "/documentos/5de799082999524dcbea4235",
+          "revista": "Robotics: Trends, Principles, and Applications - Proceedings of the Sixth Biannual World Automation Congress, WAC"
+        },
+        {
+          "titulo": "Basic strategies to enhance teleoperation platforms through the internet",
+          "link": "/documentos/5de799082999524dcbea4237",
+          "revista": "ICEIS 2004 - Proceedings of the Sixth International Conference on Enterprise Information Systems"
+        },
+        {
+          "titulo": "Reconocimientos de vistas parciales de objetos de forma libre basado en características globales",
+          "link": "/documentos/66b11506b634ba3a7e60e121",
+          "revista": "XXV Jornadas de Automática: Ciudad Real, 8, 9, y 10 de septiembre de 2004"
+        },
+        {
+          "titulo": "Virtually generated partial views database: Structure and application",
+          "link": "/documentos/5d959f7f2999525d7e94a180",
+          "revista": "Proceedings of the Fourth IASTED International Conference on Visualization, Imaging, and Image Processing"
+        },
+        {
+          "titulo": "WSD based on mutual information and syntactic patterns",
+          "link": "/documentos/61e2fe001db4736e1e980ee2",
+          "revista": "Proceedings of the SENSEVAL@ACL 2004: 3rd International Workshop on the Evaluation of Systems for the Semantic Analysis of Text - Held in cooperation with ACL 2004"
+        }
+      ]
+    },
+    {
+      "year": "2003",
+      "publicaciones": [
+        {
+          "titulo": "A modular scheme for controller design and performance evaluation in 3D visual servoing",
+          "link": "/documentos/5fa07ade299952440aae1488",
+          "revista": "Journal of Intelligent and Robotic Systems: Theory and Applications, Vol. 36, Núm. 3, pp. 235-264"
+        },
+        {
+          "titulo": "Líneas estratégicas básicas para la mejora de plataformas de teleoperación a través de internet",
+          "link": "/documentos/6467d2fca8abe22804b8d47e",
+          "revista": "XXIV Jornadas de Automática: León, 10, 11 y 12 de septiembre de 2003, Universidad de León, E.I. Industrial e Informática (Instituto de Automática y Fabricación (IAF) (Cognomática))"
+        },
+        {
+          "titulo": "Plataforma de posicionamiento controlado en aplicaciones de visión 3D",
+          "link": "/documentos/6467d2fda8abe22804b8d4bc",
+          "revista": "XXIV Jornadas de Automática: León, 10, 11 y 12 de septiembre de 2003, Universidad de León, E.I. Industrial e Informática (Instituto de Automática y Fabricación (IAF) (Cognomática))"
+        },
+        {
+          "titulo": "Reconocimiento de objetos, indexación de imágenes, matroides orientadas, teoría de conexión de regiones",
+          "link": "/documentos/6467d2fca8abe22804b8d4aa",
+          "revista": "XXIV Jornadas de Automática: León, 10, 11 y 12 de septiembre de 2003, Universidad de León, E.I. Industrial e Informática (Instituto de Automática y Fabricación (IAF) (Cognomática))"
+        },
+        {
+          "titulo": "ShADEs-3D: una herramienta de bajo coste para la adquisición de datos 3D bajo el entorno Matlab",
+          "link": "/documentos/6467d2fda8abe22804b8d4b4",
+          "revista": "XXIV Jornadas de Automática: León, 10, 11 y 12 de septiembre de 2003, Universidad de León, E.I. Industrial e Informática (Instituto de Automática y Fabricación (IAF) (Cognomática))"
+        },
+        {
+          "titulo": "Weighted cone-curvature: Applications for 3D shapes similarity",
+          "link": "/documentos/5d972f70299952695d46e1d2",
+          "revista": "Proceedings of International Conference on 3-D Digital Imaging and Modeling, 3DIM"
+        }
+      ]
+    },
+    {
+      "year": "2002",
+      "publicaciones": [
+        {
+          "titulo": "3D complex scenes segmentation from a single range image using virtual exploration",
+          "link": "/documentos/5d959f6d2999525d7e949f18",
+          "revista": "Lecture Notes in Artificial Intelligence (Subseries of Lecture Notes in Computer Science)"
+        },
+        {
+          "titulo": "Introducción a la visión por computador",
+          "link": "/documentos/5f88ead429995259ef295747",
+          "revista": "Avances en robótica y visión por computador (Ediciones de la Universidad de Castilla-La Mancha), pp. 29-60"
+        },
+        {
+          "titulo": "Reconstruction of spherical representation models from multiple partial models",
+          "link": "/documentos/5d959f6c2999525d7e949f02",
+          "revista": "Proceedings - 1st International Symposium on 3D Data Processing Visualization and Transmission, 3DPVT 2002"
+        }
+      ]
+    },
+    {
+      "year": "2001",
+      "publicaciones": [
+        {
+          "titulo": "Automatic pose determination of 3D shapes based on modeling wave sets: A new data structure for object modeling",
+          "link": "/documentos/5d9468b22999521612ef2a2f",
+          "revista": "Image and Vision Computing, Vol. 19, Núm. 12, pp. 867-890"
+        },
+        {
+          "titulo": "Fundamentos de estructura y tecnología de computadores",
+          "link": "/documentos/5f88ea6129995259ef291375",
+          "revista": "Editorial Universitaria Ramón Areces"
+        },
+        {
+          "titulo": "Manual de prácticas de programación con Módula-2: Libro y CD-ROM",
+          "link": "/documentos/5f88ea6129995259ef2913a9",
+          "revista": "Editorial Universitaria Ramón Areces"
+        },
+        {
+          "titulo": "The UNED Systems at SENSEVAL-2",
+          "link": "/documentos/64085ca4d8f6e90129f3244e",
+          "revista": "Proceedings of SENSEVAL-2 Second International Workshop on Evaluating Word Sense Disambiguation Systems"
+        },
+        {
+          "titulo": "The role of conceptual relations in Word Sense Disambiguation",
+          "link": "/documentos/6401b919d8f6e90129f3230e",
+          "revista": "International Conference on Applications of Natural Language to Information Systems (NLDB)"
+        },
+        {
+          "titulo": "Well structured robot positioning control strategy for position based visual servoing",
+          "link": "/documentos/5d9468b22999521612ef2a37",
+          "revista": "Proceedings - IEEE International Conference on Robotics and Automation, Vol. 3, pp. 2541-2546"
+        }
+      ]
+    },
+    {
+      "year": "2000",
+      "publicaciones": [
+        {
+          "titulo": "Evaluating wordnets in cross-language information retrieval: The ITEM search engine",
+          "link": "/documentos/5fa07b05299952440aae181f",
+          "revista": "2nd International Conference on Language Resources and Evaluation, LREC 2000"
+        },
+        {
+          "titulo": "Fundamentos de programación con Módula-2",
+          "link": "/documentos/5f88ea6129995259ef291377",
+          "revista": "Editorial Universitaria Ramón Areces"
+        },
+        {
+          "titulo": "HWM: A New spherical representation structure for modeling partial views of an object",
+          "link": "/documentos/5de7a96b2999527a8884d2eb",
+          "revista": "Proceedings - International Conference on Pattern Recognition, Vol. 15, Núm. 3, pp. 770-773"
+        },
+        {
+          "titulo": "ITM: un motor de búsqueda multilingüe basado en indexación semántica",
+          "link": "/documentos/5f88ead129995259ef295573",
+          "revista": "JBIDI 2000. Primeras Jornadas de bibliotecas digitales: 6 y 7 de noviembre [de 2000]. Valladolid"
+        },
+        {
+          "titulo": "Introducción a la Ingeniería del Software",
+          "link": "/documentos/5f88ea6129995259ef291381",
+          "revista": "Editorial Universitaria Ramón Areces"
+        },
+        {
+          "titulo": "Modeling wave set: definition and application of a new topological organization for 3D object modeling",
+          "link": "/documentos/5d9468b22999521612ef2a41",
+          "revista": "Computer Vision and Image Understanding, Vol. 79, Núm. 2, pp. 281-307"
+        },
+        {
+          "titulo": "Stereo vision vs. projected shadows in performance evaluation of teleoperated systems",
+          "link": "/documentos/5de799082999524dcbea423f",
+          "revista": "Proceedings - IEEE International Workshop on Robot and Human Interactive Communication"
+        },
+        {
+          "titulo": "Stereo vision vs. projected shadows in performance evaluation of teleoperated systems",
+          "link": "/documentos/5de799082999524dcbea4241",
+          "revista": "Robot and Human Communication - Proceedings of the IEEE International Workshop"
+        }
+      ]
+    },
+    {
+      "year": "1999",
+      "publicaciones": [
+        {
+          "titulo": "A design strategy for low cost experimental telerobotics platforms",
+          "link": "/documentos/5de799082999524dcbea4243",
+          "revista": "Robot and Human Communication - Proceedings of the IEEE International Workshop"
+        },
+        {
+          "titulo": "A design strategy for low cost experimental telerobotics platforms.",
+          "link": "/documentos/63ff60729391220346866c0b",
+          "revista": "RO-MAN'99: 8TH IEEE INTERNATIONAL WORKSHOP ON ROBOT AND HUMAN INTERACTION"
+        },
+        {
+          "titulo": "Automatic orienting of 3D shapes by using a new data structure for object modeling",
+          "link": "/documentos/5d9468b22999521612ef2a49",
+          "revista": "Proceedings - IEEE International Conference on Robotics and Automation, Vol. 4, pp. 2881-2886"
+        },
+        {
+          "titulo": "Load adaptive control of single-link flexible arms based on a new modeling technique",
+          "link": "/documentos/5d9468b22999521612ef2a45",
+          "revista": "IEEE Transactions on Robotics and Automation, Vol. 15, Núm. 5, pp. 793-804"
+        },
+        {
+          "titulo": "Load adaptive control of single-link flexible arms based on a new modeling technique (vol 15, pg 793, 1999)",
+          "link": "/documentos/63ff60729391220346866c07",
+          "revista": "IEEE TRANSACTIONS ON ROBOTICS AND AUTOMATION"
+        },
+        {
+          "titulo": "Modeling and control of a new three-degree-of-freedom flexible arm with simplified dynamics",
+          "link": "/documentos/5d9468b22999521612ef2a4b",
+          "revista": "Proceedings - IEEE International Conference on Robotics and Automation, Vol. 1, pp. 435-440"
+        },
+        {
+          "titulo": "Modeling and control of a new three-degree-of-freedom flexible arm with simplified dynamics",
+          "link": "/documentos/63ff60729391220346866c3b",
+          "revista": "ICRA '99: IEEE INTERNATIONAL CONFERENCE ON ROBOTICS AND AUTOMATION, VOLS 1-4, PROCEEDINGS"
+        }
+      ]
+    },
+    {
+      "year": "1997",
+      "publicaciones": [
+        {
+          "titulo": "A New Control Scheme of Single-link Flexible Manipulators Robust to Payload Changes",
+          "link": "/documentos/5d9468b22999521612ef2a53",
+          "revista": "Journal of Intelligent and Robotic Systems: Theory and Applications, Vol. 20, Núm. 2-4, pp. 349-373"
+        },
+        {
+          "titulo": "A fast mesh deformation method to build spherical representation models of 3D objects",
+          "link": "/documentos/5d9468b32999521612ef2a59",
+          "revista": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)"
+        },
+        {
+          "titulo": "Analysis and design of minimum-phase zeros of sampled systems",
+          "link": "/documentos/5d9468b32999521612ef2a57",
+          "revista": "International Journal of Control, Vol. 68, Núm. 6, pp. 1397-1416"
+        },
+        {
+          "titulo": "Informática gráfica: Aplicación a la realidad virtual",
+          "link": "/documentos/5f88ead029995259ef295551",
+          "revista": "Informática industrial"
+        },
+        {
+          "titulo": "Ingeniería de software",
+          "link": "/documentos/5f88ead029995259ef295555",
+          "revista": "Informática industrial"
+        }
+      ]
+    },
+    {
+      "year": "1996",
+      "publicaciones": [
+        {
+          "titulo": "Programación I",
+          "link": "/documentos/5f88ea6829995259ef291885",
+          "revista": "Universidad Nacional de Educación a Distancia, Ingeniería Técnica de Informática de Gestión y de Sistemas"
+        }
+      ]
+    },
+    {
+      "year": "1995",
+      "publicaciones": [
+        {
+          "titulo": "Estructura y tecnología de computadores I. Addenda",
+          "link": "/documentos/5d5ba6f52999520e90d069bb",
+          "revista": "UNED - Universidad Nacional de Educación a Distancia"
+        },
+        {
+          "titulo": "Introducción a la ingeniería de software",
+          "link": "/documentos/5f88ea5629995259ef290b9d",
+          "revista": "UNED - Universidad Nacional de Educación a Distancia"
+        }
+      ]
+    },
+    {
+      "year": "1994",
+      "publicaciones": [
+        {
+          "titulo": "A Combined Feedforward-Feedback Control Scheme for Single-Link Flexible Arms",
+          "link": "/documentos/63ff60729391220346866c12",
+          "revista": "AUTOMATIC CONTROL - WORLD CONGRESS 1993, VOL 3"
+        }
+      ]
+    },
+    {
+      "year": "1993",
+      "publicaciones": [
+        {
+          "titulo": "A Real-Time Trajectory Generation Algorithm for Mobile Robots",
+          "link": "/documentos/63ff60729391220346866c15",
+          "revista": "Intelligent Components and Instruments for Control Applications"
+        },
+        {
+          "titulo": "Estructura y tecnología de computadores I",
+          "link": "/documentos/5d5ba6f42999520e90d066b5",
+          "revista": "UNED - Universidad Nacional de Educación a Distancia"
+        },
+        {
+          "titulo": "Programación I",
+          "link": "/documentos/5f88ea5629995259ef290b83",
+          "revista": "UNED - Universidad Nacional de Educación a Distancia"
+        },
+        {
+          "titulo": "Robust control of single-link flexible manipulators with payload changes",
+          "link": "/documentos/5d9468b32999521612ef2a61",
+          "revista": "Proceedings of the IEEE International Conference on Systems, Man and Cybernetics"
+        }
+      ]
+    },
+    {
+      "year": "1992",
+      "publicaciones": [
+        {
+          "titulo": "A scheme for implementing resilient objects in distributed systems",
+          "link": "/documentos/63ff60729391220346866c42",
+          "revista": "PARALLEL COMPUTING : FROM THEORY TO SOUND PRACTICE"
+        },
+        {
+          "titulo": "Preconcentration and Determination of Bentazepam at C18-Modified Carbon Paste Electrodes",
+          "link": "/documentos/63ff60729391220346866c3f",
+          "revista": "Fresenius Journal of Analytical Chemistry, Vol. 342, Núm. 4-5, pp. 429-432"
+        }
+      ]
+    },
+    {
+      "year": "1991",
+      "publicaciones": [
+        {
+          "titulo": "A 3D-Object Reconstruction System Integrating Range-Image Processing and Rapid Prototyping",
+          "link": "/documentos/63ff60729391220346866c1b",
+          "revista": "Engineering Systems With Intelligence"
+        }
+      ]
+    },
+    {
+      "year": "1990",
+      "publicaciones": [
+        {
+          "titulo": "Technical Notes and Correspondence: A Method to Design Multirate Controllers for Plants Sampled at a Low Rate",
+          "link": "/documentos/5d94846429995266a5cf5bcf",
+          "revista": "IEEE Transactions on Automatic Control, Vol. 35, Núm. 1, pp. 57-60"
+        },
+        {
+          "titulo": "Using conversations to implement resilient objects in distributed systems",
+          "link": "/documentos/5fa07ade299952440aae148a",
+          "revista": "Annual Review in Automatic Programming, Vol. 15, Núm. PART 1, pp. 47-52"
+        }
+      ]
+    },
+    {
+      "year": "1988",
+      "publicaciones": [
+        {
+          "titulo": "Algorithm to compute the continuous state model from its equivalent discrete model",
+          "link": "/documentos/5d94846429995266a5cf5bdd",
+          "revista": "Control, theory and advanced technology, Vol. 4, Núm. 2, pp. 231-241"
+        },
+        {
+          "titulo": "Algoritmo para la obtención del sistema discreto multiperiódico a partir del correspondiente sistema dicreto",
+          "link": "/documentos/5d5ba7372999520e90d0fb65",
+          "revista": "Revista de informática y automática, Año 21, Núm. 3, pp. 31-39"
+        },
+        {
+          "titulo": "Implementation of a csp-based extension of Pascal",
+          "link": "/documentos/5fa07ade299952440aae148c",
+          "revista": "Microprocessing and Microprogramming, Vol. 22, Núm. 4, pp. 233-242"
+        }
+      ]
+    },
+    {
+      "year": "1986",
+      "publicaciones": [
+        {
+          "titulo": "Relationships between allerhand and schleyer g-scale and other solvent polarity and acidity parameters",
+          "link": "/documentos/63ff60729391220346866c26",
+          "revista": "Spectrochimica Acta Part A-Molecular and Biomolecular Spectroscopy, Vol. 42, Núm. 5, pp. 677-680"
+        }
+      ]
+    },
+    {
+      "year": "1985",
+      "publicaciones": [
+        {
+          "titulo": "Distributed systems programming in extended pascal",
+          "link": "/documentos/63ff60729391220346866c46",
+          "revista": "MICROPROCESSING AND MICROPROGRAMMING"
+        },
+        {
+          "titulo": "Estudio comparativo de métodos para la obtención de modelos de sistemas continuos a partir de su identificación por computador",
+          "link": "/documentos/5d5ba7392999520e90d0fdf9",
+          "revista": "Revista de informática y automática, Año 18, Núm. 64, pp. 35-42"
+        },
+        {
+          "titulo": "ON THE ESTIMATION OF SYSTEM LAPLACE - TRANSFORM FROM SAMPLED SIGNALS - INFLUENCE OF THE INPUT SIGNAL RECONSTRUCTION.",
+          "link": "/documentos/5d94974229995214bd66a943",
+          "revista": "Proceedings of Melecon '85: Mediterranean Electrochemical Conference."
+        },
+        {
+          "titulo": "TASK ASSIGNMENT IN DISTRIBUTED COMPUTER CONTROL SYSTEMS.",
+          "link": "/documentos/5fa07ade299952440aae148e",
+          "revista": "IEE Conference Publication"
+        }
+      ]
+    }
+  ]
+}
