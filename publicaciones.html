@@ -5,7 +5,14 @@ title: Publicaciones UNED
 
 <h1>Publicaciones</h1>
 
+<!-- Contenedor para el gráfico -->
+<canvas id="graficoPublicaciones" width="800" height="400"></canvas>
+
+<!-- Contenedor para las publicaciones listadas -->
 <div id="publicaciones-container"></div>
+
+<!-- Chart.js desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
 fetch('publicaciones.json')
@@ -14,6 +21,9 @@ fetch('publicaciones.json')
     const baseURL = 'https://portalcientifico.uned.es';
     const container = document.getElementById('publicaciones-container');
 
+    const publicacionesPorAnio = [];
+
+    // Mostrar publicaciones por año
     data.publicaciones.forEach(({ year, publicaciones }) => {
       // Encabezado del año
       const h2 = document.createElement('h2');
@@ -22,6 +32,9 @@ fetch('publicaciones.json')
 
       // Lista de publicaciones
       const ul = document.createElement('ul');
+
+      // Contadores por tipo
+      let articulos = 0, libros = 0, capitulos = 0, aportaciones = 0, otros = 0;
 
       publicaciones.forEach(p => {
         const li = document.createElement('li');
@@ -32,10 +45,101 @@ fetch('publicaciones.json')
           <em>${p.revista}</em>
         `;
         ul.appendChild(li);
+
+        // Clasificación por tipo
+        const tipo = p.tipo.toLowerCase();
+        if (tipo.includes("artículo")) articulos++;
+        else if (tipo.includes("libro") && !tipo.includes("capítulo")) libros++;
+        else if (tipo.includes("capítulo")) capitulos++;
+        else if (tipo.includes("congreso") || tipo.includes("aportación")) aportaciones++;
+        else otros++;
+      });
+
+      // Agregar datos al array para el gráfico
+      publicacionesPorAnio.push({
+        year,
+        articulos,
+        libros,
+        capitulos,
+        aportaciones,
+        otros
       });
 
       container.appendChild(ul);
     });
+
+    // Crear gráfico con Chart.js
+    const years = publicacionesPorAnio.map(p => p.year);
+
+    const chartData = {
+      labels: years,
+      datasets: [
+        {
+          label: 'Artículos',
+          backgroundColor: '#FFCD56',
+          data: publicacionesPorAnio.map(p => p.articulos),
+        },
+        {
+          label: 'Libros',
+          backgroundColor: '#FF6384',
+          data: publicacionesPorAnio.map(p => p.libros),
+        },
+        {
+          label: 'Capítulos de Libro',
+          backgroundColor: '#B266FF',
+          data: publicacionesPorAnio.map(p => p.capitulos),
+        },
+        {
+          label: 'Aportaciones de Congreso',
+          backgroundColor: '#2B2D42',
+          data: publicacionesPorAnio.map(p => p.aportaciones),
+        },
+        {
+          label: 'Otros',
+          backgroundColor: '#2ECC71',
+          data: publicacionesPorAnio.map(p => p.otros),
+        },
+      ]
+    };
+
+    const config = {
+      type: 'bar',
+      data: chartData,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Publicaciones por Año'
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false
+          }
+        },
+        interaction: {
+          mode: 'nearest',
+          axis: 'x',
+          intersect: false
+        },
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true,
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Número de Publicaciones'
+            }
+          }
+        }
+      }
+    };
+
+    const ctx = document.getElementById('graficoPublicaciones').getContext('2d');
+    new Chart(ctx, config);
   })
   .catch(error => {
     console.error("Error cargando las publicaciones:", error);
@@ -44,5 +148,3 @@ fetch('publicaciones.json')
     document.getElementById('publicaciones-container').appendChild(errorMsg);
   });
 </script>
-``
-
