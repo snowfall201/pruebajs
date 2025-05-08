@@ -1,1 +1,119 @@
-
+{
+  "publicaciones": [
+    {
+      "year": "2025",
+      "publicaciones": [
+        {
+          "titulo": "Optimization of Spectrum Use by Mode S Surveillance Systems Through Coordinated DAP Extraction",
+          "link": "/documentos/6796b47ac8fe9e422476a553",
+          "revista": "IEEE Aerospace and Electronic Systems Magazine, Vol. 40, Núm. 1, pp. 6-20"
+        },
+        {
+          "titulo": "Recognition of Egyptian hieroglyphic texts through focused generic segmentation and cross-validation voting",
+          "link": "/documentos/67b16edceb752026d8340417",
+          "revista": "Applied Soft Computing, Vol. 171"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "publicaciones": [
+        {
+          "titulo": "A Pragmatic Framework for Assessing Learning Outcomes in Competency-Based Courses",
+          "link": "/documentos/65c35d3ad2edca1267d6af14",
+          "revista": "IEEE Transactions on Education, Vol. 67, Núm. 2, pp. 224-233"
+        },
+        {
+          "titulo": "An Ontological Behavioral Modeling Approach With SHACL, SPARQL, and RDF Applied to Smart Grids",
+          "link": "/documentos/6678c8133974ce515cb0119a",
+          "revista": "IEEE Access, Vol. 12, pp. 82041-82056"
+        },
+        {
+          "titulo": "Dynamic periodic event-triggered control for nonlinear systems with output dynamic quantization",
+          "link": "/documentos/66b88ce9110bef475d852a58",
+          "revista": "Journal of the Franklin Institute, Vol. 361, Núm. 14"
+        },
+        {
+          "titulo": "Event-Based Control in Industry Practice: Paving the Way Toward Resource-Efficient Industrial Internet of Things",
+          "link": "/documentos/64c85cdbacdc40244331e7d7",
+          "revista": "IEEE Industrial Electronics Magazine, Vol. 18, Núm. 2, pp. 38-47"
+        },
+        {
+          "titulo": "Event-Triggered Control of Port-Hamiltonian Systems under Time-Delay Communication",
+          "link": "/documentos/65c35d3ad2edca1267d6af11",
+          "revista": "IEEE Control Systems Letters, Vol. 8, pp. 175-180"
+        },
+        {
+          "titulo": "IIoT System for Intelligent Detection of Bottleneck in Manufacturing Lines",
+          "link": "/documentos/664b291bcfa2e63241040c6e",
+          "revista": "Applied Sciences (Switzerland), Vol. 14, Núm. 1"
+        },
+        {
+          "titulo": "Pragmatic Random Sampling of the Linux Kernel: Enhancing the Randomness and Correctness of the conf Tool",
+          "link": "/documentos/66efdf0f03d44e1da2aa30ca",
+          "revista": "ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Remote path-following control for a holonomic Mecanum-wheeled robot in a resource-efficient networked control system",
+          "link": "/documentos/6665f26abe265147d9b62bb1",
+          "revista": "ISA Transactions, Vol. 151, pp. 377-390"
+        },
+        {
+          "titulo": "TOR y la libertad de expresión en la red",
+          "link": "/documentos/66771575f7f79b2afcf725fc",
+          "revista": "La inteligencia artificial y el control algorítmico de los derechos fundamentales (Aranzadi), pp. 173-187"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "publicaciones": [
+        {
+          "titulo": "A Combined Model Based on Recurrent Neural Networks and Graph Convolutional Networks for Financial Time Series Forecasting",
+          "link": "/documentos/63d5b4ddf851ee1ba3ea0c53",
+          "revista": "Mathematics, Vol. 11, Núm. 1"
+        },
+        {
+          "titulo": "A Monte Carlo tree search conceptual framework for feature model analyses",
+          "link": "/documentos/638beab5840d3a6d9ac8384b",
+          "revista": "Journal of Systems and Software, Vol. 195"
+        },
+        {
+          "titulo": "Circuit Testing Based on Fuzzy Sampling with BDD Bases",
+          "link": "/documentos/63f71b03eb6b7c68e7a2481c",
+          "revista": "Proceedings of the 56th Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "Circuit Testing Based on Fuzzy Sampling with BDD Bases",
+          "link": "/documentos/6444ee1148c3090deaa2665b",
+          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
+        },
+        {
+          "titulo": "FLAMA: A collaborative effort to build a new framework for the automated analysis of feature models",
+          "link": "/documentos/656207f9f2e9e72161e14e44",
+          "revista": "ACM International Conference Proceeding Series"
+        },
+        {
+          "titulo": "Finding Near-Optimal Configurations in Colossal Spaces with Statistical Guarantees",
+          "link": "/documentos/654b5873759c78696e8803f4",
+          "revista": "ACM Transactions on Software Engineering and Methodology"
+        },
+        {
+          "titulo": "Mobile Robot Navigation Based on Embedded Computer Vision",
+          "link": "/documentos/64995b7f71c692789f1dff2b",
+          "revista": "Mathematics, Vol. 11, Núm. 11"
+        },
+        {
+          "titulo": "On the Supervision of Peer Assessment Tasks: An Efficient Instructor Guidance Technique",
+          "link": "/documentos/65351ba07bba975a1caafe1f",
+          "revista": "IEEE Transactions on Learning Technologies, Vol. 16, Núm. 6, pp. 926-939"
+        },
+        {
+          "titulo": "Teaching automation with Factory I/O under a competency-based curriculum",
+          "link": "/documentos/63670937688cd71757e151d8",
+          "revista": "Multimedia Tools and Applications, Vol. 82, Núm. 13, pp. 19221-19246"
+        }
+      ]
+    }
+  ]
+}
