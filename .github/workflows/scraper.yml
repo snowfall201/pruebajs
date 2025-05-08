@@ -9,7 +9,7 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Necesario para poder hacer push
+      contents: write
 
     steps:
       - name: Clonar repositorio
@@ -22,7 +22,7 @@ jobs:
           echo "Contenido:"
           ls -la
 
-      - name: Cache node modules
+      - name: Cache node_modules
         uses: actions/cache@v3
         with:
           path: node_modules
@@ -30,16 +30,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-modules-
 
-      - name: Cache Puppeteer browser binaries
+      - name: Cache Puppeteer Chromium
         uses: actions/cache@v3
         with:
           path: ~/.cache/puppeteer
-          key: ${{ runner.os }}-puppeteer
+          key: ${{ runner.os }}-puppeteer-chromium
 
       - name: Instalar dependencias
         run: |
           npm install
-          npm audit fix --force  # Opcional, si quieres resolver vulnerabilidades automáticamente
+          npm audit fix --force
 
       - name: Ejecutar scraper principal (data.json)
         run: npm run scrape
