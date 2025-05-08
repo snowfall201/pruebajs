@@ -27,6 +27,6 @@ $('.grupo-docs__grupo.agrupador-anualidad').each((_, grupo) => {
 });
 
 const data = { publicaciones: publicacionesPorAnio };
-fs.writeFileSync('data.json', JSON.stringify(data, null, 2), 'utf-8');
+fs.writeFileSync('publicaciones.json', JSON.stringify(data, null, 2), 'utf-8');
 
 console.log('✅ Archivo data.json generado.');
