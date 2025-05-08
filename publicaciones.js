@@ -17,12 +17,18 @@ import * as cheerio from 'cheerio';
 
     // Repetir clic en "Ver más" hasta que no esté disponible
     while (true) {
-      try {
-        await page.click('button.ver-mas'); // Ajusta el selector según el botón real
-        await page.waitForTimeout(1000); // Espera a que se cargue el nuevo contenido
-      } catch (err) {
-        break; // Sale del bucle si el botón ya no está disponible
-      }
+      // Espera hasta que el botón "Ver más" sea visible
+      const buttonVisible = await page.$('button.btn.btn-secondary');
+      if (!buttonVisible) break;  // Si el botón no está visible, salimos del bucle
+
+      // Haz clic en el botón "Ver más"
+      await page.click('button.btn.btn-secondary');
+      
+      // Esperar a que se actualice el contenido en #publicaciones después del clic
+      await page.waitForSelector('#publicaciones', { visible: true });
+
+      // Espera breve para asegurar que los datos se carguen completamente
+      await page.waitForTimeout(1000);  // 1 segundo, ajustable según sea necesario
     }
 
     // Extraer el HTML completo renderizado
