@@ -8,19 +8,19 @@ title: Publicaciones UNED
 <div id="publicaciones-container"></div>
 
 <script>
-fetch('data.json')
+fetch('publicaciones.json')
   .then(res => res.json())
   .then(data => {
     const baseURL = 'https://portalcientifico.uned.es';
     const container = document.getElementById('publicaciones-container');
 
     data.publicaciones.forEach(({ year, publicaciones }) => {
-      // Crear encabezado del año
+      // Encabezado del año
       const h2 = document.createElement('h2');
       h2.textContent = `Publicaciones ${year}`;
       container.appendChild(h2);
 
-      // Crear lista de publicaciones para ese año
+      // Lista de publicaciones
       const ul = document.createElement('ul');
 
       publicaciones.forEach(p => {
@@ -41,6 +41,8 @@ fetch('data.json')
     console.error("Error cargando las publicaciones:", error);
     const errorMsg = document.createElement('p');
     errorMsg.textContent = "Hubo un problema al cargar las publicaciones.";
-    container.appendChild(errorMsg);
+    document.getElementById('publicaciones-container').appendChild(errorMsg);
   });
 </script>
+``
+
