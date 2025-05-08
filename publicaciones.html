@@ -1,1 +1,46 @@
+---
+layout: default
+title: Publicaciones UNED
+---
 
+<h1>Publicaciones</h1>
+
+<div id="publicaciones-container"></div>
+
+<script>
+fetch('data.json')
+  .then(res => res.json())
+  .then(data => {
+    const baseURL = 'https://portalcientifico.uned.es';
+    const container = document.getElementById('publicaciones-container');
+
+    data.publicaciones.forEach(({ year, publicaciones }) => {
+      // Crear encabezado del año
+      const h2 = document.createElement('h2');
+      h2.textContent = `Publicaciones ${year}`;
+      container.appendChild(h2);
+
+      // Crear lista de publicaciones para ese año
+      const ul = document.createElement('ul');
+
+      publicaciones.forEach(p => {
+        const li = document.createElement('li');
+        const pubURL = baseURL + p.link;
+
+        li.innerHTML = `
+          <a href="${pubURL}" target="_blank"><strong>${p.titulo}</strong></a><br>
+          <em>${p.revista}</em>
+        `;
+        ul.appendChild(li);
+      });
+
+      container.appendChild(ul);
+    });
+  })
+  .catch(error => {
+    console.error("Error cargando las publicaciones:", error);
+    const errorMsg = document.createElement('p');
+    errorMsg.textContent = "Hubo un problema al cargar las publicaciones.";
+    container.appendChild(errorMsg);
+  });
+</script>
