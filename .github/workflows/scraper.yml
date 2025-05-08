@@ -30,6 +30,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-modules-
 
+      - name: Cache Puppeteer browser binaries
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/puppeteer
+          key: ${{ runner.os }}-puppeteer
+
       - name: Instalar dependencias
         run: |
           npm install
