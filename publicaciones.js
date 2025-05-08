@@ -28,7 +28,7 @@ import * as cheerio from 'cheerio';
       await page.waitForSelector('#publicaciones', { visible: true });
 
       // Espera breve para asegurar que los datos se carguen completamente
-      await page.waitForTimeout(1000);  // 1 segundo, ajustable según sea necesario
+await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
     // Extraer el HTML completo renderizado
