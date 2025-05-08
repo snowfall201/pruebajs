@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import fs from 'fs';
 
 const URL = 'https://portalcientifico.uned.es/grupos/17474/publicaciones';
