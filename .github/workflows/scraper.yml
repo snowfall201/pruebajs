@@ -25,14 +25,17 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Ejecutar scraper
+      - name: Ejecutar scraper principal (data.json)
         run: npm run scrape
 
-      - name: Commit y push de data.json actualizado
+      - name: Ejecutar publicaciones.js (publicaciones.json)
+        run: node publicaciones.js
+
+      - name: Commit y push de archivos actualizados
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add data.json
-          git diff --staged --quiet || git commit -m "Actualizar data.json automáticamente"
-          git pull --rebase
+          git add data.json publicaciones.json
+          git diff --staged --quiet || git commit -m "Actualizar data.json y publicaciones.json automáticamente"
+          git pull --rebase --autostash
           git push
