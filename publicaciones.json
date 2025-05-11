@@ -12,6 +12,11 @@
           "titulo": "Recognition of Egyptian hieroglyphic texts through focused generic segmentation and cross-validation voting",
           "link": "/documentos/67b16edceb752026d8340417",
           "revista": "Applied Soft Computing, Vol. 171"
+        },
+        {
+          "titulo": "Uso de avatares parlantes para la gamificación de la asignatura de Derecho Penitenciario",
+          "link": "/documentos/681e3e61d9b86b55136a8f2c",
+          "revista": "Aprendizaje jurídico colaborativo (Aranzadi), pp. 403-410"
         }
       ]
     },
@@ -325,13 +330,13 @@
         },
         {
           "titulo": "A kconfig translation to logic with one-way validation system",
-          "link": "/documentos/5fa07c02299952440aae2fe3",
-          "revista": "Systems and Software Product Lines Conference - ACM International Conference Proceeding Series"
+          "link": "/documentos/61a5243037d5b2018338e33a",
+          "revista": "PervasiveHealth: Pervasive Computing Technologies for Healthcare"
         },
         {
           "titulo": "A kconfig translation to logic with one-way validation system",
-          "link": "/documentos/61a5243037d5b2018338e33a",
-          "revista": "PervasiveHealth: Pervasive Computing Technologies for Healthcare"
+          "link": "/documentos/5fa07c02299952440aae2fe3",
+          "revista": "Systems and Software Product Lines Conference - ACM International Conference Proceeding Series"
         },
         {
           "titulo": "A kconfig translation to logic with one-way validation system",
@@ -595,13 +600,13 @@
         },
         {
           "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
-          "link": "/documentos/64086026d8f6e90129f3245c",
-          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
+          "link": "/documentos/634ee0c048ee3619a115dcd5",
+          "revista": "Frontiers in Artificial Intelligence and Applications"
         },
         {
           "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
-          "link": "/documentos/634ee0c048ee3619a115dcd5",
-          "revista": "Frontiers in Artificial Intelligence and Applications"
+          "link": "/documentos/64086026d8f6e90129f3245c",
+          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
         },
         {
           "titulo": "Control PID basado en eventos periódico para sistemas de control de red",
@@ -1535,13 +1540,13 @@
         },
         {
           "titulo": "Modeling and control of a new three-degree-of-freedom flexible arm with simplified dynamics",
-          "link": "/documentos/5d9468b22999521612ef2a4b",
-          "revista": "Proceedings - IEEE International Conference on Robotics and Automation, Vol. 1, pp. 435-440"
+          "link": "/documentos/63ff60729391220346866c3b",
+          "revista": "ICRA '99: IEEE INTERNATIONAL CONFERENCE ON ROBOTICS AND AUTOMATION, VOLS 1-4, PROCEEDINGS"
         },
         {
           "titulo": "Modeling and control of a new three-degree-of-freedom flexible arm with simplified dynamics",
-          "link": "/documentos/63ff60729391220346866c3b",
-          "revista": "ICRA '99: IEEE INTERNATIONAL CONFERENCE ON ROBOTICS AND AUTOMATION, VOLS 1-4, PROCEEDINGS"
+          "link": "/documentos/5d9468b22999521612ef2a4b",
+          "revista": "Proceedings - IEEE International Conference on Robotics and Automation, Vol. 1, pp. 435-440"
         }
       ]
     },
