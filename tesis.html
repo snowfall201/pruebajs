@@ -2,6 +2,17 @@
 layout: default
 title: Tesis Doctorales UNED
 ---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesis Doctorales UNED</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
 <nav class="main-nav">
   <ul>
     <li><a href="proyectos.html">Proyectos</a></li>
@@ -14,9 +25,10 @@ title: Tesis Doctorales UNED
   </ul>
 </nav>
 
-<h1>Tesis Doctorales</h1>
-
-<div id="contenedor-tesis"></div>
+<main>
+  <h1>Tesis Doctorales</h1>
+  <div id="contenedor-tesis"></div>
+</main>
 
 <script>
 fetch('tesis_doctorales.json')
@@ -44,4 +56,7 @@ fetch('tesis_doctorales.json')
     });
   });
 </script>
+
+</body>
+</html>
 
