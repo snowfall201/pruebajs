@@ -1,0 +1,14 @@
+{
+  "direccion": "Calle Juan del Rosal 16, 28040 Madrid",
+  "email": "rheradio@issi.uned.es",
+  "telefono": "91 398 82 42",
+  "transporte": {
+    "metro": "Línea 6 (Ciudad Universitaria)",
+    "autobuses": [
+      "U (Autobús Universitario)",
+      "F (Cuatro Caminos)",
+      "G (Moncloa)",
+      "82 (Moncloa)"
+    ]
+  }
+}
