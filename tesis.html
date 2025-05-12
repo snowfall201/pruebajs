@@ -9,7 +9,7 @@ title: Tesis Doctorales UNED
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tesis Doctorales UNED</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -46,4 +46,17 @@ fetch('tesis_doctorales.json')
         const li = document.createElement('li');
         let contenido = `<strong>${p.titulo}</strong><br>Autor/a: ${p.autor}`;
         if (p.link) {
-          contenido = `<a href="${p.link}" target="_blank"><strong>${p.titulo}</strong></a><br_
+          contenido = `<a href="${p.link}" target="_blank"><strong>${p.titulo}</strong></a><br>Autor/a: ${p.autor}`;
+        }
+        li.innerHTML = contenido;
+        ul.appendChild(li);
+      });
+
+      contenedor.appendChild(ul);
+    });
+  });
+</script>
+
+</body>
+</html>
+
