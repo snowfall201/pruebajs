@@ -56,4 +56,19 @@ fetch('publicaciones.json')
           <a href="${pubURL}" target="_blank"><strong>${p.titulo}</strong></a><br>
           <em>${p.revista}</em>
         `;
-        ul.append
+        ul.appendChild(li);
+      });
+
+      container.appendChild(ul);
+    });
+  })
+  .catch(error => {
+    console.error("Error cargando las publicaciones:", error);
+    const errorMsg = document.createElement('p');
+    errorMsg.textContent = "Hubo un problema al cargar las publicaciones.";
+    document.getElementById('publicaciones-container').appendChild(errorMsg);
+  });
+</script>
+
+</body>
+</html>
