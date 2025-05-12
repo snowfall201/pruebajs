@@ -1,12 +1,12 @@
 @import "{{ site.theme }}";
 
 /*Estilos index*/
- nav.main-nav {
+ nav {
   background-color: #333;
   padding: 10px 0;
 }
 
-nav.main-nav ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -15,11 +15,11 @@ nav.main-nav ul {
   flex-wrap: wrap;
 }
 
-nav.main-nav ul li {
+nav ul li {
   margin: 0 15px;
 }
 
-nav.main-nav ul li a {
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -27,7 +27,7 @@ nav.main-nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-nav.main-nav ul li a:hover {
+nav ul li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
