@@ -3,12 +3,38 @@ layout: default
 title: Localización GISS-UNED
 ---
 
-<h1>Localización</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Localización GISS-UNED</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<div id="info-localizacion"></div>
+<!-- Menú de navegación -->
+<nav>
+  <ul>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="publicaciones.html">Publicaciones</a></li>
+    <li><a href="repositorios.html">Herramientas</a></li>
+    <li><a href="cosy.html">Proyecto acogedor</a></li>
+    <li><a href="tesis.html">Tesis</a></li>
+    <li><a href="localizacion.html">Localización</a></li>
+    <li><a href="aboutus.html">Sobre nosotros</a></li>
+  </ul>
+</nav>
 
-<h2>Mapa</h2>
-<div id="map" style="height: 400px;"></div>
+<!-- Contenido principal -->
+<main>
+  <h1>Localización</h1>
+
+  <div id="info-localizacion"></div>
+
+  <h2>Mapa</h2>
+  <div id="map" style="height: 400px;"></div>
+</main>
 
 <!-- Incluir Leaflet.js y su CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -44,4 +70,8 @@ fetch('localizacion.json')
     console.error('Error al cargar localizacion.json:', error);
   });
 </script>
+
+</body>
+</html>
+
 
