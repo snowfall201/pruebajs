@@ -1,1 +1,36 @@
+---
+layout: default
+title: Tesis Doctorales UNED
+---
+
+<h1>Tesis Doctorales</h1>
+
+<div id="contenedor-tesis"></div>
+
+<script>
+fetch('tesis_doctorales.json')
+  .then(res => res.json())
+  .then(data => {
+    const contenedor = document.getElementById('contenedor-tesis');
+
+    data.tesis.forEach(({ year, publicaciones }) => {
+      const h2 = document.createElement('h2');
+      h2.textContent = `Tesis defendidas en ${year}`;
+      contenedor.appendChild(h2);
+
+      const ul = document.createElement('ul');
+      publicaciones.forEach(p => {
+        const li = document.createElement('li');
+        let contenido = `<strong>${p.titulo}</strong><br>Autor/a: ${p.autor}`;
+        if (p.link) {
+          contenido = `<a href="${p.link}" target="_blank"><strong>${p.titulo}</strong></a><br>Autor/a: ${p.autor}`;
+        }
+        li.innerHTML = contenido;
+        ul.appendChild(li);
+      });
+
+      contenedor.appendChild(ul);
+    });
+  });
+</script>
 
