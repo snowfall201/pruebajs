@@ -1,9 +1,11 @@
 @import "{{ site.theme }}";
 
 /*Estilos index*/
- nav {
+ /*Estilos index*/
+nav {
   background-color: #333;
   padding: 10px 0;
+  margin-bottom: 20px; /* Espacio pequeño entre el nav y el siguiente contenido */
 }
 
 nav ul {
