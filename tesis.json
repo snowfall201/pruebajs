@@ -1,1 +1,105 @@
+{
+  "tesis": [
+    {
+      "year": "2023",
+      "publicaciones": [
+        {
+          "autor": "Lazcano de Rojas, Ana",
+          "titulo": "Modelo combinado basado en redes neuronales recurrentes y redes convolucionales de grafos para la predicción de series temporales económicas",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-A-lazcano"
+        },
+        {
+          "autor": "Larhrib Es-Salehy, Mohamed",
+          "titulo": "Alineamiento de paradigmas de modelado aplicado a orientación a objetos y ontologías",
+          "link": null
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "publicaciones": [
+        {
+          "autor": "Minguela Castro, Gerardo",
+          "titulo": "Automated Support for Battle Operational-Strategic Decision-Making",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-G-minguela"
+        },
+        {
+          "autor": "Buetas Sanjuan, Eduardo",
+          "titulo": "MQTT-SCACAUTH: Esquema de seguridad para el protocolo MQTT y su uso en el entorno del IIoT",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-E-buetas"
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "publicaciones": [
+        {
+          "autor": "Bra Gutiérrez, Sergio",
+          "titulo": "Supporting the Statistical Analysis of Variability Models by Processing Binary Decision Diagrams",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-S-bra"
+        },
+        {
+          "autor": "Rubio Sánchez, Juan Luis",
+          "titulo": "Metodología para la secuenciación de procesos ITIL. Aplicación al caso de una PYME",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-J-rubio"
+        },
+        {
+          "autor": "Callejas, Edwin Alberto",
+          "titulo": "Toma de decisiones en grupo en ambientes multicriterio, heterogéneos y lingüísticos",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-E-callejas"
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "publicaciones": [
+        {
+          "autor": "Béan Castelló, Roberto",
+          "titulo": "Codificación eficiente de modelos de configuración utilizando BDD's",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-R-bean"
+        },
+        {
+          "autor": "Jiménez de Parga Bernal-Quiros, Carlos",
+          "titulo": "High-Performance Algorithms for Real-Time GPGPU Volumetric Cloud Rendering from an Enhanced Physical-Math Abstraction Approach",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-C-jimenez"
+        }
+      ]
+    },
+    {
+      "year": "2018",
+      "publicaciones": [
+        {
+          "autor": "Duque Domingo, Jaime",
+          "titulo": "Integración de cámaras de rango y redes inalámbricas para la localización de personas en entornos estructurados",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-J-duque"
+        },
+        {
+          "autor": "Fernández Guzmán, Fernando Benjamín",
+          "titulo": "Robust and adaptive discrete-time control for autonomous off-road vehicles",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-F-fernandez"
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "publicaciones": [
+        {
+          "autor": "Galán Vicente, Daniel",
+          "titulo": "Towards the open experimentation with interactive laboratories",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-D-galan"
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "publicaciones": [
+        {
+          "autor": "Pérez Morago, Héctor José",
+          "titulo": "BDD algorithms to perform hard analysis operations on variability models",
+          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-H-perez"
+        }
+      ]
+    }
+  ]
+}
 
