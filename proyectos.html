@@ -1,16 +1,44 @@
 ---
 layout: default
-title: Proyectos UNED 
+title: Proyectos UNED
 ---
 
-<h1>Proyectos</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos UNED</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<h2>Proyectos Vigentes</h2>
-<ul id="proyectos-vigentes"></ul>
+<!-- Menú de navegación -->
+<nav>
+  <ul>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="publicaciones.html">Publicaciones</a></li>
+    <li><a href="repositorios.html">Herramientas</a></li>
+    <li><a href="cosy.html">Proyecto acogedor</a></li>
+    <li><a href="tesis.html">Tesis</a></li>
+    <li><a href="localizacion.html">Localización</a></li>
+    <li><a href="aboutus.html">Sobre nosotros</a></li>
+  </ul>
+</nav>
 
-<h2>Proyectos Finalizados</h2>
-<div id="proyectos-finalizados"></div>
+<!-- Contenido principal -->
+<main>
+  <h1>Proyectos</h1>
 
+  <h2>Proyectos Vigentes</h2>
+  <ul id="proyectos-vigentes"></ul>
+
+  <h2>Proyectos Finalizados</h2>
+  <div id="proyectos-finalizados"></div>
+
+</main>
+
+<!-- Script para cargar los proyectos desde el archivo JSON -->
 <script>
 fetch('data.json')
   .then(res => res.json())
@@ -42,3 +70,6 @@ fetch('data.json')
     });
 });
 </script>
+
+</body>
+</html>
