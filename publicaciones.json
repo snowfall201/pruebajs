@@ -85,13 +85,13 @@
         },
         {
           "titulo": "Circuit Testing Based on Fuzzy Sampling with BDD Bases",
-          "link": "/documentos/6444ee1148c3090deaa2665b",
-          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
+          "link": "/documentos/63f71b03eb6b7c68e7a2481c",
+          "revista": "Proceedings of the 56th Hawaii International Conference on System Sciences"
         },
         {
           "titulo": "Circuit Testing Based on Fuzzy Sampling with BDD Bases",
-          "link": "/documentos/63f71b03eb6b7c68e7a2481c",
-          "revista": "Proceedings of the 56th Hawaii International Conference on System Sciences"
+          "link": "/documentos/6444ee1148c3090deaa2665b",
+          "revista": "Proceedings of the Annual Hawaii International Conference on System Sciences"
         },
         {
           "titulo": "FLAMA: A collaborative effort to build a new framework for the automated analysis of feature models",
@@ -112,6 +112,11 @@
           "titulo": "On the Supervision of Peer Assessment Tasks: An Efficient Instructor Guidance Technique",
           "link": "/documentos/65351ba07bba975a1caafe1f",
           "revista": "IEEE Transactions on Learning Technologies, Vol. 16, Núm. 6, pp. 926-939"
+        },
+        {
+          "titulo": "Scalable Sampling of Highly-Configurable Systems: Generating Random Instances of the Linux Kernel",
+          "link": "/documentos/682383fb2879483fcf440969",
+          "revista": "Actas de las XXVII Jornadas de Ingeniería del Software y Bases de Datos (JISBD 2023)"
         },
         {
           "titulo": "Teaching automation with Factory I/O under a competency-based curriculum",
@@ -335,13 +340,13 @@
         },
         {
           "titulo": "A kconfig translation to logic with one-way validation system",
-          "link": "/documentos/61ff08d813638e1cfc2794e2",
-          "revista": "ACM International Conference Proceeding Series"
+          "link": "/documentos/61a5243037d5b2018338e33a",
+          "revista": "PervasiveHealth: Pervasive Computing Technologies for Healthcare"
         },
         {
           "titulo": "A kconfig translation to logic with one-way validation system",
-          "link": "/documentos/61a5243037d5b2018338e33a",
-          "revista": "PervasiveHealth: Pervasive Computing Technologies for Healthcare"
+          "link": "/documentos/61ff08d813638e1cfc2794e2",
+          "revista": "ACM International Conference Proceeding Series"
         },
         {
           "titulo": "A proposal of self-tuning controllers for path following of agricultural skid-steering robots",
