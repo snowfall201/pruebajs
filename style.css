@@ -75,3 +75,69 @@ nav ul li a:hover {
   background-color: #024fa2;
 }
 
+/* Estilos para researchers */
+.researchers {
+  margin: 3rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.researchers h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eaeaea;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.researcher-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.researcher-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.researcher-card:hover {
+  transform: scale(1.03);
+}
+
+.researcher-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.researcher-card .name {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.researcher-card .name a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.researcher-card .name a:hover {
+  text-decoration: underline;
+}
+
+.researcher-card .role {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
