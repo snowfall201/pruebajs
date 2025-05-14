@@ -1,11 +1,10 @@
 @import "{{ site.theme }}";
 
-/*Estilos index*/
  /*Estilos index*/
 nav {
   background-color: #333;
   padding: 10px 0;
-  margin-bottom: 20px; /* Espacio pequeño entre el nav y el siguiente contenido */
+  margin-bottom: 20px; 
 }
 
 nav ul {
@@ -75,3 +74,71 @@ nav ul li a:hover {
   background-color: #024fa2;
 }
 
+/* Estilos reseachers */
+
+.researchers {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.researchers h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.researcher-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.researcher-card {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.researcher-card:hover {
+  transform: scale(1.03);
+}
+
+.researcher-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.researcher-card .name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.researcher-card .name a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.researcher-card .name a:hover {
+  text-decoration: underline;
+}
+
+.researcher-card .role {
+  font-size: 0.9rem;
+  color: #6a737d;
+}
+
+.researcher-resp .researcher-card {
+  border: 2px solid #28a745;
+  background-color: #f0fff4;
+}
