@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tesis Doctorales UNED
+title: Theses UNED
 ---
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ title: Tesis Doctorales UNED
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tesis Doctorales UNED</title>
+  <title>ThesesUNED</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,34 +27,41 @@ title: Tesis Doctorales UNED
 </nav>
 
 <main>
-  <h1>Tesis Doctorales</h1>
-  <div id="contenedor-tesis"></div>
+  <h1>Theses</h1>
+  <div id="theses-container"></div>
 </main>
 
 <script>
-fetch('tesis_doctorales.json')
+// This assumes you have a data file named 'theses.json' containing the JSON structure you requested.
+fetch('theses.json')
   .then(res => res.json())
   .then(data => {
-    const contenedor = document.getElementById('contenedor-tesis');
+    const container = document.getElementById('theses-container');
 
-    data.tesis.forEach(({ year, publicaciones }) => {
+    data.thesesByYear.forEach(({ year, theses }) => {
+      // Create year heading
       const h2 = document.createElement('h2');
-      h2.textContent = `Tesis defendidas en ${year}`;
-      contenedor.appendChild(h2);
+      h2.textContent = `Theses from ${year}`;
+      container.appendChild(h2);
 
+      // Create list for theses of this year
       const ul = document.createElement('ul');
-      publicaciones.forEach(p => {
+
+      theses.forEach(({ title, author, director }) => {
         const li = document.createElement('li');
-        let contenido = `<strong>${p.titulo}</strong><br>Autor/a: ${p.autor}`;
-        if (p.link) {
-          contenido = `<a href="${p.link}" target="_blank"><strong>${p.titulo}</strong></a><br>Autor/a: ${p.autor}`;
-        }
-        li.innerHTML = contenido;
+
+        // Compose inner HTML: title (bold), author, director
+        li.innerHTML = `<strong>${title}</strong><br>Author: ${author}<br>Directed by: ${director}`;
         ul.appendChild(li);
       });
 
-      contenedor.appendChild(ul);
+      container.appendChild(ul);
     });
+  })
+  .catch(error => {
+    console.error('Error loading theses data:', error);
+    const container = document.getElementById('theses-container');
+    container.textContent = 'Failed to load theses data.';
   });
 </script>
 
