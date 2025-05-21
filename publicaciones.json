@@ -335,11 +335,6 @@
         },
         {
           "titulo": "A kconfig translation to logic with one-way validation system",
-          "link": "/documentos/61ff08d813638e1cfc2794e2",
-          "revista": "ACM International Conference Proceeding Series"
-        },
-        {
-          "titulo": "A kconfig translation to logic with one-way validation system",
           "link": "/documentos/5fa07c02299952440aae2fe3",
           "revista": "Systems and Software Product Lines Conference - ACM International Conference Proceeding Series"
         },
@@ -347,6 +342,11 @@
           "titulo": "A kconfig translation to logic with one-way validation system",
           "link": "/documentos/61a5243037d5b2018338e33a",
           "revista": "PervasiveHealth: Pervasive Computing Technologies for Healthcare"
+        },
+        {
+          "titulo": "A kconfig translation to logic with one-way validation system",
+          "link": "/documentos/61ff08d813638e1cfc2794e2",
+          "revista": "ACM International Conference Proceeding Series"
         },
         {
           "titulo": "A proposal of self-tuning controllers for path following of agricultural skid-steering robots",
@@ -605,13 +605,13 @@
         },
         {
           "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
-          "link": "/documentos/634ee0c048ee3619a115dcd5",
-          "revista": "Frontiers in Artificial Intelligence and Applications"
+          "link": "/documentos/64086026d8f6e90129f3245c",
+          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
         },
         {
           "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
-          "link": "/documentos/64086026d8f6e90129f3245c",
-          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
+          "link": "/documentos/634ee0c048ee3619a115dcd5",
+          "revista": "Frontiers in Artificial Intelligence and Applications"
         },
         {
           "titulo": "Control PID basado en eventos periódico para sistemas de control de red",

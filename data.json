@@ -177,18 +177,18 @@
         "year": 2016,
         "proyectos": [
           {
-            "titulo": "Laboratorios Online de Energías Renovables",
-            "responsables": [
-              "LUIS DE LA TORRE CUBILLO"
-            ],
-            "link": "/proyectos/1094346/detalle"
-          },
-          {
             "titulo": "Control distribuido basado en eventos",
             "responsables": [
               "MARIA GUINALDO LOSADA"
             ],
             "link": "/proyectos/1094280/detalle"
+          },
+          {
+            "titulo": "Laboratorios Online de Energías Renovables",
+            "responsables": [
+              "LUIS DE LA TORRE CUBILLO"
+            ],
+            "link": "/proyectos/1094346/detalle"
           }
         ]
       },
