@@ -3,189 +3,220 @@
     {
       "titulo": "Modelo combinado basado en redes neuronales recurrentes y redes convolucionales de grafos para la predicción de series temporales económicas",
       "autor": "LAZCANO DE ROJAS, ANA",
-      "directores": ["PEDRO JAVIER HERRERA CARO"]
+      "directores": ["PEDRO JAVIER HERRERA CARO"],
+      "link": "/tesis/Modelo-combinado-basado-en-redes-neuronales-recurrentes-y-redes-convolucionales-de-grafos-para-la-prediccion-de-series-temporales-economicas"
     },
     {
       "titulo": "Alineamiento de paradigmas de modelado aplicado a orientación a objetos y ontologías",
       "autor": "LARHRIB ES-SALEHY, MOHAMED",
-      "directores": ["JUAN JOSE ESCRIBANO RODENAS", "CARLOS CERRADA SOMOLINOS"]
+      "directores": ["JUAN JOSE ESCRIBANO RODENAS", "CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Alineamiento-de-paradigmas-de-modelado-aplicado-a-orientacion-a-objetos-y-ontologias"
     }
   ],
   "2021": [
     {
       "titulo": "Automated support for battle operational-strategic decision-making",
       "autor": "MINGUELA CASTRO, GERARDO",
-      "directores": ["RUBEN HERADIO GIL", "CARLOS CERRADA SOMOLINOS"]
+      "directores": ["RUBEN HERADIO GIL", "CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Automated-support-for-battle-operational-strategic-decision-making"
     },
     {
       "titulo": "MQTT-SCACAUTH: Esquema de seguridad para el protocolo MQTT y su uso en el entorno del IIoT",
       "autor": "BUETAS SANJUAN, EDUARADO",
-      "directores": ["ISMAEL ABAD CARDIEL", "JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["ISMAEL ABAD CARDIEL", "JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/MQTT-SCACAUTH-Esquema-de-seguridad-para-el-protocolo-MQTT-y-su-uso-en-el-entorno-del-IIoT"
     }
   ],
   "2020": [
     {
       "titulo": "Supporting the Statistical Analysis of Variability Models by Processing Binary Decision Diagrams",
       "autor": "Bra Gutiérrez, Sergio",
-      "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"]
+      "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"],
+      "link": "/tesis/Supporting-the-Statistical-Analysis-of-Variability-Models-by-Processing-Binary-Decision-Diagrams"
     },
     {
       "titulo": "Metodología para la secuenciación de procesos ITIL: Aplicación al caso de una PYME",
       "autor": "Rubio Sánchez, Juan Luis",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "MARIA MAGDALENA ARCILLA COBIAN"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "MARIA MAGDALENA ARCILLA COBIAN"],
+      "link": "/tesis/Metodologia-para-la-secuenciacion-de-procesos-ITIL-Aplicacion-al-caso-de-una-PYME"
     },
     {
       "titulo": "Toma de decisiones en grupo en ambientes multicriterio, heterogéneos y lingüísticos",
       "autor": "CALLEJAS, EDWIN ALBERTO",
-      "directores": ["FRANCISCO JAVIER CABRERIZO LORITE", "CARLOS CERRADA SOMOLINOS"]
+      "directores": ["FRANCISCO JAVIER CABRERIZO LORITE", "CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Toma-de-decisiones-en-grupo-en-ambientes-multicriterio-heterogeneos-y-linguisticos"
     }
   ],
   "2019": [
     {
       "titulo": "High-Perfomance Algorithms for Real-Time GPGPU Volumetric Cloud Rendering from an Enhanced Physical-Math Abstraction Approach",
       "autor": "JIMÉNEZ DE PARGA BERNAL QUIRÓS, CARLOS",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "SEBASTIAN RUBEN GOMEZ PALOMO"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "SEBASTIAN RUBEN GOMEZ PALOMO"],
+      "link": "/tesis/High-Perfomance-Algorithms-for-Real-Time-GPGPU-Volumetric-Cloud-Rendering-from-an-Enhanced-Physical-Math-Abstraction-Approach"
     }
   ],
   "2018": [
     {
       "titulo": "Robust and adaptive discrete-time control for autonomous off-road vehicles",
       "autor": "FERNÁNDEZ GUZMÁN, FERNANDO BENJAMÍN",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "PEDRO JAVIER HERRERA CARO"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "PEDRO JAVIER HERRERA CARO"],
+      "link": "/tesis/Robust-and-adaptive-discrete-time-control-for-autonomous-off-road-vehicles"
     },
     {
       "titulo": "Integración de cámaras de rango y redes inalámbricas para la localicación de personas en entornos estructurados",
       "autor": "DUQUE DOMINGO, JAIME",
-      "directores": ["CARLOS CERRADA SOMOLINOS", "ENRIQUE VALERO RODRIGUEZ"]
+      "directores": ["CARLOS CERRADA SOMOLINOS", "ENRIQUE VALERO RODRIGUEZ"],
+      "link": "/tesis/Integracion-de-camaras-de-rango-y-redes-inalambricas-para-la-localicacion-de-personas-en-entornos-estructurados"
     },
     {
       "titulo": "Codificación eficiente de modelos de configuración utilizando BDD'S",
       "autor": "Béan Castelló, Roberto",
-      "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"]
+      "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"],
+      "link": "/tesis/Codificacion-eficiente-de-modelos-de-configuracion-utilizando-BDDS"
     }
   ],
   "2017": [
     {
       "titulo": "Towards the open experimentation with interactive laboratories",
       "autor": "GALÁN VICENTE, DANIEL",
-      "directores": ["RUBEN HERADIO GIL", "SEBASTIAN DORMIDO BENCOMO"]
+      "directores": ["RUBEN HERADIO GIL", "SEBASTIAN DORMIDO BENCOMO"],
+      "link": "/tesis/Towards-the-open-experimentation-with-interactive-laboratories"
     }
   ],
   "2016": [
     {
       "titulo": "DGL: Lenguaje de Diseño Genérico, Multi-paradigmático y Ejecutable",
       "autor": "Abad Cardiel, Ismael",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "EUGENIO ARELLANO ALAMEDA"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "EUGENIO ARELLANO ALAMEDA"],
+      "link": "/tesis/DGL-Lenguaje-de-Diseno-Generico-Multi-paradigmatico-y-Ejecutable"
     }
   ],
   "2015": [
     {
       "titulo": "BDD algorithms to perform hard analysis operations on variability models",
       "autor": "Pérez Morago, Héctor José",
-      "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"]
+      "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"],
+      "link": "/tesis/BDD-algorithms-to-perform-hard-analysis-operations-on-variability-models"
     }
   ],
   "2013": [
     {
       "titulo": "Generación automática de modelos 3D con escáneres y tecnologías inteligentes",
       "autor": "Valero Rodríguez, Enrique",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Generacion-automatica-de-modelos-3D-con-escanees-y-tecnologias-inteligentes"
     }
   ],
   "2011": [
     {
       "titulo": "Técnicas de relleno de huecos en superficies adquiridas mediante escáneres 3D",
       "autor": "Pérez Hernández, Emiliano",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Tecnicas-de-relleno-de-huecos-en-superficies-adquiridas-mediante-escanees-3D"
     },
     {
       "titulo": "Desarrollo de un servicio de notificación de cambios en una base de datos de gestión de la configuración mediante programación generativa",
       "autor": "Coz, José Ramón",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "RUBEN HERADIO GIL"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "RUBEN HERADIO GIL"],
+      "link": "/tesis/Desarrollo-de-un-servicio-de-notificacion-de-cambios-en-una-base-de-datos-de-gestion-de-la-configuracion-mediante-programacion-generativa"
     },
     {
       "titulo": "Estrategia de seguridad informática por capas, aplicando el concepto de operación militar por acción retardante",
       "autor": "Corletti Estrada, Alejandro",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "JOSE FELIX ESTIVARIZ LOPEZ"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "JOSE FELIX ESTIVARIZ LOPEZ"],
+      "link": "/tesis/Estrategia-de-seguridad-informatica-por-capas-aplicando-el-concepto-de-operacion-militar-por-accion-retardante"
     },
     {
       "titulo": "Metamodelo para la implantación de la gestión financiera de servicios tic en las medianas, pequeñas y micro empresas",
       "autor": "Arcilla Cobián, María Magdalena",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Metamodelo-para-la-implantacion-de-la-gestion-financiera-de-servicios-tic-en-las-medianas-pequenas-y-micro-empresas"
     }
   ],
   "2007": [
     {
       "titulo": "Metodología de desarrollo de software basada en el paradigma generativo. Realización mediante la transformación de ejemplares",
       "autor": "Heradio Gil, Rubén",
-      "directores": ["JOSE FELIX ESTIVARIZ LOPEZ", "JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE FELIX ESTIVARIZ LOPEZ", "JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Metodologia-de-desarrollo-de-software-basada-en-el-paradigma-generativo-Realizacion-mediante-la-transformacion-de-ejemplares"
     }
   ],
   "2005": [
     {
       "titulo": "Modelado tridimensional de vistas parciales para objetos con forma libre orientado a tareas de visión por computador.",
       "autor": "Salamanca Miño, Santiago",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Modelado-tridimensional-de-vistas-parciales-para-objetos-con-forma-libre-orientado-a-tareas-de-vision-por-computador"
     }
   ],
   "2003": [
     {
       "titulo": "Estrategias para el diseño de plataformas de teleoperación a través de Internet",
       "autor": "Escribano Ródenas, Juan José",
-      "directores": ["CARLOS CERRADA SOMOLINOS", "SEBASTIAN RUBEN GOMEZ PALOMO"]
+      "directores": ["CARLOS CERRADA SOMOLINOS", "SEBASTIAN RUBEN GOMEZ PALOMO"],
+      "link": "/tesis/Estrategias-para-el-diseno-de-plataformas-de-teleoperacion-a-traves-de-Internet"
     }
   ],
   "2001": [
     {
       "titulo": "Modelado y control de sistemas caracterizados por ecuaciones íntegro-diferenciales de orden fraccional",
       "autor": "Vinagre Jara, Blas Manuel",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Modelado-y-control-de-sistemas-caracterizados-por-ecuaciones-integro-diferenciales-de-orden-fraccional"
     }
   ],
   "1999": [
     {
       "titulo": "Modelado dinámico y control de un robot flexible de tres grados de libertad",
       "autor": "Somolinos Sánchez, José Andrés",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Modelado-dinamico-y-control-de-un-robot-flexible-de-tres-grados-de-libertad"
     },
     {
       "titulo": "Era: metodología de diseño de sistemas de información",
       "autor": "Arellano Alameda, Eugenio",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Era-metodologia-de-diseno-de-sistemas-de-informacion"
     },
     {
       "titulo": "Estrategias de control para el seguimiento de objetos con movimiento tridimensional: aplicación a un sistema robótico con percepción visual",
       "autor": "Bachiller Mayoral, Margarita",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Estrategias-de-control-para-el-seguimiento-de-objetos-con-movimiento-tridimensional-aplicacion-a-un-sistema-robotico-con-percepcion-visual"
     }
   ],
   "1997": [
     {
       "titulo": "Sistema de control robusto para robots flexibles de un grado de libertad con carga variable en el extremo",
       "autor": "Estívariz López, José Félix",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Sistema-de-control-robuusto-para-robots-flexibles-de-un-grado-de-libertad-con-carga-variable-en-el-extremo"
     },
     {
       "titulo": "Diseño de algoritmos para la representación cinemática de sólidos articulados en entornos virtuales: aplicación a la telepresencia",
       "autor": "Gómez Palomo, Sebastián Rubén",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Diseno-de-algoritmos-para-la-representacion-cinematica-de-solidos-articulados-en-entornos-virtuales-aplicacion-a-la-telepresencia"
     },
     {
       "titulo": "Aportaciones a la calibración de cámaras con distorsión geométrica: aplicación al control con realimentación visual",
       "autor": "González Cid, Yolanda",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Aportaciones-a-la-calibracion-de-camaras-con-distorsion-geometrica-aplicacion-al-control-con-realimentacion-visual"
     },
     {
       "titulo": "Modelado 3D de formas libres orientado a reconocimiento y posicionamiento de objetos tridimensionales",
       "autor": "Adán Oliver, Antonio",
-      "directores": ["CARLOS CERRADA SOMOLINOS"]
+      "directores": ["CARLOS CERRADA SOMOLINOS"],
+      "link": "/tesis/Modelado-3D-de-formas-libres-orientado-a-reconocimiento-y-posicionamiento-de-objetos-tridimensionales"
     }
   ],
   "1991": [
     {
       "titulo": "Derivacion deductiva de programas funcionales con patrones",
       "autor": "Velázquez Iturbide, Jesús Angel",
-      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"]
+      "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
+      "link": "/tesis/Derivacion-deductiva-de-programas-funcionales-con-patrones"
     }
   ]
 }
