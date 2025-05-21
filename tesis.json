@@ -4,13 +4,13 @@
       "titulo": "Modelo combinado basado en redes neuronales recurrentes y redes convolucionales de grafos para la predicción de series temporales económicas",
       "autor": "LAZCANO DE ROJAS, ANA",
       "directores": ["PEDRO JAVIER HERRERA CARO"],
-      "link": "/tesis/Modelo-combinado-basado-en-redes-neuronales-recurrentes-y-redes-convolucionales-de-grafos-para-la-prediccion-de-series-temporales-economicas"
+      "link": "https://portalcientifico.uned.es/documentos/649dc42ba3a4af6c6b6260f4"
     },
     {
       "titulo": "Alineamiento de paradigmas de modelado aplicado a orientación a objetos y ontologías",
       "autor": "LARHRIB ES-SALEHY, MOHAMED",
       "directores": ["JUAN JOSE ESCRIBANO RODENAS", "CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Alineamiento-de-paradigmas-de-modelado-aplicado-a-orientacion-a-objetos-y-ontologias"
+      "link": "https://portalcientifico.uned.es/documentos/65ea0e488aef32320667f038"
     }
   ],
   "2021": [
@@ -18,13 +18,13 @@
       "titulo": "Automated support for battle operational-strategic decision-making",
       "autor": "MINGUELA CASTRO, GERARDO",
       "directores": ["RUBEN HERADIO GIL", "CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Automated-support-for-battle-operational-strategic-decision-making"
+      "link": "https://portalcientifico.uned.es/documentos/61fa20da7ef7e91a694b7b6a"
     },
     {
       "titulo": "MQTT-SCACAUTH: Esquema de seguridad para el protocolo MQTT y su uso en el entorno del IIoT",
       "autor": "BUETAS SANJUAN, EDUARADO",
       "directores": ["ISMAEL ABAD CARDIEL", "JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/MQTT-SCACAUTH-Esquema-de-seguridad-para-el-protocolo-MQTT-y-su-uso-en-el-entorno-del-IIoT"
+      "link": "https://portalcientifico.uned.es/documentos/61fa20da7ef7e91a694b7b7c"
     }
   ],
   "2020": [
@@ -32,19 +32,19 @@
       "titulo": "Supporting the Statistical Analysis of Variability Models by Processing Binary Decision Diagrams",
       "autor": "Bra Gutiérrez, Sergio",
       "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"],
-      "link": "/tesis/Supporting-the-Statistical-Analysis-of-Variability-Models-by-Processing-Binary-Decision-Diagrams"
+      "link": "https://portalcientifico.uned.es/documentos/5fb5ca152999527339681e04"
     },
     {
       "titulo": "Metodología para la secuenciación de procesos ITIL: Aplicación al caso de una PYME",
       "autor": "Rubio Sánchez, Juan Luis",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "MARIA MAGDALENA ARCILLA COBIAN"],
-      "link": "/tesis/Metodologia-para-la-secuenciacion-de-procesos-ITIL-Aplicacion-al-caso-de-una-PYME"
+      "link": "https://portalcientifico.uned.es/documentos/5fb5ca142999527339681df4"
     },
     {
       "titulo": "Toma de decisiones en grupo en ambientes multicriterio, heterogéneos y lingüísticos",
       "autor": "CALLEJAS, EDWIN ALBERTO",
       "directores": ["FRANCISCO JAVIER CABRERIZO LORITE", "CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Toma-de-decisiones-en-grupo-en-ambientes-multicriterio-heterogeneos-y-linguisticos"
+      "link": "https://portalcientifico.uned.es/documentos/61f044fc231cc058a9f4e9bb"
     }
   ],
   "2019": [
@@ -52,7 +52,7 @@
       "titulo": "High-Perfomance Algorithms for Real-Time GPGPU Volumetric Cloud Rendering from an Enhanced Physical-Math Abstraction Approach",
       "autor": "JIMÉNEZ DE PARGA BERNAL QUIRÓS, CARLOS",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "SEBASTIAN RUBEN GOMEZ PALOMO"],
-      "link": "/tesis/High-Perfomance-Algorithms-for-Real-Time-GPGPU-Volumetric-Cloud-Rendering-from-an-Enhanced-Physical-Math-Abstraction-Approach"
+      "link": "https://portalcientifico.uned.es/documentos/5dca9a9b2999525a490686bb"
     }
   ],
   "2018": [
@@ -60,19 +60,19 @@
       "titulo": "Robust and adaptive discrete-time control for autonomous off-road vehicles",
       "autor": "FERNÁNDEZ GUZMÁN, FERNANDO BENJAMÍN",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "PEDRO JAVIER HERRERA CARO"],
-      "link": "/tesis/Robust-and-adaptive-discrete-time-control-for-autonomous-off-road-vehicles"
+      "link": "https://portalcientifico.uned.es/documentos/5ce7499c29995267a5537088"
     },
     {
       "titulo": "Integración de cámaras de rango y redes inalámbricas para la localicación de personas en entornos estructurados",
       "autor": "DUQUE DOMINGO, JAIME",
       "directores": ["CARLOS CERRADA SOMOLINOS", "ENRIQUE VALERO RODRIGUEZ"],
-      "link": "/tesis/Integracion-de-camaras-de-rango-y-redes-inalambricas-para-la-localicacion-de-personas-en-entornos-estructurados"
+      "link": "https://portalcientifico.uned.es/documentos/5d399a66299952068446756b"
     },
     {
       "titulo": "Codificación eficiente de modelos de configuración utilizando BDD'S",
       "autor": "Béan Castelló, Roberto",
       "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"],
-      "link": "/tesis/Codificacion-eficiente-de-modelos-de-configuracion-utilizando-BDDS"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc8e29995274fc8e8f6e"
     }
   ],
   "2017": [
@@ -80,7 +80,7 @@
       "titulo": "Towards the open experimentation with interactive laboratories",
       "autor": "GALÁN VICENTE, DANIEL",
       "directores": ["RUBEN HERADIO GIL", "SEBASTIAN DORMIDO BENCOMO"],
-      "link": "/tesis/Towards-the-open-experimentation-with-interactive-laboratories"
+      "link": "https://portalcientifico.uned.es/documentos/5c13b1d7c8914b6ed377785e"
     }
   ],
   "2016": [
@@ -88,7 +88,7 @@
       "titulo": "DGL: Lenguaje de Diseño Genérico, Multi-paradigmático y Ejecutable",
       "autor": "Abad Cardiel, Ismael",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "EUGENIO ARELLANO ALAMEDA"],
-      "link": "/tesis/DGL-Lenguaje-de-Diseno-Generico-Multi-paradigmatico-y-Ejecutable"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc8d29995274fc8e8df7"
     }
   ],
   "2015": [
@@ -96,7 +96,7 @@
       "titulo": "BDD algorithms to perform hard analysis operations on variability models",
       "autor": "Pérez Morago, Héctor José",
       "directores": ["RUBEN HERADIO GIL", "DAVID JOSE FERNANDEZ AMOROS"],
-      "link": "/tesis/BDD-algorithms-to-perform-hard-analysis-operations-on-variability-models"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc8e29995274fc8e8f05"
     }
   ],
   "2013": [
@@ -104,7 +104,7 @@
       "titulo": "Generación automática de modelos 3D con escáneres y tecnologías inteligentes",
       "autor": "Valero Rodríguez, Enrique",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Generacion-automatica-de-modelos-3D-con-escanees-y-tecnologias-inteligentes"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6eb2999520e90d058db"
     }
   ],
   "2011": [
@@ -112,25 +112,25 @@
       "titulo": "Técnicas de relleno de huecos en superficies adquiridas mediante escáneres 3D",
       "autor": "Pérez Hernández, Emiliano",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Tecnicas-de-relleno-de-huecos-en-superficies-adquiridas-mediante-escanees-3D"
+      "link": "https://portalcientifico.uned.es/documentos/5da997a62999527bba178941"
     },
     {
       "titulo": "Desarrollo de un servicio de notificación de cambios en una base de datos de gestión de la configuración mediante programación generativa",
       "autor": "Coz, José Ramón",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "RUBEN HERADIO GIL"],
-      "link": "/tesis/Desarrollo-de-un-servicio-de-notificacion-de-cambios-en-una-base-de-datos-de-gestion-de-la-configuracion-mediante-programacion-generativa"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc7d29995274fc8e774d"
     },
     {
       "titulo": "Estrategia de seguridad informática por capas, aplicando el concepto de operación militar por acción retardante",
       "autor": "Corletti Estrada, Alejandro",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS", "JOSE FELIX ESTIVARIZ LOPEZ"],
-      "link": "/tesis/Estrategia-de-seguridad-informatica-por-capas-aplicando-el-concepto-de-operacion-militar-por-accion-retardante"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc7f29995274fc8e7921"
     },
     {
       "titulo": "Metamodelo para la implantación de la gestión financiera de servicios tic en las medianas, pequeñas y micro empresas",
       "autor": "Arcilla Cobián, María Magdalena",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Metamodelo-para-la-implantacion-de-la-gestion-financiera-de-servicios-tic-en-las-medianas-pequenas-y-micro-empresas"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc7a29995274fc8e73ab"
     }
   ],
   "2007": [
@@ -138,7 +138,7 @@
       "titulo": "Metodología de desarrollo de software basada en el paradigma generativo. Realización mediante la transformación de ejemplares",
       "autor": "Heradio Gil, Rubén",
       "directores": ["JOSE FELIX ESTIVARIZ LOPEZ", "JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Metodologia-de-desarrollo-de-software-basada-en-el-paradigma-generativo-Realizacion-mediante-la-transformacion-de-ejemplares"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc7a29995274fc8e736d"
     }
   ],
   "2005": [
@@ -146,7 +146,7 @@
       "titulo": "Modelado tridimensional de vistas parciales para objetos con forma libre orientado a tareas de visión por computador.",
       "autor": "Salamanca Miño, Santiago",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Modelado-tridimensional-de-vistas-parciales-para-objetos-con-forma-libre-orientado-a-tareas-de-vision-por-computador"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e52999520e90d04e43"
     }
   ],
   "2003": [
@@ -154,7 +154,7 @@
       "titulo": "Estrategias para el diseño de plataformas de teleoperación a través de Internet",
       "autor": "Escribano Ródenas, Juan José",
       "directores": ["CARLOS CERRADA SOMOLINOS", "SEBASTIAN RUBEN GOMEZ PALOMO"],
-      "link": "/tesis/Estrategias-para-el-diseno-de-plataformas-de-teleoperacion-a-traves-de-Internet"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc7b29995274fc8e740b"
     }
   ],
   "2001": [
@@ -162,7 +162,7 @@
       "titulo": "Modelado y control de sistemas caracterizados por ecuaciones íntegro-diferenciales de orden fraccional",
       "autor": "Vinagre Jara, Blas Manuel",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Modelado-y-control-de-sistemas-caracterizados-por-ecuaciones-integro-diferenciales-de-orden-fraccional"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e82999520e90d0535d"
     }
   ],
   "1999": [
@@ -170,19 +170,19 @@
       "titulo": "Modelado dinámico y control de un robot flexible de tres grados de libertad",
       "autor": "Somolinos Sánchez, José Andrés",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Modelado-dinamico-y-control-de-un-robot-flexible-de-tres-grados-de-libertad"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e72999520e90d05193"
     },
     {
       "titulo": "Era: metodología de diseño de sistemas de información",
       "autor": "Arellano Alameda, Eugenio",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Era-metodologia-de-diseno-de-sistemas-de-informacion"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc7929995274fc8e72cc"
     },
     {
       "titulo": "Estrategias de control para el seguimiento de objetos con movimiento tridimensional: aplicación a un sistema robótico con percepción visual",
       "autor": "Bachiller Mayoral, Margarita",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Estrategias-de-control-para-el-seguimiento-de-objetos-con-movimiento-tridimensional-aplicacion-a-un-sistema-robotico-con-percepcion-visual"
+      "link": "https://portalcientifico.uned.es/documentos/5f63fc8229995274fc8e7e18"
     }
   ],
   "1997": [
@@ -190,25 +190,25 @@
       "titulo": "Sistema de control robusto para robots flexibles de un grado de libertad con carga variable en el extremo",
       "autor": "Estívariz López, José Félix",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Sistema-de-control-robuusto-para-robots-flexibles-de-un-grado-de-libertad-con-carga-variable-en-el-extremo"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e72999520e90d051e6"
     },
     {
       "titulo": "Diseño de algoritmos para la representación cinemática de sólidos articulados en entornos virtuales: aplicación a la telepresencia",
       "autor": "Gómez Palomo, Sebastián Rubén",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Diseno-de-algoritmos-para-la-representacion-cinematica-de-solidos-articulados-en-entornos-virtuales-aplicacion-a-la-telepresencia"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e72999520e90d051fb"
     },
     {
       "titulo": "Aportaciones a la calibración de cámaras con distorsión geométrica: aplicación al control con realimentación visual",
       "autor": "González Cid, Yolanda",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Aportaciones-a-la-calibracion-de-camaras-con-distorsion-geometrica-aplicacion-al-control-con-realimentacion-visual"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e72999520e90d051de"
     },
     {
       "titulo": "Modelado 3D de formas libres orientado a reconocimiento y posicionamiento de objetos tridimensionales",
       "autor": "Adán Oliver, Antonio",
       "directores": ["CARLOS CERRADA SOMOLINOS"],
-      "link": "/tesis/Modelado-3D-de-formas-libres-orientado-a-reconocimiento-y-posicionamiento-de-objetos-tridimensionales"
+      "link": "https://portalcientifico.uned.es/documentos/5d5ba6e72999520e90d051f3"
     }
   ],
   "1991": [
@@ -216,7 +216,7 @@
       "titulo": "Derivacion deductiva de programas funcionales con patrones",
       "autor": "Velázquez Iturbide, Jesús Angel",
       "directores": ["JOSE ANTONIO CERRADA SOMOLINOS"],
-      "link": "/tesis/Derivacion-deductiva-de-programas-funcionales-con-patrones"
+      "link": "https://portalcientifico.uned.es/documentos/5d39994729995206844406ae"
     }
   ]
 }
