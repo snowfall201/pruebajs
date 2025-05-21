@@ -23,73 +23,59 @@ import * as cheerio from 'cheerio';
       await new Promise((r) => setTimeout(r, 1000));
     }
 
-    // Obtener contenido ya cargado
     const html = await page.content();
     await browser.close();
 
     const $ = cheerio.load(html);
     const tesisPorAnio = {};
+    const baseUrl = 'https://portalcientifico.uned.es';
 
-    // Cada grupo de tesis está agrupado por año
     $('.grupo-docs__grupo.agrupador-anualidad').each((_, grupo) => {
       const year = $(grupo).find('h3').text().trim();
-      if (!year) return; // Ignorar si no hay año
+      if (!year) return;
 
-      // Inicializar array para este año
       if (!tesisPorAnio[year]) tesisPorAnio[year] = [];
 
-      // Cada tesis está en li.grupo-docs__item
-      $(grupo)
-        .find('li.grupo-docs__item')
-        .each((_, item) => {
-          const titulo = $(item).find('a').first().text().trim();
+      $(grupo).find('li.grupo-docs__item').each((_, item) => {
+        const titulo = $(item).find('a').first().text().trim();
+        const link = baseUrl + ($(item).find('a').first().attr('href') || '');
 
-          // El texto debajo incluye autor y directores, pero no tiene estructura clara,
-          // así que haremos un split básico y regex para extraer datos.
-          const infoText = $(item).find('p').text().trim();
+        const infoText = $(item).find('p').text().trim();
 
-          // Intentamos extraer autor y directores del texto. 
-          // Basado en tu texto: Autor está en la primera línea, Directores en "Dirigida por ..."
-          let autor = '';
-          let directores = [];
+        let autor = '';
+        let directores = [];
 
-          // Dividir infoText en líneas para procesar
-          const lines = infoText.split('\n').map((l) => l.trim()).filter(Boolean);
+        const lines = infoText.split('\n').map(l => l.trim()).filter(Boolean);
 
-          // Autor: primera línea que no contenga "Dirigida"
-          for (const line of lines) {
-            if (!line.toLowerCase().includes('dirigida por')) {
-              autor = line;
-              break;
+        for (const line of lines) {
+          if (!line.toLowerCase().includes('dirigida por')) {
+            autor = line;
+            break;
+          }
+        }
+
+        lines.forEach(line => {
+          if (line.toLowerCase().includes('dirigida por')) {
+            const match = line.match(/Dirigida por (.+)/i);
+            if (match && match[1]) {
+              const dirsRaw = match[1].split(/ y |, /).map(d => d.trim());
+              directores.push(...dirsRaw);
             }
           }
-
-          // Buscar directores: líneas que contienen "Dirigida por"
-          lines.forEach((line) => {
-            if (line.toLowerCase().includes('dirigida por')) {
-              // Extraer nombres después de "Dirigida por"
-              const match = line.match(/Dirigida por (.+)/i);
-              if (match && match[1]) {
-                // Separar por " y " o ", "
-                const dirsRaw = match[1].split(/ y |, /).map((d) => d.trim());
-                directores.push(...dirsRaw);
-              }
-            }
-          });
-
-          tesisPorAnio[year].push({
-            titulo,
-            autor,
-            directores,
-          });
         });
+
+        tesisPorAnio[year].push({
+          titulo,
+          autor,
+          directores,
+          link
+        });
+      });
     });
 
-    // Guardar en JSON
     await fs.writeFile('tesis.json', JSON.stringify(tesisPorAnio, null, 2), 'utf-8');
     console.log('✅ Archivo tesis.json generado.');
   } catch (error) {
     console.error('Error durante el scraping:', error);
   }
 })();
-
