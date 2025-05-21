@@ -6,7 +6,7 @@ layout: default
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UNED | Tesis</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -56,7 +56,7 @@ layout: default
           data[year].forEach(tesis => {
             const li = document.createElement('li');
             li.innerHTML = `
-              <p class="titulo">${tesis.titulo}</p>
+              <p class="titulo"><a href="${tesis.link}" target="_blank" rel="noopener noreferrer">${tesis.titulo}</a></p>
               <p class="autor"><strong>Autor:</strong> ${tesis.autor}</p>
               <p class="directores"><strong>Director(es):</strong> ${tesis.directores.join(', ')}</p>
             `;
