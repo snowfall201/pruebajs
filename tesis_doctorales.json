@@ -1,102 +1,242 @@
 {
-  "tesis": [
+  "thesesByYear": [
     {
       "year": "2023",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Lazcano de Rojas, Ana",
-          "titulo": "Modelo combinado basado en redes neuronales recurrentes y redes convolucionales de grafos para la predicción de series temporales económicas",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-A-lazcano"
+          "title": "Combined model based on recurrent neural networks and graph convolutional networks for economic time series prediction",
+          "author": "ANA LAZCANO DE ROJAS",
+          "director": "PEDRO JAVIER HERRERA CARO"
         },
         {
-          "autor": "Larhrib Es-Salehy, Mohamed",
-          "titulo": "Alineamiento de paradigmas de modelado aplicado a orientación a objetos y ontologías",
-          "link": null
+          "title": "Alignment of modeling paradigms applied to object orientation and ontologies",
+          "author": "MOHAMED LARHRIB ES-SALEHY",
+          "director": "JUAN JOSE ESCRIBANO RODENAS and CARLOS CERRADA SOMOLINOS"
         }
       ]
     },
     {
       "year": "2021",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Minguela Castro, Gerardo",
-          "titulo": "Automated Support for Battle Operational-Strategic Decision-Making",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-G-minguela"
+          "title": "Automated support for battle operational-strategic decision-making",
+          "author": "GERARDO MINGUELA CASTRO",
+          "director": "RUBEN HERADIO GIL and CARLOS CERRADA SOMOLINOS"
         },
         {
-          "autor": "Buetas Sanjuan, Eduardo",
-          "titulo": "MQTT-SCACAUTH: Esquema de seguridad para el protocolo MQTT y su uso en el entorno del IIoT",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-E-buetas"
+          "title": "MQTT-SCACAUTH: Security scheme for MQTT protocol and its use in the IIoT environment",
+          "author": "EDUARDO BUETAS SANJUAN",
+          "director": "ISMAEL ABAD CARDIEL and JOSE ANTONIO CERRADA SOMOLINOS"
         }
       ]
     },
     {
       "year": "2020",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Bra Gutiérrez, Sergio",
-          "titulo": "Supporting the Statistical Analysis of Variability Models by Processing Binary Decision Diagrams",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-S-bra"
+          "title": "Supporting the Statistical Analysis of Variability Models by Processing Binary Decision Diagrams",
+          "author": "SERGIO BRA GUTIÉRREZ",
+          "director": "RUBEN HERADIO GIL and DAVID JOSE FERNANDEZ AMOROS"
         },
         {
-          "autor": "Rubio Sánchez, Juan Luis",
-          "titulo": "Metodología para la secuenciación de procesos ITIL. Aplicación al caso de una PYME",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-J-rubio"
+          "title": "Methodology for ITIL process sequencing: Application to a SME case",
+          "author": "JUAN LUIS RUBIO SÁNCHEZ",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS and MARIA MAGDALENA ARCILLA COBIAN"
         },
         {
-          "autor": "Callejas, Edwin Alberto",
-          "titulo": "Toma de decisiones en grupo en ambientes multicriterio, heterogéneos y lingüísticos",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-E-callejas"
+          "title": "Group decision making in multicriteria, heterogeneous, and linguistic environments",
+          "author": "EDWIN ALBERTO CALLEJAS",
+          "director": "FRANCISCO JAVIER CABRERIZO LORITE and CARLOS CERRADA SOMOLINOS"
         }
       ]
     },
     {
       "year": "2019",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Béan Castelló, Roberto",
-          "titulo": "Codificación eficiente de modelos de configuración utilizando BDD's",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-R-bean"
-        },
-        {
-          "autor": "Jiménez de Parga Bernal-Quiros, Carlos",
-          "titulo": "High-Performance Algorithms for Real-Time GPGPU Volumetric Cloud Rendering from an Enhanced Physical-Math Abstraction Approach",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-C-jimenez"
+          "title": "High-Performance Algorithms for Real-Time GPGPU Volumetric Cloud Rendering from an Enhanced Physical-Math Abstraction Approach",
+          "author": "CARLOS JIMÉNEZ DE PARGA BERNAL QUIRÓS",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS and SEBASTIAN RUBEN GOMEZ PALOMO"
         }
       ]
     },
     {
       "year": "2018",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Duque Domingo, Jaime",
-          "titulo": "Integración de cámaras de rango y redes inalámbricas para la localización de personas en entornos estructurados",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-J-duque"
+          "title": "Robust and adaptive discrete-time control for autonomous off-road vehicles",
+          "author": "FERNANDO BENJAMÍN FERNÁNDEZ GUZMÁN",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS and PEDRO JAVIER HERRERA CARO"
         },
         {
-          "autor": "Fernández Guzmán, Fernando Benjamín",
-          "titulo": "Robust and adaptive discrete-time control for autonomous off-road vehicles",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-F-fernandez"
+          "title": "Integration of range cameras and wireless networks for locating people in structured environments",
+          "author": "JAIME DUQUE DOMINGO",
+          "director": "CARLOS CERRADA SOMOLINOS and ENRIQUE VALERO RODRIGUEZ"
+        },
+        {
+          "title": "Efficient encoding of configuration models using BDDs",
+          "author": "ROBERTO BÉAN CASTELLÓ",
+          "director": "RUBEN HERADIO GIL and DAVID JOSE FERNANDEZ AMOROS"
         }
       ]
     },
     {
       "year": "2017",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Galán Vicente, Daniel",
-          "titulo": "Towards the open experimentation with interactive laboratories",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-D-galan"
+          "title": "Towards the open experimentation with interactive laboratories",
+          "author": "DANIEL GALÁN VICENTE",
+          "director": "RUBEN HERADIO GIL and SEBASTIAN DORMIDO BENCOMO"
         }
       ]
     },
     {
       "year": "2016",
-      "publicaciones": [
+      "theses": [
         {
-          "autor": "Pérez Morago, Héctor José",
-          "titulo": "BDD algorithms to perform hard analysis operations on variability models",
-          "link": "https://e-spacio.uned.es/fez/view/tesisuned:ED-Pg-IngSisCon-H-perez"
+          "title": "DGL: Generic, multi-paradigmatic and executable design language",
+          "author": "ISMAEL ABAD CARDIEL",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS and EUGENIO ARELLANO ALAMEDA"
+        }
+      ]
+    },
+    {
+      "year": "2015",
+      "theses": [
+        {
+          "title": "BDD algorithms to perform hard analysis operations on variability models",
+          "author": "HÉCTOR JOSÉ PÉREZ MORAGO",
+          "director": "RUBEN HERADIO GIL and DAVID JOSE FERNANDEZ AMOROS"
+        }
+      ]
+    },
+    {
+      "year": "2013",
+      "theses": [
+        {
+          "title": "Automatic generation of 3D models with scanners and intelligent technologies",
+          "author": "ENRIQUE VALERO RODRIGUEZ",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "2011",
+      "theses": [
+        {
+          "title": "Techniques for filling holes in surfaces acquired through 3D scanners",
+          "author": "EMILIANO PÉREZ HERNÁNDEZ",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        },
+        {
+          "title": "Development of a change notification service in a configuration management database using generative programming",
+          "author": "JOSÉ RAMÓN COZ",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS and RUBEN HERADIO GIL"
+        },
+        {
+          "title": "Layered IT security strategy applying the military operation concept by delaying action",
+          "author": "ALEJANDRO CORLETTI ESTRADA",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS and JOSE FELIX ESTIVARIZ LOPEZ"
+        },
+        {
+          "title": "Metamodel for implementing financial management of ICT services in medium, small and micro enterprises",
+          "author": "MARÍA MAGDALENA ARCILLA COBIÁN",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "2007",
+      "theses": [
+        {
+          "title": "Software development methodology based on the generative paradigm. Realization through specimen transformation",
+          "author": "RUBÉN HERADIO GIL",
+          "director": "JOSE FELIX ESTIVARIZ LOPEZ and JOSE ANTONIO CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "2005",
+      "theses": [
+        {
+          "title": "Three-dimensional modeling of partial views for freeform objects oriented to computer vision tasks",
+          "author": "SANTIAGO SALAMANCA MIÑO",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "2003",
+      "theses": [
+        {
+          "title": "Strategies for the design of teleoperation platforms via the Internet",
+          "author": "JUAN JOSÉ ESCRIBANO RÓDENAS",
+          "director": "CARLOS CERRADA SOMOLINOS and SEBASTIAN RUBEN GOMEZ PALOMO"
+        }
+      ]
+    },
+    {
+      "year": "2001",
+      "theses": [
+        {
+          "title": "Modeling and control of systems characterized by fractional-order integro-differential equations",
+          "author": "BLAS MANUEL VINAGRE JARA",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "1999",
+      "theses": [
+        {
+          "title": "Dynamic modeling and control of a flexible robot with three degrees of freedom",
+          "author": "JOSÉ ANDRÉS SOMOLINOS SÁNCHEZ",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS"
+        },
+        {
+          "title": "Era: methodology for the design of information systems",
+          "author": "EUGENIO ARELLANO ALAMEDA",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS"
+        },
+        {
+          "title": "Control strategies for tracking objects with three-dimensional movement: application to a robotic system with visual perception",
+          "author": "MARGARITA BACHILLER MAYORAL",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "1997",
+      "theses": [
+        {
+          "title": "Robust control system for flexible robots with one degree of freedom and variable load at the end",
+          "author": "JOSÉ FÉLIX ESTÍVARIZ LÓPEZ",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS"
+        },
+        {
+          "title": "Algorithm design for kinematic representation of articulated solids in virtual environments: application to telepresence",
+          "author": "SEBASTIÁN RUBÉN GÓMEZ PALOMO",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS"
+        },
+        {
+          "title": "Contributions to camera calibration with geometric distortion: application to control with visual feedback",
+          "author": "YOLANDA GONZÁLEZ CID",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        },
+        {
+          "title": "3D modeling of freeform shapes oriented to recognition and positioning of three-dimensional objects",
+          "author": "ANTONIO ADÁN OLIVER",
+          "director": "CARLOS CERRADA SOMOLINOS"
+        }
+      ]
+    },
+    {
+      "year": "1991",
+      "theses": [
+        {
+          "title": "Deductive derivation of functional programs with patterns",
+          "author": "JESÚS ANGEL VELÁZQUEZ ITURBIDE",
+          "director": "JOSE ANTONIO CERRADA SOMOLINOS"
         }
       ]
     }
