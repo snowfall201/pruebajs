@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Proyectos UNED
 ---
 
 <!DOCTYPE html>
@@ -8,71 +7,71 @@ title: Proyectos UNED
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proyectos UNED</title>
+  <title>UNED | Tesis</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Menú de navegación -->
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="proyectos.html">Projects</a></li>
-    <li><a href="publicaciones.html">Publications</a></li>
-    <li><a href="repositorios.html">Tools</a></li>
-    <li><a href="cosy.html">Cosy Project</a></li>
-    <li><a href="tesis.html">Thesis</a></li>
-    <li><a href="localizacion.html">Location</a></li>
-    <li><a href="aboutus.html">About Us</a></li>
-  </ul>
-</nav>
+  <h1>UNED</h1>
 
-<!-- Contenido principal -->
-<main>
-  <h1>Tesis</h1>
+  <nav>
+    <ul>
+      <li><a href="proyectos.html">Projects</a></li>
+      <li><a href="publicaciones.html">Publications</a></li>
+      <li><a href="repositorios.html">Tools</a></li>
+      <li><a href="cosy.html">Cosy Project</a></li>
+      <li><a href="tesis.html">Thesis</a></li>
+      <li><a href="localizacion.html">Locations</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
 
-  <h2>Tesis recientes (2020 en adelante)</h2>
-  <ul id="tesis-recientes"></ul>
+  <main>
+    <section class="tesis">
+      <h2>Tesis</h2>
+      <div id="tesis-container">
+        <!-- Aquí se cargan las tesis -->
+      </div>
+    </section>
+  </main>
 
-  <h2>Tesis anteriores (antes de 2020)</h2>
-  <div id="tesis-anteriores"></div>
+  <script>
+    fetch('tesis.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('tesis-container');
+        const years = Object.keys(data).sort((a,b) => b - a);
 
-</main>
+        years.forEach(year => {
+          const yearSection = document.createElement('section');
+          yearSection.classList.add('year-section');
 
-<!-- Script para cargar las tesis desde el archivo JSON -->
-<script>
-fetch('tesis.json')
-  .then(res => res.json())
-  .then(data => {
-    // Separa las tesis recientes y anteriores
-    const recientes = data.tesis.filter(t => t.anio >= 2020);
-    const anteriores = data.tesis.filter(t => t.anio < 2020);
+          const h3 = document.createElement('h3');
+          h3.textContent = `Tesis del año ${year}`;
+          yearSection.appendChild(h3);
 
-    const recientesList = document.getElementById('tesis-recientes');
-    recientes.forEach(({ año, trabajos }) => {
-      trabajos.forEach(trabajo => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${trabajo.titulo}</strong><br>Autor: ${trabajo.autor}<br>Director(es): ${trabajo.director.join(', ')}<br><em>Año: ${año}</em>`;
-        recientesList.appendChild(li);
+          const ul = document.createElement('ul');
+          ul.classList.add('tesis-list');
+
+          data[year].forEach(tesis => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+              <p class="titulo">${tesis.titulo}</p>
+              <p class="autor"><strong>Autor:</strong> ${tesis.autor}</p>
+              <p class="directores"><strong>Director(es):</strong> ${tesis.directores.join(', ')}</p>
+            `;
+            ul.appendChild(li);
+          });
+
+          yearSection.appendChild(ul);
+          container.appendChild(yearSection);
+        });
+      })
+      .catch(err => {
+        document.getElementById('tesis-container').textContent = 'Error cargando las tesis.';
+        console.error(err);
       });
-    });
-
-    const anterioresDiv = document.getElementById('tesis-anteriores');
-    anteriores.forEach(({ año, trabajos }) => {
-      const h3 = document.createElement('h3');
-      h3.textContent = `Tesis del año ${año}`;
-      anterioresDiv.appendChild(h3);
-
-      const ul = document.createElement('ul');
-      trabajos.forEach(trabajo => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${trabajo.titulo}</strong><br>Autor: ${trabajo.autor}<br>Director(es): ${trabajo.director.join(', ')}`;
-        ul.appendChild(li);
-      });
-      anterioresDiv.appendChild(ul);
-    });
-  });
-</script>
+  </script>
 
 </body>
 </html>
