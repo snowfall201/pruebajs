@@ -11,54 +11,69 @@ import * as cheerio from 'cheerio';
 
     const page = await browser.newPage();
     await page.goto('https://portalcientifico.uned.es/grupos/17474/tesis', {
-      waitUntil: 'networkidle0',
+      waitUntil: 'networkidle0'
     });
 
-    // Click "Load More" until button disappears
-    while (true) {
-      const loadMoreButton = await page.$('button.btn.btn-secondary');
-      if (!loadMoreButton) break;
-
-      await loadMoreButton.click();
-      await page.waitForTimeout(1000); // wait for content load
-    }
+    // En esta página no hay botón "Ver más" para tesis, así que no iteramos
 
     const html = await page.content();
     await browser.close();
 
     const $ = cheerio.load(html);
-    const thesesByYear = [];
 
-    $('.grupo-docs__grupo.agrupador-anualidad').each((_, yearGroup) => {
-      const year = $(yearGroup).find('h3').text().trim();
-      const theses = [];
+    const tesisPorAnio = [];
 
-      $(yearGroup).find('li.grupo-docs__item').each((_, thesisItem) => {
-        const titleElement = $(thesisItem).find('a');
-        const title = titleElement.text().trim();
+    // El contenido está organizado en secciones por año con la clase "grupo-docs__grupo agrupador-anualidad"
+    $('.grupo-docs__grupo.agrupador-anualidad').each((_, grupo) => {
+      const year = $(grupo).find('h3').text().trim();
 
-        const info = {};
-        $(thesisItem).find('p').each((_, p) => {
-          const text = $(p).text().trim();
-          const [key, ...rest] = text.split(':');
-          if (key && rest.length > 0) {
-            info[key.trim().toLowerCase()] = rest.join(':').trim();
-          }
-        });
+      const trabajos = [];
 
-        theses.push({
-          title,
-          author: info['author'] || info['authors'] || null,
-          director: info['director'] || null,
+      // Cada tesis está dentro de un li con clase "grupo-docs__item"
+      $(grupo).find('li.grupo-docs__item').each((_, item) => {
+        // El título está en el enlace <a>
+        const titulo = $(item).find('a').first().text().trim();
+
+        // El texto debajo contiene autor y director, separados por saltos de línea
+        const textoInfo = $(item).find('p').text().trim().split('\n').map(s => s.trim()).filter(Boolean);
+
+        // El formato típico es:
+        // Línea 1: Autor (todo mayúsculas o normal)
+        // Línea 2: "Dirigida por ..." con uno o varios directores separados por "y"
+
+        let autor = '';
+        let director = [];
+
+        if (textoInfo.length >= 2) {
+          autor = textoInfo[0];
+          const dirStr = textoInfo[1].replace(/^Dirigida por\s*/i, '');
+          director = dirStr.split(/\sy\s/).map(s => s.trim());
+        } else {
+          // Por si faltase algún campo
+          autor = textoInfo[0] || '';
+          director = [];
+        }
+
+        trabajos.push({
+          titulo,
+          autor,
+          director
         });
       });
 
-      thesesByYear.push({ year, theses });
+      tesisPorAnio.push({
+        anio: year,
+        trabajos
+      });
     });
 
-    await fs.writeFile('theses.json', JSON.stringify({ thesesByYear }, null, 2), 'utf-8');
-    console.log('✅ File theses.json has been generated.');
+    // Guardamos el JSON
+    const data = { tesis: tesisPorAnio };
+    await fs.writeFile('tesis.json', JSON.stringify(data, null, 2), 'utf-8');
+
+    console.log('✅ Archivo tesis.json generado correctamente.');
+
   } catch (error) {
-    console.error('Error during scraping:', error);
+    console.error('Error durante el scraping:', error);
   }
 })();
