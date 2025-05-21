@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Theses UNED
+title: UNED Theses
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThesesUNED</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNED Theses</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -26,45 +26,43 @@ title: Theses UNED
   </ul>
 </nav>
 
-<main>
-  <h1>Theses</h1>
-  <div id="theses-container"></div>
-</main>
+  <main>
+    <h1>UNED Theses</h1>
+    <div id="theses-container"></div>
+  </main>
 
-<script>
-// This assumes you have a data file named 'theses.json' containing the JSON structure you requested.
-fetch('theses.json')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('theses-container');
+  <script>
+    fetch('theses.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+      })
+      .then(data => {
+        const container = document.getElementById('theses-container');
 
-    data.thesesByYear.forEach(({ year, theses }) => {
-      // Create year heading
-      const h2 = document.createElement('h2');
-      h2.textContent = `Theses from ${year}`;
-      container.appendChild(h2);
+        data.thesesByYear.forEach(({ year, theses }) => {
+          const h2 = document.createElement('h2');
+          h2.textContent = `Theses from ${year}`;
+          container.appendChild(h2);
 
-      // Create list for theses of this year
-      const ul = document.createElement('ul');
+          const ul = document.createElement('ul');
 
-      theses.forEach(({ title, author, director }) => {
-        const li = document.createElement('li');
+          theses.forEach(({ title, author, director }) => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${title}</strong><br>Author: ${author || 'N/A'}<br>Directed by: ${director || 'N/A'}`;
+            ul.appendChild(li);
+          });
 
-        // Compose inner HTML: title (bold), author, director
-        li.innerHTML = `<strong>${title}</strong><br>Author: ${author}<br>Directed by: ${director}`;
-        ul.appendChild(li);
+          container.appendChild(ul);
+        });
+      })
+      .catch(error => {
+        const container = document.getElementById('theses-container');
+        container.textContent = 'Failed to load theses data.';
+        console.error('Error loading theses data:', error);
       });
-
-      container.appendChild(ul);
-    });
-  })
-  .catch(error => {
-    console.error('Error loading theses data:', error);
-    const container = document.getElementById('theses-container');
-    container.textContent = 'Failed to load theses data.';
-  });
-</script>
-
+  </script>
 </body>
 </html>
+
 
