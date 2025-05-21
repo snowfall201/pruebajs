@@ -2,9 +2,10 @@
   "2023": [
     {
       "titulo": "Modelo combinado basado en redes neuronales recurrentes y redes convolucionales de grafos para la predicción de series temporales económicas",
+      "link": "/documentos/649dc42ba3a4af6c6b6260f4"
       "autor": "LAZCANO DE ROJAS, ANA",
       "directores": ["PEDRO JAVIER HERRERA CARO"],
-      "link": "https://portalcientifico.uned.es/documentos/649dc42ba3a4af6c6b6260f4"
+     
     },
     {
       "titulo": "Alineamiento de paradigmas de modelado aplicado a orientación a objetos y ontologías",
