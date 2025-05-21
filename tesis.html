@@ -45,8 +45,8 @@ fetch('tesis.json')
   .then(res => res.json())
   .then(data => {
     // Separa las tesis recientes y anteriores
-    const recientes = data.tesis.filter(t => t.año >= 2020);
-    const anteriores = data.tesis.filter(t => t.año < 2020);
+    const recientes = data.tesis.filter(t => t.anio >= 2020);
+    const anteriores = data.tesis.filter(t => t.anio < 2020);
 
     const recientesList = document.getElementById('tesis-recientes');
     recientes.forEach(({ año, trabajos }) => {
