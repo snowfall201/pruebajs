@@ -1,18 +1,19 @@
 ---
 layout: default
-title: UNED Theses
+title: Proyectos UNED
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UNED Theses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos UNED</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+<!-- Menú de navegación -->
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -26,43 +27,52 @@ title: UNED Theses
   </ul>
 </nav>
 
-  <main>
-    <h1>UNED Theses</h1>
-    <div id="theses-container"></div>
-  </main>
+<!-- Contenido principal -->
+<main>
+  <h1>Tesis</h1>
 
-  <script>
-    fetch('theses.json')
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.json();
-      })
-      .then(data => {
-        const container = document.getElementById('theses-container');
+  <h2>Tesis recientes (2020 en adelante)</h2>
+  <ul id="tesis-recientes"></ul>
 
-        data.thesesByYear.forEach(({ year, theses }) => {
-          const h2 = document.createElement('h2');
-          h2.textContent = `Theses from ${year}`;
-          container.appendChild(h2);
+  <h2>Tesis anteriores (antes de 2020)</h2>
+  <div id="tesis-anteriores"></div>
 
-          const ul = document.createElement('ul');
+</main>
 
-          theses.forEach(({ title, author, director }) => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${title}</strong><br>Author: ${author || 'N/A'}<br>Directed by: ${director || 'N/A'}`;
-            ul.appendChild(li);
-          });
+<!-- Script para cargar las tesis desde el archivo JSON -->
+<script>
+fetch('tesis.json')
+  .then(res => res.json())
+  .then(data => {
+    // Separa las tesis recientes y anteriores
+    const recientes = data.tesis.filter(t => t.año >= 2020);
+    const anteriores = data.tesis.filter(t => t.año < 2020);
 
-          container.appendChild(ul);
-        });
-      })
-      .catch(error => {
-        const container = document.getElementById('theses-container');
-        container.textContent = 'Failed to load theses data.';
-        console.error('Error loading theses data:', error);
+    const recientesList = document.getElementById('tesis-recientes');
+    recientes.forEach(({ año, trabajos }) => {
+      trabajos.forEach(trabajo => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${trabajo.titulo}</strong><br>Autor: ${trabajo.autor}<br>Director(es): ${trabajo.director.join(', ')}<br><em>Año: ${año}</em>`;
+        recientesList.appendChild(li);
       });
-  </script>
+    });
+
+    const anterioresDiv = document.getElementById('tesis-anteriores');
+    anteriores.forEach(({ año, trabajos }) => {
+      const h3 = document.createElement('h3');
+      h3.textContent = `Tesis del año ${año}`;
+      anterioresDiv.appendChild(h3);
+
+      const ul = document.createElement('ul');
+      trabajos.forEach(trabajo => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${trabajo.titulo}</strong><br>Autor: ${trabajo.autor}<br>Director(es): ${trabajo.director.join(', ')}`;
+        ul.appendChild(li);
+      });
+      anterioresDiv.appendChild(ul);
+    });
+  });
+</script>
+
 </body>
 </html>
-
-
