@@ -74,6 +74,53 @@ nav ul li a:hover {
   background-color: #024fa2;
 }
 
+/* Estilos para el formulario de añadir repositorio */
+#repoForm {
+  background-color: #f6f8fa;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 500px;
+  margin-top: 30px;
+  box-shadow: 0 1px 3px rgba(27,31,35,0.1);
+}
+
+#repoForm label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #24292e;
+}
+
+#repoForm input[type="text"],
+#repoForm input[type="url"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5da;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #24292e;
+  margin-top: 4px;
+}
+
+#repoForm button {
+  margin-top: 15px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#repoForm button:hover {
+  background-color: #218838;
+}
+
+
 /* Estilos para researchers */
 .researchers {
   margin: 3rem auto;
