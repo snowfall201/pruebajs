@@ -98,6 +98,24 @@ title: GitHub Repositories
       <a href="https://github.com/rheradio/VMStatAnal" target="_blank">View on GitHub</a>
     </div>
   </div>
+
+  <hr>
+  <h2>Add New Repository</h2>
+  <form id="repoForm">
+    <label>
+      Name:
+      <input type="text" id="repoName" required>
+    </label><br>
+    <label>
+      URL:
+      <input type="url" id="repoURL" required>
+    </label><br>
+    <label>
+      Category (comma-separated):
+      <input type="text" id="repoCategory" required>
+    </label><br>
+    <button type="submit">Add Repository</button>
+  </form>
 </main>
 
 <script>
@@ -118,6 +136,41 @@ title: GitHub Repositories
         card.style.display = selectedCategories.length === 0 || matches ? 'block' : 'none';
       });
     });
+  });
+
+  // Añadir repositorio nuevo
+  document.getElementById('repoForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('repoName').value.trim();
+    const url = document.getElementById('repoURL').value.trim();
+    const category = document.getElementById('repoCategory').value.trim();
+
+    if (!name || !url || !category) return;
+
+    const newCard = document.createElement('div');
+    newCard.className = 'repo-card';
+    newCard.dataset.category = category;
+
+    newCard.innerHTML = `
+      <h2>${name}</h2>
+      <p><strong>Category:</strong> ${category}</p>
+      <a href="${url}" target="_blank">View on GitHub</a>
+    `;
+
+    document.querySelector('.repo-list').appendChild(newCard);
+
+    // Limpiar formulario
+    document.getElementById('repoForm').reset();
+
+    // Aplicar filtro actual si hay categorías seleccionadas
+    const selectedCategories = Array.from(checkboxes)
+      .filter(cb => cb.checked)
+      .map(cb => cb.value.toLowerCase());
+
+    const categoryText = category.toLowerCase();
+    const matches = selectedCategories.length === 0 || selectedCategories.some(cat => categoryText.includes(cat));
+    newCard.style.display = matches ? 'block' : 'none';
   });
 </script>
 
