@@ -74,7 +74,7 @@ nav ul li a:hover {
   background-color: #024fa2;
 }
 
-/* Estilos para el formulario de añadir repositorio */
+/* Estilos para el contenedor del formulario */
 #repoForm {
   background-color: #f6f8fa;
   border: 1px solid #d1d5da;
@@ -82,14 +82,27 @@ nav ul li a:hover {
   padding: 20px;
   max-width: 500px;
   margin-top: 30px;
+  margin-bottom: 40px;
   box-shadow: 0 1px 3px rgba(27,31,35,0.1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
+/* Estilo del título del formulario */
+#repoForm h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #0366d6;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 5px;
+}
+
+/* Estilos para cada campo del formulario */
 #repoForm label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 600;
   color: #24292e;
+  margin-top: 15px;
 }
 
 #repoForm input[type="text"],
@@ -101,15 +114,17 @@ nav ul li a:hover {
   font-size: 14px;
   background-color: #fff;
   color: #24292e;
-  margin-top: 4px;
+  box-sizing: border-box;
 }
 
+/* Estilo del botón */
 #repoForm button {
-  margin-top: 15px;
+  margin-top: 20px;
   background-color: #28a745;
   color: white;
   padding: 10px 16px;
   font-size: 14px;
+  font-weight: 600;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -119,6 +134,18 @@ nav ul li a:hover {
 #repoForm button:hover {
   background-color: #218838;
 }
+
+/* Responsive en pantallas pequeñas */
+@media (max-width: 600px) {
+  #repoForm {
+    padding: 15px;
+  }
+
+  #repoForm button {
+    width: 100%;
+  }
+}
+
 
 
 /* Estilos para researchers */
