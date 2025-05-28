@@ -10,7 +10,7 @@ layout: default
   <title>UNED | Localización</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Leaflet.js CSS -->
+  <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -21,6 +21,7 @@ layout: default
 
 <body>
 
+  <!-- Google Translate -->
   <div id="google_translate_element"></div>
   <script type="text/javascript">
     function googleTranslateElementInit() {
@@ -52,7 +53,7 @@ layout: default
     </section>
   </main>
 
-  <!-- Leaflet.js Script -->
+  <!-- Leaflet JS -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha512-o9N1jXUJ0SAl3IjV+zqMwC2eO9iZgyB3dYiOy+O8EKlKfl8VY4PZ7BPYeQ1aRmlUTx27H+eF4P2z0ZfwH+VQqA=="
@@ -60,12 +61,10 @@ layout: default
   ></script>
 
   <script>
-    // Esperar a que se cargue el DOM completamente
     document.addEventListener('DOMContentLoaded', () => {
       fetch('localizacion.json')
         .then(res => res.json())
         .then(data => {
-          // Mostrar información textual
           const contenedor = document.getElementById('info-localizacion');
           contenedor.innerHTML = `
             <p><strong>Dirección:</strong> ${data.direccion}</p>
@@ -75,21 +74,17 @@ layout: default
             <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
           `;
 
-          // Coordenadas desplazadas más a la izquierda (4 veces)
+          // Coordenadas ajustadas 3 veces más a la izquierda
           const lat = 40.452898;
-          const lng = -3.734083;
+          const lng = -3.736122; // Ajustado desde -3.732122
 
-          // Crear el mapa centrado en esas coordenadas
           const map = L.map('map').setView([lat, lng], 17);
 
-          // Añadir capa base
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
           }).addTo(map);
 
-          // Añadir el marcador
-          L.marker([lat, lng])
-            .addTo(map)
+          L.marker([lat, lng]).addTo(map)
             .bindPopup('Facultad de Informática - UNED<br>C. de Juan del Rosal, 14')
             .openPopup();
         })
