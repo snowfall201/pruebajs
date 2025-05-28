@@ -23,7 +23,7 @@ layout: default
 
   <!-- Google Translate -->
   <div id="google_translate_element"></div>
-  <script type="text/javascript">
+  <script>
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element');
     }
@@ -63,7 +63,10 @@ layout: default
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       fetch('localizacion.json')
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) throw new Error("No se encontró localizacion.json");
+          return res.json();
+        })
         .then(data => {
           const contenedor = document.getElementById('info-localizacion');
           contenedor.innerHTML = `
@@ -74,7 +77,7 @@ layout: default
             <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
           `;
 
-          // Coordenadas ajustadas 3 veces más a la izquierda
+          // Coordenadas más a la izquierda
           const lat = 40.452898;
           const lng = -3.736122; // Ajustado desde -3.732122
 
