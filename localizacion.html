@@ -9,26 +9,17 @@ layout: default
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UNED | Localización</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Leaflet CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha512-sA+z0pYZ1pMP7v2Z6gq2bCKLomPvKgJo0vvVuv5AO9M/dwZ0pniS3pSkeYMt2rt7NmBGG99nmCaTKlF5jZEzOw=="
-    crossorigin=""
-  />
 </head>
 
 <body>
 
-  <!-- Google Translate -->
   <div id="google_translate_element"></div>
-  <script>
+  <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'es' }, 'google_translate_element');
     }
   </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <h1>UNED</h1>
 
@@ -53,49 +44,41 @@ layout: default
     </section>
   </main>
 
-  <!-- Leaflet JS -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha512-o9N1jXUJ0SAl3IjV+zqMwC2eO9iZgyB3dYiOy+O8EKlKfl8VY4PZ7BPYeQ1aRmlUTx27H+eF4P2z0ZfwH+VQqA=="
-    crossorigin=""
-  ></script>
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('localizacion.json')
-        .then(res => {
-          if (!res.ok) throw new Error("No se encontró localizacion.json");
-          return res.json();
-        })
-        .then(data => {
-          const contenedor = document.getElementById('info-localizacion');
-          contenedor.innerHTML = `
-            <p><strong>Dirección:</strong> ${data.direccion}</p>
-            <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
-            <p><strong>Teléfono:</strong> ${data.telefono}</p>
-            <p><strong>Metro:</strong> ${data.transporte.metro}</p>
-            <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
-          `;
+    fetch('localizacion.json')
+      .then(res => res.json())
+      .then(data => {
+        const contenedor = document.getElementById('info-localizacion');
+        contenedor.innerHTML = `
+          <p><strong>Dirección:</strong> ${data.direccion}</p>
+          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+          <p><strong>Teléfono:</strong> ${data.telefono}</p>
+          <p><strong>Metro:</strong> ${data.transporte.metro}</p>
+          <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
+        `;
 
-          // Coordenadas más a la izquierda
-          const lat = 40.452898;
-          const lng = -3.736122; // Ajustado desde -3.732122
+        // Coordenadas ajustadas aún más a la izquierda
+        const lat = 40.452898;
+        const lng = -3.732122;
 
-          const map = L.map('map').setView([lat, lng], 17);
+        const map = L.map('map').setView([lat, lng], 17);
 
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-          }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
 
-          L.marker([lat, lng]).addTo(map)
-            .bindPopup('Facultad de Informática - UNED<br>C. de Juan del Rosal, 14')
-            .openPopup();
-        })
-        .catch(error => {
-          console.error('Error al cargar localizacion.json:', error);
-          document.getElementById('info-localizacion').textContent = 'No se pudo cargar la información de localización.';
-        });
-    });
+        L.marker([lat, lng]).addTo(map)
+          .bindPopup('Facultad de Informática - UNED<br>C. de Juan del Rosal, 14')
+          .openPopup();
+      })
+      .catch(error => {
+        console.error('Error al cargar localizacion.json:', error);
+        document.getElementById('info-localizacion').textContent = 'No se pudo cargar la información de localización.';
+      });
   </script>
 
 </body>
