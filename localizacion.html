@@ -61,9 +61,9 @@ layout: default
           <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
         `;
 
-        // Coordenadas ajustadas un poco más a la izquierda
-        const lat = 40.452898;
-        const lng = -3.734122;  // Ajuste ligero a la izquierda
+        // Coordenadas ajustadas: más a la izquierda y un poquito abajo, el doble del desplazamiento anterior
+        const lat = 40.451898;   // moved down
+        const lng = -3.736122;   // moved left
 
         const map = L.map('map').setView([lat, lng], 17);
 
