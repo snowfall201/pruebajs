@@ -7,14 +7,10 @@ import fs from 'fs/promises';
     const { data: html } = await axios.get('https://sites.google.com/view/giss-uned/localizaci%C3%B3n?authuser=0');
     const $ = cheerio.load(html);
 
-    // ✅ Dirección corregida
     const direccion = "C. de Juan del Rosal, 14, Moncloa - Aravaca, 28040 Madrid";
-
-    // Extraer el correo electrónico
     const emailMatch = html.match(/[\w.-]+@[\w.-]+\.\w+/);
     const email = emailMatch ? emailMatch[0] : "rheradio@issi.uned.es";
 
-    // Extraer el teléfono
     const telefonoMatch = html.match(/tlf\.\s*:\s*([\d\s]+)/i);
     const telefono = telefonoMatch ? telefonoMatch[1].trim() : "91 398 82 42";
 
