@@ -61,8 +61,8 @@ fetch('localizacion.json')
       <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
     `;
 
-    // Inicializar el mapa
-   const map = L.map('map').setView([40.452387, -3.728763], 17);
+ // Coordenadas para Calle Juan del Rosal 14
+const map = L.map('map').setView([40.452274, -3.729119], 17);
 
 
     // Añadir capa de OpenStreetMap
@@ -70,8 +70,10 @@ fetch('localizacion.json')
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Añadir marcador
-    L.marker([40.452387, -3.728763]).addTo(map)
+   // Añadir marcador en la nueva ubicación
+L.marker([40.452274, -3.729119]).addTo(map)
+  .bindPopup('GISS - UNED<br>Calle Juan del Rosal 14')
+  .openPopup();
 
       .bindPopup('GISS - UNED<br>Calle Juan del Rosal 16')
       .openPopup();
