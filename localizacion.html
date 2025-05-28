@@ -11,15 +11,15 @@ title: Localización GISS-UNED
   <title>Localización GISS-UNED</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <body>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- Menú de navegación -->
 <nav>
@@ -30,7 +30,6 @@ title: Localización GISS-UNED
     <li><a href="repositorios.html">Tools</a></li>
     <li><a href="tesis.html">Thesis</a></li>
     <li><a href="localizacion.html">Location</a></li>
-  
   </ul>
 </nav>
 
@@ -61,21 +60,17 @@ fetch('localizacion.json')
       <p><strong>Autobuses:</strong> ${data.transporte.autobuses.join(', ')}</p>
     `;
 
- // Coordenadas para Calle Juan del Rosal 14
-const map = L.map('map').setView([40.452274, -3.729119], 17);
-
+    // Coordenadas para Calle Juan del Rosal 14
+    const map = L.map('map').setView([40.452274, -3.729119], 17);
 
     // Añadir capa de OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-   // Añadir marcador en la nueva ubicación
-L.marker([40.452274, -3.729119]).addTo(map)
-  .bindPopup('GISS - UNED<br>Calle Juan del Rosal 14')
-  .openPopup();
-
-      .bindPopup('GISS - UNED<br>Calle Juan del Rosal 16')
+    // Añadir marcador en la nueva ubicación
+    L.marker([40.452274, -3.729119]).addTo(map)
+      .bindPopup('GISS - UNED<br>Calle Juan del Rosal 14')
       .openPopup();
   })
   .catch(error => {
@@ -85,5 +80,3 @@ L.marker([40.452274, -3.729119]).addTo(map)
 
 </body>
 </html>
-
-
