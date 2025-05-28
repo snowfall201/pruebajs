@@ -7,24 +7,22 @@ import fs from 'fs/promises';
     const { data: html } = await axios.get('https://sites.google.com/view/giss-uned/localizaci%C3%B3n?authuser=0');
     const $ = cheerio.load(html);
 
-    // ✅ Dirección exacta escrita manualmente
-    const direccion = "C. de Juan del Rosal, 16, Moncloa - Aravaca, 28040 Madrid";
+    // ✅ Dirección corregida
+    const direccion = "C. de Juan del Rosal, 14, Moncloa - Aravaca, 28040 Madrid";
 
     // Extraer el correo electrónico
     const emailMatch = html.match(/[\w.-]+@[\w.-]+\.\w+/);
-    const email = emailMatch ? emailMatch[0] : "rheradio@issi.uned.es"; // fallback por si falla
+    const email = emailMatch ? emailMatch[0] : "rheradio@issi.uned.es";
 
     // Extraer el teléfono
     const telefonoMatch = html.match(/tlf\.\s*:\s*([\d\s]+)/i);
-    const telefono = telefonoMatch ? telefonoMatch[1].trim() : "91 398 82 42"; // fallback por si falla
+    const telefono = telefonoMatch ? telefonoMatch[1].trim() : "91 398 82 42";
 
-    // Información de transporte (estática o puedes scrapear si lo prefieres)
     const transporte = {
       metro: 'Línea 6 (Ciudad Universitaria)',
       autobuses: ['U (Autobús Universitario)', 'F (Cuatro Caminos)', 'G (Moncloa)', '82 (Moncloa)']
     };
 
-    // Construir el objeto de localización
     const localizacion = {
       direccion,
       email,
@@ -32,7 +30,6 @@ import fs from 'fs/promises';
       transporte
     };
 
-    // Guardar en un archivo JSON
     await fs.writeFile('localizacion.json', JSON.stringify(localizacion, null, 2), 'utf-8');
     console.log('✅ Archivo localizacion.json generado.');
   } catch (error) {
