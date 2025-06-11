@@ -40,45 +40,92 @@ title: Proyectos UNED
 <main>
   <h1>Proyectos</h1>
 
+  <div class="checkbox-group">
+  <strong>Filtrar por año:</strong><br />
+  <label><input type="checkbox" class="filtro-anio" value="vigentes"> Proyectos Vigentes</label>
+  <!-- Los años se generarán dinámicamente -->
+  <span id="filtros-anios"></span>
+  </div>
+
   <h2>Proyectos Vigentes</h2>
   <ul id="proyectos-vigentes"></ul>
 
   <h2>Proyectos Finalizados</h2>
   <div id="proyectos-finalizados"></div>
 
+  
 </main>
 
-<!-- Script para cargar los proyectos desde el archivo JSON -->
+<!-- Script de configuración primero -->
+<script src="config.js"></script>
+<script src="proyectos_alt_urls.js"></script>
 <script>
-fetch('data.json')
-  .then(res => res.json())
-  .then(data => {
-    const baseURL = 'https://portalcientifico.uned.es';
+const altUrls = window.PROYECTOS_ALT_URLS || {};
+const baseURL = 'https://portalcientifico.uned.es';
 
-    const vigentesList = document.getElementById('proyectos-vigentes');
-    data.vigentes.proyectos.forEach(p => {
+function getProyectoUrl(link) {
+  if (altUrls[link]) return altUrls[link];
+  return baseURL + link;
+}
+
+let proyectosData = null;
+
+function renderProyectos(filtroAnios) {
+  const vigentesList = document.getElementById('proyectos-vigentes');
+  const finalizadosDiv = document.getElementById('proyectos-finalizados');
+  vigentesList.innerHTML = '';
+  finalizadosDiv.innerHTML = '';
+
+  // Vigentes
+  if (!filtroAnios.length || filtroAnios.includes('vigentes')) {
+    proyectosData.vigentes.proyectos.forEach(p => {
       const li = document.createElement('li');
-      const proyectoURL = baseURL + p.link;
+      const proyectoURL = getProyectoUrl(p.link);
       li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
       vigentesList.appendChild(li);
     });
+  }
 
-    const finalizadosDiv = document.getElementById('proyectos-finalizados');
-    data.finalizados.anios.forEach(({ year, proyectos }) => {
-      const h3 = document.createElement('h3');
-      h3.textContent = `Proyectos finalizados en ${year}`;
-      finalizadosDiv.appendChild(h3);
+  // Finalizados
+  proyectosData.finalizados.anios.forEach(({ year, proyectos }) => {
+    if (filtroAnios.length && !filtroAnios.includes(String(year))) return;
+    const h3 = document.createElement('h3');
+    h3.textContent = `Proyectos finalizados en ${year}`;
+    finalizadosDiv.appendChild(h3);
 
-      const ul = document.createElement('ul');
-      proyectos.forEach(p => {
-        const li = document.createElement('li');
-        const proyectoURL = baseURL + p.link;
-        li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
-        ul.appendChild(li);
-      });
-      finalizadosDiv.appendChild(ul);
+    const ul = document.createElement('ul');
+    proyectos.forEach(p => {
+      const li = document.createElement('li');
+      const proyectoURL = getProyectoUrl(p.link);
+      li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
+      ul.appendChild(li);
     });
-});
+    finalizadosDiv.appendChild(ul);
+  });
+}
+
+fetch(window.PROYECTOS_DATA_URL)
+  .then(res => res.json())
+  .then(data => {
+    proyectosData = data;
+
+    // Generar checkboxes de años
+    const anios = data.finalizados.anios.map(a => a.year);
+    const filtrosAnios = document.getElementById('filtros-anios');
+    filtrosAnios.innerHTML = anios.map(anio =>
+      `<label><input type="checkbox" class="filtro-anio" value="${anio}"> ${anio}</label>`
+    ).join(' ');
+
+    // Evento de filtrado
+    document.querySelectorAll('.filtro-anio').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const seleccionados = Array.from(document.querySelectorAll('.filtro-anio:checked')).map(cb => cb.value);
+        renderProyectos(seleccionados);
+      });
+    });
+
+    renderProyectos([]); // Mostrar todo al inicio
+  });
 </script>
 
 </body>
