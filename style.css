@@ -277,3 +277,68 @@ nav ul li a:hover {
   background-color: #e6f7f4;
   border-color: #1abc9c;
 }
+
+/**************************
+ Estilos para el filtro de publicaciones 
+ ***************************************/
+/* Agrupamos el label y el select */
+.filtro-anio-wrapper {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Label */
+.filtro-anio-wrapper label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Select */
+#filtro-anio {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+#filtro-anio:focus {
+  border-color: #0366d6;
+  background-color: #fff;
+}
+
+
+
+
+#filtro-busqueda {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+#filtro-busqueda:focus {
+  outline: none;
+  border-color: #0366d6;
+}
+
+/* Resaltado */
+mark {
+  background-color: #fffd75;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
