@@ -38,46 +38,118 @@ title: Publicaciones UNED
 <!-- Contenido principal -->
 <main>
   <h1>Publicaciones</h1>
-  <div id="publicaciones-container"></div>
+    <div class="filtro-anio-wrapper">
+      <label for="filtro-anio">Filtrar por año:</label>
+      <select id="filtro-anio">
+        <option value="">Todos los años</option>
+      </select>
+    </div>
+
+    <input type="text" id="filtro-busqueda" placeholder="Buscar publicaciones..." />
+    <div id="publicaciones-container"></div>
 </main>
 
-<script>
-fetch('publicaciones.json')
-  .then(res => res.json())
-  .then(data => {
-    const baseURL = 'https://portalcientifico.uned.es';
-    const container = document.getElementById('publicaciones-container');
+  <script>
+    fetch('publicaciones.json')
+      .then(res => res.json())
+      .then(data => {
+        const baseURL = 'https://portalcientifico.uned.es';
+        const container = document.getElementById('publicaciones-container');
+        const input = document.getElementById('filtro-busqueda');
+        const selectAnio = document.getElementById('filtro-anio');
 
-    data.publicaciones.forEach(({ year, publicaciones }) => {
-      // Encabezado del año
-      const h2 = document.createElement('h2');
-      h2.textContent = `Publicaciones ${year}`;
-      container.appendChild(h2);
+        const todasLasPublicaciones = [];
 
-      // Lista de publicaciones
-      const ul = document.createElement('ul');
+        // Recolectamos todas las publicaciones y años únicos
+        const aniosSet = new Set();
+        data.publicaciones.forEach(({ year, publicaciones }) => {
+          aniosSet.add(year);
+          publicaciones.forEach(pub => {
+            todasLasPublicaciones.push({ year, ...pub });
+          });
+        });
 
-      publicaciones.forEach(p => {
-        const li = document.createElement('li');
-        const pubURL = baseURL + p.link;
+        // Llenar el <select> con los años
+        [...aniosSet].sort((a, b) => b - a).forEach(year => {
+          const option = document.createElement('option');
+          option.value = year;
+          option.textContent = year;
+          selectAnio.appendChild(option);
+        });
 
-        li.innerHTML = ` 
-          <a href="${pubURL}" target="_blank"><strong>${p.titulo}</strong></a><br>
-          <em>${p.revista}</em>
-        `;
-        ul.appendChild(li);
+        // Función para resaltar texto
+        function resaltar(texto, termino) {
+          if (!termino) return texto;
+          const regex = new RegExp(`(${termino})`, 'gi');
+          return texto.replace(regex, '<mark>$1</mark>');
+        }
+
+        // Función para renderizar
+        function renderPublicaciones(publicaciones, terminoBusqueda = '') {
+          container.innerHTML = '';
+          const publicacionesPorAnio = {};
+
+          publicaciones.forEach(pub => {
+            if (!publicacionesPorAnio[pub.year]) {
+              publicacionesPorAnio[pub.year] = [];
+            }
+            publicacionesPorAnio[pub.year].push(pub);
+          });
+
+          Object.entries(publicacionesPorAnio).forEach(([year, pubs]) => {
+            const h2 = document.createElement('h2');
+            h2.textContent = `Publicaciones ${year}`;
+            container.appendChild(h2);
+
+            const ul = document.createElement('ul');
+            pubs.forEach(p => {
+              const li = document.createElement('li');
+              const pubURL = baseURL + p.link;
+
+              li.innerHTML = `
+              <a href="${pubURL}" target="_blank"><strong>${resaltar(p.titulo, terminoBusqueda)}</strong></a><br>
+              <em>${resaltar(p.revista, terminoBusqueda)}</em>
+            `;
+              ul.appendChild(li);
+            });
+
+            container.appendChild(ul);
+          });
+        }
+
+        // Función para aplicar filtros
+        function aplicarFiltros() {
+          const texto = input.value.trim().toLowerCase();
+          const anio = selectAnio.value;
+
+          const filtradas = todasLasPublicaciones.filter(p => {
+            const coincideTexto =
+              !texto ||
+              p.titulo.toLowerCase().includes(texto) ||
+              p.revista.toLowerCase().includes(texto) ||
+              p.year.includes(texto);
+
+            const coincideAnio = !anio || p.year === anio;
+
+            return coincideTexto && coincideAnio;
+          });
+
+          renderPublicaciones(filtradas, texto);
+        }
+
+        // Eventos
+        input.addEventListener('input', aplicarFiltros);
+        selectAnio.addEventListener('change', aplicarFiltros);
+
+        // Mostrar todas al inicio
+        renderPublicaciones(todasLasPublicaciones);
+      })
+      .catch(error => {
+        console.error("Error cargando las publicaciones:", error);
+        const errorMsg = document.createElement('p');
+        errorMsg.textContent = "Hubo un problema al cargar las publicaciones.";
+        document.getElementById('publicaciones-container').appendChild(errorMsg);
       });
-
-      container.appendChild(ul);
-    });
-  })
-  .catch(error => {
-    console.error("Error cargando las publicaciones:", error);
-    const errorMsg = document.createElement('p');
-    errorMsg.textContent = "Hubo un problema al cargar las publicaciones.";
-    document.getElementById('publicaciones-container').appendChild(errorMsg);
-  });
-</script>
-
+  </script>
 </body>
 </html>
