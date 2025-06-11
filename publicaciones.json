@@ -9,9 +9,19 @@
           "revista": "IEEE Aerospace and Electronic Systems Magazine, Vol. 40, Núm. 1, pp. 6-20"
         },
         {
+          "titulo": "Passivity-Based Distributed Event-Triggered Flocking Control of Port-Hamiltonian Systems",
+          "link": "/documentos/6844b124e2a55c4fb915c9f6",
+          "revista": "IEEE Control Systems Letters"
+        },
+        {
           "titulo": "Recognition of Egyptian hieroglyphic texts through focused generic segmentation and cross-validation voting",
           "link": "/documentos/67b16edceb752026d8340417",
           "revista": "Applied Soft Computing, Vol. 171"
+        },
+        {
+          "titulo": "Scalable hybrid laboratories: Application in industrial automation",
+          "link": "/documentos/6844b124e2a55c4fb915c9c7",
+          "revista": "Results in Engineering, Vol. 26"
         },
         {
           "titulo": "Uso de avatares parlantes para la gamificación de la asignatura de Derecho Penitenciario",
@@ -605,13 +615,13 @@
         },
         {
           "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
-          "link": "/documentos/64086026d8f6e90129f3245c",
-          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
+          "link": "/documentos/634ee0c048ee3619a115dcd5",
+          "revista": "Frontiers in Artificial Intelligence and Applications"
         },
         {
           "titulo": "Binary Decision Diagram Algorithms to Perform Hard Analysis Operations on Variability Models",
-          "link": "/documentos/634ee0c048ee3619a115dcd5",
-          "revista": "Frontiers in Artificial Intelligence and Applications"
+          "link": "/documentos/64086026d8f6e90129f3245c",
+          "revista": "THE 15TH INTERNATIONAL CONFERENCE ON INTELLIGENT SOFTWARE METHODOLOGIES, TOOLS, AND TECHNIQUES (SOMET 16)"
         },
         {
           "titulo": "Control PID basado en eventos periódico para sistemas de control de red",
