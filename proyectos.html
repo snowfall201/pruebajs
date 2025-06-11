@@ -12,15 +12,13 @@ title: Proyectos UNED
   <link rel="stylesheet" href="style.css" />
 </head>
 
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <body>
-  
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <body>
 
 <!-- Menú de navegación -->
@@ -32,31 +30,22 @@ title: Proyectos UNED
     <li><a href="repositorios.html">Tools</a></li>
     <li><a href="tesis.html">Thesis</a></li>
     <li><a href="localizacion.html">Location</a></li>
- 
   </ul>
 </nav>
 
-<!-- Contenido principal -->
 <main>
   <h1>Proyectos</h1>
-
-  <div class="checkbox-group">
-  <strong>Filtrar por año:</strong><br />
-  <label><input type="checkbox" class="filtro-anio" value="vigentes"> Proyectos Vigentes</label>
-  <!-- Los años se generarán dinámicamente -->
-  <span id="filtros-anios"></span>
+  <div class="filtro-anio-wrapper">
+    <label for="filtro-anio">Filtrar por año:</label>
+    <select id="filtro-anio">
+      <option value="">Todos los años</option>
+      <option value="vigentes">Proyectos Vigentes</option>
+    </select>
   </div>
-
-  <h2>Proyectos Vigentes</h2>
-  <ul id="proyectos-vigentes"></ul>
-
-  <h2>Proyectos Finalizados</h2>
-  <div id="proyectos-finalizados"></div>
-
-  
+  <input type="text" id="filtro-busqueda" placeholder="Buscar por título o responsable..." style="width:300px;" />
+  <div id="proyectos-container"></div>
 </main>
 
-<!-- Script de configuración primero -->
 <script src="config.js"></script>
 <script src="proyectos_alt_urls.js"></script>
 <script>
@@ -68,65 +57,120 @@ function getProyectoUrl(link) {
   return baseURL + link;
 }
 
-let proyectosData = null;
-
-function renderProyectos(filtroAnios) {
-  const vigentesList = document.getElementById('proyectos-vigentes');
-  const finalizadosDiv = document.getElementById('proyectos-finalizados');
-  vigentesList.innerHTML = '';
-  finalizadosDiv.innerHTML = '';
-
-  // Vigentes
-  if (!filtroAnios.length || filtroAnios.includes('vigentes')) {
-    proyectosData.vigentes.proyectos.forEach(p => {
-      const li = document.createElement('li');
-      const proyectoURL = getProyectoUrl(p.link);
-      li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
-      vigentesList.appendChild(li);
-    });
-  }
-
-  // Finalizados
-  proyectosData.finalizados.anios.forEach(({ year, proyectos }) => {
-    if (filtroAnios.length && !filtroAnios.includes(String(year))) return;
-    const h3 = document.createElement('h3');
-    h3.textContent = `Proyectos finalizados en ${year}`;
-    finalizadosDiv.appendChild(h3);
-
-    const ul = document.createElement('ul');
-    proyectos.forEach(p => {
-      const li = document.createElement('li');
-      const proyectoURL = getProyectoUrl(p.link);
-      li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${p.titulo}</strong></a><br>Responsables: ${p.responsables.join(', ')}`;
-      ul.appendChild(li);
-    });
-    finalizadosDiv.appendChild(ul);
-  });
-}
-
 fetch(window.PROYECTOS_DATA_URL)
   .then(res => res.json())
   .then(data => {
-    proyectosData = data;
+    const container = document.getElementById('proyectos-container');
+    const input = document.getElementById('filtro-busqueda');
+    const selectAnio = document.getElementById('filtro-anio');
 
-    // Generar checkboxes de años
-    const anios = data.finalizados.anios.map(a => a.year);
-    const filtrosAnios = document.getElementById('filtros-anios');
-    filtrosAnios.innerHTML = anios.map(anio =>
-      `<label><input type="checkbox" class="filtro-anio" value="${anio}"> ${anio}</label>`
-    ).join(' ');
+    const todosLosProyectos = [];
 
-    // Evento de filtrado
-    document.querySelectorAll('.filtro-anio').forEach(cb => {
-      cb.addEventListener('change', () => {
-        const seleccionados = Array.from(document.querySelectorAll('.filtro-anio:checked')).map(cb => cb.value);
-        renderProyectos(seleccionados);
+    // Vigentes
+    data.vigentes.proyectos.forEach(p => {
+      todosLosProyectos.push({ ...p, year: "vigentes", tipo: "vigente" });
+    });
+
+    // Finalizados
+    data.finalizados.anios.forEach(({ year, proyectos }) => {
+      proyectos.forEach(p => {
+        todosLosProyectos.push({ ...p, year: String(year), tipo: "finalizado" });
       });
     });
 
-    renderProyectos([]); // Mostrar todo al inicio
+    // Llenar el <select> con los años (además de "vigentes")
+    const aniosSet = new Set(data.finalizados.anios.map(a => String(a.year)));
+    [...aniosSet].sort((a, b) => b - a).forEach(year => {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      selectAnio.appendChild(option);
+    });
+
+    // Función para resaltar texto
+    function resaltar(texto, termino) {
+      if (!termino) return texto;
+      const regex = new RegExp(`(${termino})`, 'gi');
+      return texto.replace(regex, '<mark>$1</mark>');
+    }
+
+    // Renderizado
+    function renderProyectos(proyectos, terminoBusqueda = '', anio = '') {
+      container.innerHTML = '';
+      // Agrupar por año
+      const proyectosPorAnio = {};
+      proyectos.forEach(p => {
+        if (!proyectosPorAnio[p.year]) proyectosPorAnio[p.year] = [];
+        proyectosPorAnio[p.year].push(p);
+      });
+
+      // Vigentes primero si corresponde
+      if (!anio || anio === "vigentes") {
+        if (proyectosPorAnio["vigentes"] && proyectosPorAnio["vigentes"].length) {
+          const h2 = document.createElement('h2');
+          h2.textContent = "Proyectos Vigentes";
+          container.appendChild(h2);
+
+          const ul = document.createElement('ul');
+          proyectosPorAnio["vigentes"].forEach(p => {
+            const li = document.createElement('li');
+            const proyectoURL = getProyectoUrl(p.link);
+            li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${resaltar(p.titulo, terminoBusqueda)}</strong></a><br>Responsables: ${resaltar(p.responsables.join(', '), terminoBusqueda)}`;
+            ul.appendChild(li);
+          });
+          container.appendChild(ul);
+        }
+      }
+
+      // Finalizados por año
+      Object.entries(proyectosPorAnio)
+        .filter(([y]) => y !== "vigentes" && (!anio || anio === y))
+        .sort((a, b) => b[0] - a[0])
+        .forEach(([year, proyectos]) => {
+          const h3 = document.createElement('h3');
+          h3.textContent = `Proyectos finalizados en ${year}`;
+          container.appendChild(h3);
+
+          const ul = document.createElement('ul');
+          proyectos.forEach(p => {
+            const li = document.createElement('li');
+            const proyectoURL = getProyectoUrl(p.link);
+            li.innerHTML = `<a href="${proyectoURL}" target="_blank"><strong>${resaltar(p.titulo, terminoBusqueda)}</strong></a><br>Responsables: ${resaltar(p.responsables.join(', '), terminoBusqueda)}`;
+            ul.appendChild(li);
+          });
+          container.appendChild(ul);
+        });
+    }
+
+    // Filtros
+    function aplicarFiltros() {
+      const texto = input.value.trim().toLowerCase();
+      const anio = selectAnio.value;
+
+      const filtrados = todosLosProyectos.filter(p => {
+        const coincideTexto =
+          !texto ||
+          p.titulo.toLowerCase().includes(texto) ||
+          (p.responsables && p.responsables.join(' ').toLowerCase().includes(texto));
+        const coincideAnio = !anio || p.year === anio;
+        return coincideTexto && coincideAnio;
+      });
+
+      renderProyectos(filtrados, texto, anio);
+    }
+
+    input.addEventListener('input', aplicarFiltros);
+    selectAnio.addEventListener('change', aplicarFiltros);
+
+    // Mostrar todos al inicio
+    renderProyectos(todosLosProyectos);
+  })
+  .catch(error => {
+    console.error("Error cargando los proyectos:", error);
+    const errorMsg = document.createElement('p');
+    errorMsg.textContent = "Hubo un problema al cargar los proyectos.";
+    document.getElementById('proyectos-container').appendChild(errorMsg);
   });
 </script>
-
 </body>
 </html>
